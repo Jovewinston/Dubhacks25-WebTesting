@@ -74,41 +74,16 @@ def inject_statsig_sdk(
                 // Wait a bit for the SDK to load
                 setTimeout(async function() {{
                     try {{
-                        // Check what's available in the global scope
-                        console.log('Available globals:', Object.keys(window).filter(key => key.toLowerCase().includes('statsig')));
+                        // Use destructuring syntax as shown in official documentation
+                        const {{ StatsigClient, StatsigAutoCapturePlugin, StatsigSessionReplayPlugin }} = window.Statsig;
                         
-                        // Try different approaches to access StatSig
-                        let StatsigClientClass = null;
-                        let StatsigSessionReplayPlugin = null;
-                        let StatsigAutoCapturePlugin = null;
+                        console.log('StatSig components loaded:', {{
+                            StatsigClient: typeof StatsigClient,
+                            StatsigAutoCapturePlugin: typeof StatsigAutoCapturePlugin,
+                            StatsigSessionReplayPlugin: typeof StatsigSessionReplayPlugin
+                        }});
 
-                        // Check for different possible global names
-                        if (typeof window.StatsigClient !== 'undefined') {{
-                            StatsigClientClass = window.StatsigClient;
-                        }} else if (typeof window.Statsig !== 'undefined' && window.Statsig.StatsigClient) {{
-                            StatsigClientClass = window.Statsig.StatsigClient;
-                        }} else if (typeof window.__STATSIG__ !== 'undefined' && window.__STATSIG__.StatsigClient) {{
-                            StatsigClientClass = window.__STATSIG__.StatsigClient;
-                        }}
-
-                        // Check for plugin classes
-                        if (typeof window.StatsigSessionReplayPlugin !== 'undefined') {{
-                            StatsigSessionReplayPlugin = window.StatsigSessionReplayPlugin;
-                        }} else if (typeof window.Statsig !== 'undefined' && window.Statsig.StatsigSessionReplayPlugin) {{
-                            StatsigSessionReplayPlugin = window.Statsig.StatsigSessionReplayPlugin;
-                        }} else if (typeof window.__STATSIG__ !== 'undefined' && window.__STATSIG__.StatsigSessionReplayPlugin) {{
-                            StatsigSessionReplayPlugin = window.__STATSIG__.StatsigSessionReplayPlugin;
-                        }}
-
-                        if (typeof window.StatsigAutoCapturePlugin !== 'undefined') {{
-                            StatsigAutoCapturePlugin = window.StatsigAutoCapturePlugin;
-                        }} else if (typeof window.Statsig !== 'undefined' && window.Statsig.StatsigAutoCapturePlugin) {{
-                            StatsigAutoCapturePlugin = window.Statsig.StatsigAutoCapturePlugin;
-                        }} else if (typeof window.__STATSIG__ !== 'undefined' && window.__STATSIG__.StatsigAutoCapturePlugin) {{
-                            StatsigAutoCapturePlugin = window.__STATSIG__.StatsigAutoCapturePlugin;
-                        }}
-
-                        if (!StatsigClientClass) {{
+                        if (!StatsigClient) {{
                             throw new Error('StatSig SDK not loaded - StatsigClient not found');
                         }}
 
@@ -124,13 +99,27 @@ def inject_statsig_sdk(
                         }}
                         
                         if (StatsigAutoCapturePlugin && {str(enable_auto_capture).lower()}) {{
-                            plugins.push(new StatsigAutoCapturePlugin());
+                            // Initialize auto-capture plugin with standard configuration
+                            plugins.push(new StatsigAutoCapturePlugin({{
+                                eventFilterFunc: (event) => {{
+                                    // Filter out events from admin pages or sensitive data
+                                    if (event.metadata && event.metadata.pageUrl && 
+                                        event.metadata.pageUrl.includes('/admin/')) {{
+                                        return false;
+                                    }}
+                                    return true;
+                                }},
+                                consoleLogAutoCaptureSettings: {{
+                                    enabled: false,  // Disable console log capture by default
+                                    logLevel: 'warn'
+                                }}
+                            }}));
                             console.log('Auto-capture plugin added');
                         }} else {{
                             console.log('Auto-capture plugin not found or disabled');
                         }}
 
-                        window.statsigClient = new StatsigClientClass(
+                        window.statsigClient = new StatsigClient(
                             '{client_key}',
                             {{ 
                                 userID: userId,

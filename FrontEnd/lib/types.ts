@@ -51,6 +51,30 @@ export interface TestResult {
     explanation?: string
     analytics?: AnalyticsData
   }>
+  // StatSig performance metrics
+  performanceMetrics?: {
+    load_time_ms?: string
+    dom_interactive_time_ms?: string
+    redirect_count?: string
+    transfer_bytes?: string
+    first_contentful_paint_time_ms?: string
+    effective_connection_type?: string
+    downlink_mbps?: string
+    downlink_kbps?: string
+    city?: string
+    state?: string
+    country?: string
+  }
+  performanceData?: {
+    fetch_timestamp: string
+    performance_event?: any
+    web_vitals_event?: any
+    summary: {
+      has_performance_data: boolean
+      has_web_vitals_data: boolean
+      total_events_found: number
+    }
+  }
 }
 
 export interface TestHistory {

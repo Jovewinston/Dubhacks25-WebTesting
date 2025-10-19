@@ -333,31 +333,31 @@ export function TestResultsModal({ test, onClose, onRunAgain }: TestResultsModal
                       <div className="flex justify-between items-center p-2 bg-card rounded border">
                         <span className="text-sm text-muted-foreground">load_time_ms</span>
                         <span className="text-sm font-mono text-muted-foreground italic">
-                          ""
+                          {results.performanceMetrics?.load_time_ms || "N/A"}
                         </span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-card rounded border">
                         <span className="text-sm text-muted-foreground">dom_interactive_time_ms</span>
                         <span className="text-sm font-mono text-muted-foreground italic">
-                          ""
+                          {results.performanceMetrics?.dom_interactive_time_ms || "N/A"}
                         </span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-card rounded border">
                         <span className="text-sm text-muted-foreground">first_contentful_paint_time_ms</span>
                         <span className="text-sm font-mono text-muted-foreground italic">
-                          ""
+                          {results.performanceMetrics?.first_contentful_paint_time_ms || "N/A"}
                         </span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-card rounded border">
                         <span className="text-sm text-muted-foreground">redirect_count</span>
                         <span className="text-sm font-mono text-muted-foreground italic">
-                          ""
+                          {results.performanceMetrics?.redirect_count || "N/A"}
                         </span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-card rounded border">
                         <span className="text-sm text-muted-foreground">transfer_bytes</span>
                         <span className="text-sm font-mono text-muted-foreground italic">
-                          ""
+                          {results.performanceMetrics?.transfer_bytes || "N/A"}
                         </span>
                       </div>
                     </div>
@@ -370,31 +370,31 @@ export function TestResultsModal({ test, onClose, onRunAgain }: TestResultsModal
                       <div className="flex justify-between items-center p-2 bg-card rounded border">
                         <span className="text-sm text-muted-foreground">effective_connection_type</span>
                         <span className="text-sm font-mono text-muted-foreground italic">
-                          ""
+                          {results.performanceMetrics?.effective_connection_type || "N/A"}
                         </span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-card rounded border">
                         <span className="text-sm text-muted-foreground">downlink_mbps</span>
                         <span className="text-sm font-mono text-muted-foreground italic">
-                          ""
+                          {results.performanceMetrics?.downlink_mbps || "N/A"}
                         </span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-card rounded border">
                         <span className="text-sm text-muted-foreground">downlink_kbps</span>
                         <span className="text-sm font-mono text-muted-foreground italic">
-                          ""
+                          {results.performanceMetrics?.downlink_kbps || "N/A"}
                         </span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-card rounded border">
                         <span className="text-sm text-muted-foreground">city</span>
                         <span className="text-sm font-mono text-muted-foreground italic">
-                          ""
+                          {results.performanceMetrics?.city || "N/A"}
                         </span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-card rounded border">
                         <span className="text-sm text-muted-foreground">state</span>
                         <span className="text-sm font-mono text-muted-foreground italic">
-                          ""
+                          {results.performanceMetrics?.state || "N/A"}
                         </span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-card rounded border">

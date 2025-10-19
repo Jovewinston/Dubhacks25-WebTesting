@@ -43,6 +43,24 @@ class CombinationResult(BaseModel):
         # Allow extra fields from metadata that we don't need
         extra = "allow"
 
+class PerformanceEvent(BaseModel):
+    """StatSig performance event data"""
+    event_name: str
+    user_id: Optional[str] = None
+    timestamp: datetime
+    metadata: Optional[Dict[str, Any]] = None
+    event_data: Optional[Dict[str, Any]] = None
+
+class PerformanceData(BaseModel):
+    """Performance data from StatSig"""
+    performance_events: List[PerformanceEvent] = []
+    web_vitals_events: List[PerformanceEvent] = []
+    total_performance_events: int = 0
+    total_web_vitals_events: int = 0
+    fetch_timestamp: datetime
+    fetch_successful: bool = True
+    error_message: Optional[str] = None
+
 class PipelineResponse(BaseModel):
     """Response model for pipeline results"""
     episode_name: str
@@ -56,6 +74,19 @@ class PipelineResponse(BaseModel):
     failed_combinations: int
     total_runtime_sec: float
     created_at: datetime
+    performance_data: Optional[PerformanceData] = None
+    # Performance metrics from StatSig
+    load_time_ms: Optional[str] = ""
+    dom_interactive_time_ms: Optional[str] = ""
+    redirect_count: Optional[str] = ""
+    transfer_bytes: Optional[str] = ""
+    first_contentful_paint_time_ms: Optional[str] = ""
+    effective_connection_type: Optional[str] = ""
+    downlink_mbps: Optional[str] = ""
+    downlink_kbps: Optional[str] = ""
+    city: Optional[str] = ""
+    state: Optional[str] = ""
+    country: Optional[str] = ""
 
 class JobStatus(BaseModel):
     """Job status for async processing"""

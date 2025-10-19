@@ -12,7 +12,7 @@ import os
 import webbrowser
 from pathlib import Path
 
-def start_server(port=3000):
+def start_server(port=5000):
     """Start the HTTP server."""
     
     # Change to the dummy_web directory

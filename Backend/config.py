@@ -278,3 +278,9 @@ def calculate_auto_indexes():
 # Apply auto-indexing if enabled
 if AUTO_INDEXING:
     ACCOUNTS = calculate_auto_indexes()
+
+# ========== STATSIG API CONFIGURATION ==========
+# StatSig Console API credentials for fetching performance data
+STATSIG_API_KEY = None  # Set via environment variable STATSIG_API_KEY
+STATSIG_PROJECT_ID = None  # Set via environment variable STATSIG_PROJECT_ID
+STATSIG_CONSOLE_API_BASE_URL = "https://console.statsig.com/api/v1"

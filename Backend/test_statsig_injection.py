@@ -43,7 +43,7 @@ def test_statsig_injection():
         
         try:
             # Navigate to the calculator app
-            test_url = "http://localhost:3000"
+            test_url = "http://localhost:5000"
             print(f"🌐 Navigating to: {test_url}")
             page.goto(test_url)
             

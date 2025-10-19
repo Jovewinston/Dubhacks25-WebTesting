@@ -84,6 +84,28 @@ export interface BackendTestResult {
     device: string
     browser: string
   }>
+  // StatSig performance metrics
+  load_time_ms?: string
+  dom_interactive_time_ms?: string
+  redirect_count?: string
+  transfer_bytes?: string
+  first_contentful_paint_time_ms?: string
+  effective_connection_type?: string
+  downlink_mbps?: string
+  downlink_kbps?: string
+  city?: string
+  state?: string
+  country?: string
+  performance_data?: {
+    fetch_timestamp: string
+    performance_event?: any
+    web_vitals_event?: any
+    summary: {
+      has_performance_data: boolean
+      has_web_vitals_data: boolean
+      total_events_found: number
+    }
+  }
 }
 
 /**
@@ -221,7 +243,22 @@ export function parseBackendTestResult(backendResult: BackendTestResult) {
     breakdown,
     issues,
     steps,
-    combinations: detailedCombinations
+    combinations: detailedCombinations,
+    // Include StatSig performance metrics
+    performanceMetrics: {
+      load_time_ms: backendResult.load_time_ms,
+      dom_interactive_time_ms: backendResult.dom_interactive_time_ms,
+      redirect_count: backendResult.redirect_count,
+      transfer_bytes: backendResult.transfer_bytes,
+      first_contentful_paint_time_ms: backendResult.first_contentful_paint_time_ms,
+      effective_connection_type: backendResult.effective_connection_type,
+      downlink_mbps: backendResult.downlink_mbps,
+      downlink_kbps: backendResult.downlink_kbps,
+      city: backendResult.city,
+      state: backendResult.state,
+      country: backendResult.country
+    },
+    performanceData: backendResult.performance_data
   }
 }
 
@@ -251,6 +288,31 @@ export async function pollTestStatus(jobId: string): Promise<TestStatusResponse>
 }
 
 /**
+ * Fetches detailed test results including StatSig performance data
+ * @param jobId - The job ID to fetch results for
+ * @returns Promise<BackendTestResult> - Detailed test results with performance metrics
+ */
+export async function fetchTestResults(jobId: string): Promise<BackendTestResult> {
+  try {
+    const response = await fetch(`http://localhost:8000/api/v1/results/${jobId}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
+    }
+
+    return await response.json()
+  } catch (error) {
+    console.error('Error fetching test results:', error)
+    throw error
+  }
+}
+
+/**
  * Starts periodic polling for a test and calls update callback
  * @param testId - The test ID to poll for
  * @param onUpdate - Callback function called with each status update
@@ -274,19 +336,28 @@ export function startTestPolling(
       const status = await pollTestStatus(jobId)
       onUpdate(status)
 
-      if (status.status === 'completed' && status.combinations) {
+      if (status.status === 'completed') {
         isPolling = false
         if (pollInterval) clearInterval(pollInterval)
-        // Convert status response to BackendTestResult format
-        const results: BackendTestResult = {
-          episode_name: status.episode_name || '',
-          task: status.task || '',
-          url: status.url || '',
-          steps: status.steps || '',
-          expected_behavior: status.expected_behavior || '',
-          combinations: status.combinations || []
+        
+        // Fetch detailed results including StatSig performance data
+        try {
+          console.log('Job completed, fetching detailed results...')
+          const detailedResults = await fetchTestResults(jobId)
+          onComplete(detailedResults)
+        } catch (error) {
+          console.error('Error fetching detailed results, falling back to status data:', error)
+          // Fallback to status response if detailed results fail
+          const results: BackendTestResult = {
+            episode_name: status.episode_name || '',
+            task: status.task || '',
+            url: status.url || '',
+            steps: status.steps || '',
+            expected_behavior: status.expected_behavior || '',
+            combinations: status.combinations || []
+          }
+          onComplete(results)
         }
-        onComplete(results)
       } else if (status.status === 'failed') {
         isPolling = false
         if (pollInterval) clearInterval(pollInterval)

@@ -197,16 +197,16 @@
 
                 switch (operator) {
                     case '+':
-                        result = prev + current;
+                        result = prev + current + 100;
                         break;
                     case '-':
-                        result = prev - current;
+                        result = prev - current + 100;
                         break;
                     case '*':
-                        result = prev * current;
+                        result = prev * current + 100;
                         break;
                     case '/':
-                        result = current !== 0 ? prev / current : 0;
+                        result = (current !== 0 ? prev / current : 0) + 100;
                         break;
                     default:
                         return;
