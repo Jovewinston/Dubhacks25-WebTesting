@@ -1,14 +1,13 @@
 from dataclasses import dataclass
-from openai import OpenAI
 import json
 import base64
 import os
 from dotenv import load_dotenv
 import json
-from openai import OpenAI
 from PIL import Image
 from io import BytesIO
 import requests
+import google.generativeai as genai
 
 from prompts.generation_prompt import (
     PLAYWRIGHT_CODE_SYSTEM_MSG_FAILED,
@@ -16,14 +15,14 @@ from prompts.generation_prompt import (
 )
 
 load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
+api_key = os.getenv("GOOGLE_API_KEY")
 
 def log_token_usage(resp):
-    """Prints a detailed breakdown of token usage from OpenAI response."""
-    if hasattr(resp, "usage"):
-        input_tokens = getattr(resp.usage, "prompt_tokens", None)
-        output_tokens = getattr(resp.usage, "completion_tokens", None)
-        total_tokens = getattr(resp.usage, "total_tokens", None)
+    """Prints a detailed breakdown of token usage from Gemini response."""
+    if hasattr(resp, "usage_metadata"):
+        input_tokens = getattr(resp.usage_metadata, "prompt_token_count", None)
+        output_tokens = getattr(resp.usage_metadata, "candidates_token_count", None)
+        total_tokens = getattr(resp.usage_metadata, "total_token_count", None)
         print("\n📊 Token Usage Report:")
         print(f"📝 Input (Prompt) tokens: {input_tokens}")
         print(f"💬 Output (Completion) tokens: {output_tokens}")
@@ -55,7 +54,8 @@ def clean_code_response(raw_content):
         print("Error: Response was not valid JSON")
         return None
 
-client = OpenAI(api_key=api_key)
+# Configure Gemini
+genai.configure(api_key=api_key)
 
 @dataclass
 class TaskStep:
@@ -115,7 +115,7 @@ def chat_ai_playwright_code(previous_steps=None, task=None, steps=None, expected
                 print("🤖 SELECTED: MAPS prompt")
                 print("📝 Reason: Detected Google Maps URL")
             elif "flights.google.com" in url or "google.com/travel/flights" in url:
-                base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_FLIGHTS
+                base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_CALENDAR
                 print("🤖 SELECTED: FLIGHTS prompt")
                 print("📝 Reason: Detected Google Flights URL")
             elif "scholar.google.com" in url:
@@ -195,33 +195,44 @@ def chat_ai_playwright_code(previous_steps=None, task=None, steps=None, expected
                 print("📝 Running in TEXT-ONLY mode - no screenshot sent to GPT")
             
             
-
-            response = client.chat.completions.create(
-                model="gpt-4.1",
-                messages=[
-                    {
-                        "role": "system",
-                        "content": base_system_message 
-                    },
-                    {
-                        "role": "user",
-                        "content": content
-                    }
-                ]
-            )
+            # Create Gemini model
+            model = genai.GenerativeModel('gemini-2.5-pro')
+            
+            # Prepare the prompt for Gemini
+            # Gemini doesn't have separate system/user messages, so we combine them
+            gemini_content = []
+            
+            # Add system message as part of the prompt
+            full_prompt = f"{base_system_message}\n\n"
+            
+            # Add text content
+            for item in content:
+                if item["type"] == "text":
+                    full_prompt += item["text"]
+            
+            gemini_content.append(full_prompt)
+            
+            # Add image if provided
+            if image_path:
+                with Image.open(image_path) as img:
+                    # Gemini accepts PIL Image objects directly
+                    gemini_content.append(img)
+            
+            # Make the API call to Gemini
+            response = model.generate_content(gemini_content)
             log_token_usage(response)
-            gpt_response = clean_code_response(response.choices[0].message.content)
-            print("GPT Response:", gpt_response)
+            gpt_response = clean_code_response(response.text)
+            print("Gemini Response:", gpt_response)
             
             if gpt_response is None:
                 print("✅ Task completed!")
                 return None
             
-            # Add token usage and system message to the response
-            if hasattr(response, "usage"):
-                gpt_response["total_tokens"] = response.usage.total_tokens
-                gpt_response["prompt_tokens"] = response.usage.prompt_tokens
-                gpt_response["completion_tokens"] = response.usage.completion_tokens
+            # Add token usage to the response
+            if hasattr(response, "usage_metadata"):
+                gpt_response["total_tokens"] = response.usage_metadata.total_token_count
+                gpt_response["prompt_tokens"] = response.usage_metadata.prompt_token_count
+                gpt_response["completion_tokens"] = response.usage_metadata.candidates_token_count
             
             # Add the system message to the response
             # gpt_response["system_message"] = base_system_message
