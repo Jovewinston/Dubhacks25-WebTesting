@@ -13,6 +13,20 @@ export interface TestStep {
   llmOutput?: string
 }
 
+export interface AnalyticsData {
+  load_time_ms?: string
+  dom_interactive_time_ms?: string
+  redirect_count?: string
+  transfer_bytes?: string
+  first_contentful_paint_time_ms?: string
+  effective_connection_type?: string
+  downlink_mbps?: string
+  downlink_kbps?: string
+  city?: string
+  state?: string
+  country?: string
+}
+
 export interface TestResult {
   totalSteps: number
   passed: number
@@ -35,6 +49,7 @@ export interface TestResult {
     success: boolean
     gptOutput?: string
     explanation?: string
+    analytics?: AnalyticsData
   }>
 }
 

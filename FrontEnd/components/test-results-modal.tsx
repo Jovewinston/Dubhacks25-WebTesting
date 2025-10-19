@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { X, ChevronDown, ChevronRight, CheckCircle2, XCircle, Clock, History, Monitor, Smartphone } from "lucide-react"
-import type { Test, TestStep, TestResult, TestHistory } from "@/lib/types"
+import { X, ChevronDown, ChevronRight, CheckCircle2, XCircle, Clock, History, Monitor, Smartphone, BarChart3 } from "lucide-react"
+import type { Test, TestStep, TestResult, TestHistory, AnalyticsData } from "@/lib/types"
 
 interface TestResultsModalProps {
   test: Test
@@ -18,6 +18,7 @@ export function TestResultsModal({ test, onClose, onRunAgain }: TestResultsModal
   const [expandedSteps, setExpandedSteps] = useState<Set<number>>(new Set())
   const [showErrors, setShowErrors] = useState(true)
   const [showSteps, setShowSteps] = useState(true)
+  const [showPerformanceMetrics, setShowPerformanceMetrics] = useState(false)
   const [showHistory, setShowHistory] = useState(false)
   const [expandedHistory, setExpandedHistory] = useState<Set<string>>(new Set())
   const [expandedHistorySteps, setExpandedHistorySteps] = useState<Record<string, Set<number>>>({})
@@ -304,6 +305,109 @@ export function TestResultsModal({ test, onClose, onRunAgain }: TestResultsModal
               ))}
               </div>
             </div>
+          )}
+        </div>
+
+        {/* Performance Metrics Section */}
+        <div className="mb-6">
+          <button
+            onClick={() => setShowPerformanceMetrics(!showPerformanceMetrics)}
+            className="flex items-center gap-2 text-lg font-semibold mb-3 text-foreground hover:text-primary transition-colors"
+          >
+            {showPerformanceMetrics ? <ChevronDown className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
+            <BarChart3 className="w-5 h-5" />
+            Performance Metrics
+          </button>
+          {showPerformanceMetrics && (
+            <Card className="p-4 bg-muted/30">
+              <div className="space-y-4">
+                <div className="text-sm text-muted-foreground mb-3">
+                  Detailed performance and network metrics for the selected browser/device combination
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Performance Metrics */}
+                  <div className="space-y-3">
+                    <h4 className="text-sm font-semibold text-foreground">Performance Data</h4>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">load_time_ms</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">dom_interactive_time_ms</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">first_contentful_paint_time_ms</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">redirect_count</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">transfer_bytes</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Network & Location */}
+                  <div className="space-y-3">
+                    <h4 className="text-sm font-semibold text-foreground">Network & Location</h4>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">effective_connection_type</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">downlink_mbps</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">downlink_kbps</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">city</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">state</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-card rounded border">
+                        <span className="text-sm text-muted-foreground">country</span>
+                        <span className="text-sm font-mono text-muted-foreground italic">
+                          ""
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
           )}
         </div>
 
