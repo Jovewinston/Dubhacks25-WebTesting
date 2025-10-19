@@ -14,6 +14,7 @@ import { TestResultsModal } from "@/components/test-results-modal"
 import { Play, Settings, Copy, Trash2, CheckSquare, Square } from "lucide-react"
 import { sendTestToBackend, formatTestDataForBackend, parseBackendTestResult, startTestPolling, type TestStatusResponse } from "@/lib/api"
 import type { Test, TestHistory, TestResult, TestStep } from "@/lib/types"
+import Confetti from "react-confetti"
 
 const STORAGE_KEY = "tm_dashboard_v0_tests"
 
@@ -33,6 +34,8 @@ export function TestDashboard() {
   const [runningTests, setRunningTests] = useState<Set<string>>(new Set())
   const [testStatuses, setTestStatuses] = useState<Record<string, TestStatusResponse>>({})
   const [pollingStoppers, setPollingStoppers] = useState<Record<string, () => void>>({})
+  const [showConfetti, setShowConfetti] = useState(false)
+  const [stopGeneratingConfetti, setStopGeneratingConfetti] = useState(false)
   const { toast } = useToast()
 
   useEffect(() => {
@@ -115,6 +118,7 @@ export function TestDashboard() {
 
     setTests([...tests, test])
     setNewTest({ name: "", description: "", url: "", expectedBehavior: "", username: "", password: "" })
+    
     toast({
       title: "✅ Test created successfully!",
       description: `${test.name} has been added to your tests`,
@@ -268,6 +272,22 @@ export function TestDashboard() {
           return newStoppers
         })
 
+        // Trigger confetti only for 100% success
+        if (parsedResults.passRate === 100) {
+          setShowConfetti(true)
+          setStopGeneratingConfetti(false)
+          
+          // Stop generating new confetti after 2 seconds, but let existing ones fall
+          setTimeout(() => {
+            setStopGeneratingConfetti(true)
+          }, 2000)
+          
+          // Hide confetti completely after 8 seconds (enough time for pieces to fall off screen)
+          setTimeout(() => {
+            setShowConfetti(false)
+          }, 8000)
+        }
+
         toast({
           title: parsedResults.passRate >= 80 ? "✅ Test completed successfully!" : "⚠️ Test completed with failures",
           description: `Pass rate: ${parsedResults.passRate}%`,
@@ -335,6 +355,17 @@ export function TestDashboard() {
 
   return (
     <div className="min-h-screen bg-background">
+      {showConfetti && (
+        <Confetti
+          width={window.innerWidth}
+          height={window.innerHeight}
+          recycle={!stopGeneratingConfetti}
+          numberOfPieces={200}
+          gravity={0.3}
+          colors={['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3', '#54a0ff']}
+          run={showConfetti}
+        />
+      )}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <img 

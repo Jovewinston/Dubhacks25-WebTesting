@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { TestDashboard } from "@/components/test-dashboard"
 import { Toaster } from "@/components/ui/toaster"
 import { Button } from "@/components/ui/button"
+import GradientText from "@/components/ui/gradient-text"
 import { ArrowLeft, Play, Zap, Shield, BarChart3, Users, Globe, Monitor, Smartphone, ArrowRight, CheckCircle2 } from "lucide-react"
 import Image from "next/image"
 
@@ -166,12 +167,16 @@ export default function Home() {
 
               {/* Main Title with refined typography */}
               <div className="space-y-6">
-                <h1 className="text-6xl md:text-7xl font-bold text-gray-900 leading-[1.1] tracking-tight">
+                <h1 className="text-6xl md:text-7xl font-bold text-gray-900 leading-[1.0] tracking-tight">
                   Discover real-world
                   <br />
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  <GradientText 
+                    colors={['#2563eb', '#9333ea', '#db2777', '#2563eb']}
+                    animationSpeed={6}
+                    className="text-6xl md:text-7xl font-bold leading-[0.9] tracking-tight"
+                  >
                     testing automation
-                  </span>
+                  </GradientText>
                 </h1>
                 
                 <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
