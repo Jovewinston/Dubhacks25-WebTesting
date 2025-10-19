@@ -1,0 +1,77 @@
+{
+  "1": {
+    "screenshot": "screenshot_001.png",
+    "axtree": "axtree_001.txt",
+    "targeting_data": "targeting_data/targeting_data_001.json",
+    "user_message": "user_message/user_message_001.txt",
+    "other_obs": {
+      "page_index": 0,
+      "url": "https://www.google.com/?zx=1760856448132&no_sw_cr=1",
+      "open_pages_titles": [
+        "Google"
+      ],
+      "open_pages_urls": [
+        "https://www.google.com/?zx=1760856448132&no_sw_cr=1"
+      ]
+    },
+    "action": {
+      "action_str": "click(bid='', button='left')",
+      "playwright_code": "page.get_by_role('combobox', name='Search').click()",
+      "action_description": "Click on the Google search bar (combobox labeled 'Search') to focus it.",
+      "action_output": {
+        "thought": "I need to click the \"Search\" button.",
+        "action": {
+          "bid": "",
+          "button": "left",
+          "click_type": "single",
+          "bbox": [
+            344,
+            247,
+            440,
+            50
+          ],
+          "class": "gLFyf",
+          "id": "APjFqb",
+          "type": "textarea",
+          "ariaLabel": "Search",
+          "role": "combobox",
+          "value": "",
+          "node_properties": {
+            "role": "combobox",
+            "value": "Search"
+          }
+        },
+        "action_name": "click",
+        "annotation_id": "18"
+      }
+    },
+    "error": null,
+    "wrong_behavior": false,
+    "action_timestamp": 1760856456.6763
+  },
+  "2": {
+    "screenshot": "screenshot_002.png",
+    "axtree": "axtree_002.txt",
+    "targeting_data": "targeting_data/targeting_data_002.json",
+    "user_message": "user_message/user_message_002.txt",
+    "other_obs": {
+      "page_index": 0,
+      "url": "https://www.google.com/?zx=1760856448132&no_sw_cr=1",
+      "open_pages_titles": [
+        "Google"
+      ],
+      "open_pages_urls": [
+        "https://www.google.com/?zx=1760856448132&no_sw_cr=1"
+      ]
+    },
+    "action": {
+      "action_str": "page.keyboard.type('hello')",
+      "playwright_code": "page.keyboard.type('hello')",
+      "action_description": "Type the text 'hello' into the focused Google search bar.",
+      "action_output": null
+    },
+    "error": null,
+    "wrong_behavior": false,
+    "action_timestamp": 1760856472.6023722
+  }
+}

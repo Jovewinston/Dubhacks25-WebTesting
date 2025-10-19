@@ -1,0 +1,179 @@
+Step: 2
+Current Goal: Type hello in the Google search bar
+URL: https://www.google.com
+Task Goal: Type hello on google search bar
+
+Steps:
+1. Click on the search bar, 2. Type Hello
+
+Expected Behavior:
+You should see hello in the search bar
+Trajectory Context: 
+Element Summary Sent to GPT:
+
+
+Available Interactive Elements:
+[
+  {
+    "annotation_id": "0",
+    "role": "button",
+    "name": "Google apps",
+    "x": 287,
+    "y": 27
+  },
+  {
+    "annotation_id": "1",
+    "role": "button",
+    "name": "Clear",
+    "x": 156,
+    "y": 218
+  },
+  {
+    "annotation_id": "2",
+    "role": "button",
+    "name": "Search by voice",
+    "x": 205,
+    "y": 218
+  },
+  {
+    "annotation_id": "3",
+    "role": "button",
+    "name": "Search by image",
+    "x": 245,
+    "y": 218
+  },
+  {
+    "annotation_id": "4",
+    "role": "link",
+    "name": "About",
+    "x": 44,
+    "y": 29
+  },
+  {
+    "annotation_id": "5",
+    "role": "link",
+    "name": "Store",
+    "x": 98,
+    "y": 29
+  },
+  {
+    "annotation_id": "6",
+    "role": "link",
+    "name": "Gmail",
+    "x": 176,
+    "y": 27
+  },
+  {
+    "annotation_id": "7",
+    "role": "link",
+    "name": "Search for Images",
+    "x": 230,
+    "y": 27
+  },
+  {
+    "annotation_id": "8",
+    "role": "link",
+    "name": "Sign in",
+    "x": 352,
+    "y": 27
+  },
+  {
+    "annotation_id": "9",
+    "role": "link",
+    "name": ".plR5qb{align-self:center;background:inherit;bo...",
+    "x": 322,
+    "y": 218
+  },
+  {
+    "annotation_id": "10",
+    "role": "combobox",
+    "name": "Search",
+    "x": 99,
+    "y": 218
+  },
+  {
+    "annotation_id": "11",
+    "role": "listbox",
+    "name": "HelloSong by Adele.MagqMc .ZFiwCf{background-co...",
+    "x": 200,
+    "y": 454
+  },
+  {
+    "annotation_id": "12",
+    "role": "option",
+    "name": "hello",
+    "x": 214,
+    "y": 269
+  },
+  {
+    "annotation_id": "13",
+    "role": "option",
+    "name": "hello kitty",
+    "x": 214,
+    "y": 313
+  },
+  {
+    "annotation_id": "14",
+    "role": "option",
+    "name": "hellofresh",
+    "x": 214,
+    "y": 355
+  },
+  {
+    "annotation_id": "15",
+    "role": "option",
+    "name": "hello molly",
+    "x": 214,
+    "y": 395
+  },
+  {
+    "annotation_id": "16",
+    "role": "option",
+    "name": "hello india",
+    "x": 214,
+    "y": 443
+  },
+  {
+    "annotation_id": "17",
+    "role": "option",
+    "name": "hello robin",
+    "x": 214,
+    "y": 486
+  },
+  {
+    "annotation_id": "18",
+    "role": "option",
+    "name": "hello interview",
+    "x": 214,
+    "y": 516
+  },
+  {
+    "annotation_id": "19",
+    "role": "option",
+    "name": "hello kitty island adventure",
+    "x": 214,
+    "y": 554
+  },
+  {
+    "annotation_id": "20",
+    "role": "option",
+    "name": "hello pho",
+    "x": 214,
+    "y": 604
+  },
+  {
+    "annotation_id": "21",
+    "role": "option",
+    "name": "hello in japanese",
+    "x": 214,
+    "y": 647
+  },
+  {
+    "annotation_id": "22",
+    "role": "navigation",
+    "name": ".Ne6nSd{display:flex;align-items:center;padding...",
+    "x": 200,
+    "y": 30
+  }
+]
+

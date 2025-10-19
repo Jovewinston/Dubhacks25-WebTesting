@@ -1,0 +1,238 @@
+Goal: Type hello in the Google search bar by clicking the search bar and then typing 'hello'.
+
+Previous Actions:
+  1. Click on the Google search bar (combobox with name 'Search') to focus it before typing. | Code: page.get_by_role('combobox', name='Search').click()
+  2. Type 'hello' into the Google search bar after it has been focused. | Code: page.keyboard.type('hello')
+
+Current Page: Google (https://www.google.com/?zx=1760856446487&no_sw_cr=1)
+
+AX Tree:
+[
+  {
+    "annotation_id": "0",
+    "role": "button",
+    "name": "Google apps",
+    "x": 1157,
+    "y": 28
+  },
+  {
+    "annotation_id": "1",
+    "role": "button",
+    "name": "Search by voice",
+    "x": 809,
+    "y": 271
+  },
+  {
+    "annotation_id": "2",
+    "role": "button",
+    "name": "Search by image",
+    "x": 849,
+    "y": 271
+  },
+  {
+    "annotation_id": "3",
+    "role": "button",
+    "name": "Google Search",
+    "x": 563,
+    "y": 701
+  },
+  {
+    "annotation_id": "4",
+    "role": "button",
+    "name": "I\\'m Feeling Lucky",
+    "x": 709,
+    "y": 701
+  },
+  {
+    "annotation_id": "5",
+    "role": "button",
+    "name": "Settings",
+    "x": 1218,
+    "y": 695
+  },
+  {
+    "annotation_id": "6",
+    "role": "button",
+    "name": "Stay signed out",
+    "x": 1004,
+    "y": 614
+  },
+  {
+    "annotation_id": "7",
+    "role": "button",
+    "name": "Sign in",
+    "x": 1154,
+    "y": 614
+  },
+  {
+    "annotation_id": "8",
+    "role": "link",
+    "name": "About",
+    "x": 44,
+    "y": 29
+  },
+  {
+    "annotation_id": "9",
+    "role": "link",
+    "name": "Store",
+    "x": 99,
+    "y": 29
+  },
+  {
+    "annotation_id": "10",
+    "role": "link",
+    "name": "Gmail",
+    "x": 1046,
+    "y": 28
+  },
+  {
+    "annotation_id": "11",
+    "role": "link",
+    "name": "Search for Images",
+    "x": 1100,
+    "y": 28
+  },
+  {
+    "annotation_id": "12",
+    "role": "link",
+    "name": "Sign in",
+    "x": 1227,
+    "y": 28
+  },
+  {
+    "annotation_id": "13",
+    "role": "link",
+    "name": ".plR5qb{align-self:center;background:inherit;bo...",
+    "x": 926,
+    "y": 271
+  },
+  {
+    "annotation_id": "14",
+    "role": "link",
+    "name": "Advertising",
+    "x": 70,
+    "y": 695
+  },
+  {
+    "annotation_id": "15",
+    "role": "link",
+    "name": "Business",
+    "x": 163,
+    "y": 695
+  },
+  {
+    "annotation_id": "16",
+    "role": "link",
+    "name": "How Search works",
+    "x": 279,
+    "y": 695
+  },
+  {
+    "annotation_id": "17",
+    "role": "link",
+    "name": "Privacy",
+    "x": 1071,
+    "y": 695
+  },
+  {
+    "annotation_id": "18",
+    "role": "link",
+    "name": "Terms",
+    "x": 1143,
+    "y": 695
+  },
+  {
+    "annotation_id": "19",
+    "role": "combobox",
+    "name": "Search",
+    "x": 564,
+    "y": 271
+  },
+  {
+    "annotation_id": "20",
+    "role": "listbox",
+    "name": "see comet lemmon.MagqMc .ZFiwCf{background-colo...",
+    "x": 640,
+    "y": 498
+  },
+  {
+    "annotation_id": "21",
+    "role": "option",
+    "name": "see comet lemmon",
+    "x": 654,
+    "y": 348
+  },
+  {
+    "annotation_id": "22",
+    "role": "option",
+    "name": "orionids meteor showers",
+    "x": 654,
+    "y": 380
+  },
+  {
+    "annotation_id": "23",
+    "role": "option",
+    "name": "how to see the comet tonight",
+    "x": 654,
+    "y": 412
+  },
+  {
+    "annotation_id": "24",
+    "role": "option",
+    "name": "nc state fair ride low voltage",
+    "x": 654,
+    "y": 444
+  },
+  {
+    "annotation_id": "25",
+    "role": "option",
+    "name": "severe storms",
+    "x": 654,
+    "y": 476
+  },
+  {
+    "annotation_id": "26",
+    "role": "option",
+    "name": "boston celtics",
+    "x": 654,
+    "y": 514
+  },
+  {
+    "annotation_id": "27",
+    "role": "option",
+    "name": "general hospital spoilers next week",
+    "x": 654,
+    "y": 552
+  },
+  {
+    "annotation_id": "28",
+    "role": "option",
+    "name": "nyt connections hints october 18",
+    "x": 654,
+    "y": 584
+  },
+  {
+    "annotation_id": "29",
+    "role": "option",
+    "name": "bristol zoo gorillas",
+    "x": 654,
+    "y": 616
+  },
+  {
+    "annotation_id": "30",
+    "role": "option",
+    "name": "sprint race f1 qualifying results",
+    "x": 654,
+    "y": 648
+  },
+  {
+    "annotation_id": "31",
+    "role": "navigation",
+    "name": ".Ne6nSd{display:flex;align-items:center;padding...",
+    "x": 640,
+    "y": 30
+  }
+]
+
+Error Codes:
+  None

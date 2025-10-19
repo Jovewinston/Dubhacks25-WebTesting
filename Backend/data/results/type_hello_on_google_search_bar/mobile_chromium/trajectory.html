@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization of Trajectory</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1, h2 { color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .step { border: 1px solid #ddd; margin: 20px 0; padding: 15px; border-radius: 5px; background-color: white; }
+        .step-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .step-number { font-size: 1.2em; font-weight: bold; color: #2196F3; }
+        .step-content { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .screenshot { max-width: 100%; border: 1px solid #ddd; border-radius: 4px; }
+        .collapsible { background-color: #eee; color: #444; cursor: pointer; padding: 10px; width: 100%; border: none; text-align: left; outline: none; font-size: 1em; margin-top: 5px; }
+        .active, .collapsible:hover { background-color: #ccc; }
+        .content { padding: 0 18px; display: none; overflow: auto; background-color: #f9f9f9; border-radius: 0 0 5px 5px; }
+        pre { white-space: pre-wrap; word-break: break-word; }
+        table.instruction-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        table.instruction-table th, table.instruction-table td { border: 1px solid #ddd; padding: 8px; }
+        table.instruction-table th { background: #f0f0f0; text-align: left; }
+        .steps-list { margin: 0; padding-left: 20px; }
+        .steps-list li { margin-bottom: 4px; }
+        .step-details-label { font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>type_hello_on_google_search_bar/mobile_chromium</h1>
+        <p><strong>GPT Summaries:</strong> <a href="gpt_summaries/">View all GPT summary files</a></p>
+        <h2>Task Information</h2>
+        <table class="instruction-table">
+            <tr><th>Field</th><th>Value</th></tr>
+            <tr><td><em>Goal</em></td><td>Type hello on google search bar</td></tr>
+            <tr><td><em>Steps</em></td><td><ul class="steps-list"><li>Click on the visible &#x27;Search&#x27; combobox (the main Google search bar) to focus the input field.</li><li>Type &#x27;hello&#x27; in the Google search bar, assuming the search bar has already been focused.</li></ul></td></tr>
+            <tr><td><em>Expected Behavior</em></td><td>You should see hello in the search bar</td></tr>
+        </table>
+        <h2>Trajectory Steps</h2>
+
+        <div class="step">
+            <div class="step-header">
+                <span class="step-number">Step 1</span>
+            </div>
+            <div class="step-content">
+                <div>
+                    <img src="images/screenshot_001.png" alt="Step 1 Screenshot" class="screenshot">
+                    <br><br><strong>Annotated Version:</strong><br><img src="annotated_images/annotated_screenshot_001.png" alt="Step 1 Annotated Screenshot" class="screenshot">
+                </div>
+                <div>
+                    <div class="step-details-label">Thought</div>
+                    <div>I need to click the &quot;Search&quot; button.</div>
+                    <div class="step-details-label">Action Code</div>
+                    <div><pre>page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()</pre></div>
+                    <div class="step-details-label">Action Description</div>
+                    <div>Click on the visible &#x27;Search&#x27; combobox (the main Google search bar) to focus the input field.</div>
+                    
+                        <div class="step-details-label">Selected Element (ID: 16)</div>
+                        <div>
+                            <strong>Name:</strong> Search<br>
+                            <strong>Role:</strong> combobox<br>
+                            <strong>Type:</strong> textarea<br>
+                            <strong>Bounding Box:</strong> x=68, y=194, width=112, height=50<br>
+                            <strong>Center:</strong> (124, 219)
+                        </div>
+                        
+                    <button class="collapsible">System Message</button>
+                    <div class="content"><pre>System message for this step (placeholder)</pre></div>
+                    <button class="collapsible">User Message</button>
+                    <div class="content"><pre>Goal: Type hello on google search bar
+
+Previous Actions:
+  1. Click on the visible &#x27;Search&#x27; combobox (the main Google search bar) to focus the input field. | Code: page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()
+
+Current Page: Google (https://www.google.com/?zx=1760856447411&amp;no_sw_cr=1)
+
+AX Tree:
+[
+  {
+    &quot;annotation_id&quot;: &quot;0&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Google apps&quot;,
+    &quot;x&quot;: 287,
+    &quot;y&quot;: 28
+  },
+  {
+    &quot;annotation_id&quot;: &quot;1&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Search by voice&quot;,
+    &quot;x&quot;: 204,
+    &quot;y&quot;: 219
+  },
+  {
+    &quot;annotation_id&quot;: &quot;2&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Search by image&quot;,
+    &quot;x&quot;: 244,
+    &quot;y&quot;: 219
+  },
+  {
+    &quot;annotation_id&quot;: &quot;3&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Google Search&quot;,
+    &quot;x&quot;: 123,
+    &quot;y&quot;: 292
+  },
+  {
+    &quot;annotation_id&quot;: &quot;4&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;I\\&#x27;m Feeling Lucky&quot;,
+    &quot;x&quot;: 269,
+    &quot;y&quot;: 292
+  },
+  {
+    &quot;annotation_id&quot;: &quot;5&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Settings&quot;,
+    &quot;x&quot;: 271,
+    &quot;y&quot;: 643
+  },
+  {
+    &quot;annotation_id&quot;: &quot;6&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Stay signed out&quot;,
+    &quot;x&quot;: 99,
+    &quot;y&quot;: 561
+  },
+  {
+    &quot;annotation_id&quot;: &quot;7&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Sign in&quot;,
+    &quot;x&quot;: 249,
+    &quot;y&quot;: 561
+  },
+  {
+    &quot;annotation_id&quot;: &quot;8&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;About&quot;,
+    &quot;x&quot;: 44,
+    &quot;y&quot;: 29
+  },
+  {
+    &quot;annotation_id&quot;: &quot;9&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;Store&quot;,
+    &quot;x&quot;: 99,
+    &quot;y&quot;: 29
+  },
+  {
+    &quot;annotation_id&quot;: &quot;10&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;Gmail&quot;,
+    &quot;x&quot;: 176,
+    &quot;y&quot;: 28
+  },
+  {
+    &quot;annotation_id&quot;: &quot;11&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;Search for Images&quot;,
+    &quot;x&quot;: 230,
+    &quot;y&quot;: 28
+  },
+  {
+    &quot;annotation_id&quot;: &quot;12&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;Sign in&quot;,
+    &quot;x&quot;: 352,
+    &quot;y&quot;: 28
+  },
+  {
+    &quot;annotation_id&quot;: &quot;13&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;.plR5qb{align-self:center;background:inherit;bo...&quot;,
+    &quot;x&quot;: 321,
+    &quot;y&quot;: 219
+  },
+  {
+    &quot;annotation_id&quot;: &quot;14&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;Privacy&quot;,
+    &quot;x&quot;: 124,
+    &quot;y&quot;: 643
+  },
+  {
+    &quot;annotation_id&quot;: &quot;15&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;Terms&quot;,
+    &quot;x&quot;: 196,
+    &quot;y&quot;: 643
+  },
+  {
+    &quot;annotation_id&quot;: &quot;16&quot;,
+    &quot;role&quot;: &quot;combobox&quot;,
+    &quot;name&quot;: &quot;Search&quot;,
+    &quot;x&quot;: 124,
+    &quot;y&quot;: 219
+  },
+  {
+    &quot;annotation_id&quot;: &quot;17&quot;,
+    &quot;role&quot;: &quot;navigation&quot;,
+    &quot;name&quot;: &quot;.Ne6nSd{display:flex;align-items:center;padding...&quot;,
+    &quot;x&quot;: 200,
+    &quot;y&quot;: 30
+  }
+]
+
+Error Codes:
+  None</pre></div>
+                    <button class="collapsible">Element Output</button>
+                    <div class="content"><pre>{
+  &quot;bid&quot;: &quot;&quot;,
+  &quot;button&quot;: &quot;left&quot;,
+  &quot;click_type&quot;: &quot;single&quot;,
+  &quot;bbox&quot;: [
+    68,
+    194,
+    112,
+    50
+  ],
+  &quot;class&quot;: &quot;gLFyf&quot;,
+  &quot;id&quot;: &quot;APjFqb&quot;,
+  &quot;type&quot;: &quot;textarea&quot;,
+  &quot;ariaLabel&quot;: &quot;Search&quot;,
+  &quot;role&quot;: &quot;combobox&quot;,
+  &quot;value&quot;: &quot;&quot;,
+  &quot;node_properties&quot;: {
+    &quot;role&quot;: &quot;combobox&quot;,
+    &quot;value&quot;: &quot;Search&quot;
+  }
+}</pre></div>
+                    <button class="collapsible">LLM Output</button>
+                    <div class="content"><pre>page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()</pre></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-header">
+                <span class="step-number">Step 2</span>
+            </div>
+            <div class="step-content">
+                <div>
+                    <img src="images/screenshot_002.png" alt="Step 2 Screenshot" class="screenshot">
+                    <br><br><strong>Annotated Version:</strong><br><img src="annotated_images/annotated_screenshot_002.png" alt="Step 2 Annotated Screenshot" class="screenshot">
+                </div>
+                <div>
+                    <div class="step-details-label">Thought</div>
+                    <div></div>
+                    <div class="step-details-label">Action Code</div>
+                    <div><pre>page.keyboard.type(&#x27;hello&#x27;)</pre></div>
+                    <div class="step-details-label">Action Description</div>
+                    <div>Type &#x27;hello&#x27; in the Google search bar, assuming the search bar has already been focused.</div>
+                    
+                    <button class="collapsible">System Message</button>
+                    <div class="content"><pre>System message for this step (placeholder)</pre></div>
+                    <button class="collapsible">User Message</button>
+                    <div class="content"><pre>Goal: Type hello in the Google search bar
+
+Previous Actions:
+  1. Click on the visible &#x27;Search&#x27; combobox (the main Google search bar) to focus the input field. | Code: page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()
+  2. Type &#x27;hello&#x27; in the Google search bar, assuming the search bar has already been focused. | Code: page.keyboard.type(&#x27;hello&#x27;)
+
+Current Page: Google (https://www.google.com/?zx=1760856447411&amp;no_sw_cr=1)
+
+AX Tree:
+[
+  {
+    &quot;annotation_id&quot;: &quot;0&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Google apps&quot;,
+    &quot;x&quot;: 287,
+    &quot;y&quot;: 28
+  },
+  {
+    &quot;annotation_id&quot;: &quot;1&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Search by voice&quot;,
+    &quot;x&quot;: 205,
+    &quot;y&quot;: 218
+  },
+  {
+    &quot;annotation_id&quot;: &quot;2&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Search by image&quot;,
+    &quot;x&quot;: 245,
+    &quot;y&quot;: 218
+  },
+  {
+    &quot;annotation_id&quot;: &quot;3&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Google Search&quot;,
+    &quot;x&quot;: 123,
+    &quot;y&quot;: 660
+  },
+  {
+    &quot;annotation_id&quot;: &quot;4&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;I\\&#x27;m Feeling Lucky&quot;,
+    &quot;x&quot;: 269,
+    &quot;y&quot;: 660
+  },
+  {
+    &quot;annotation_id&quot;: &quot;5&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Stay signed out&quot;,
+    &quot;x&quot;: 99,
+    &quot;y&quot;: 561
+  },
+  {
+    &quot;annotation_id&quot;: &quot;6&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Sign in&quot;,
+    &quot;x&quot;: 249,
+    &quot;y&quot;: 561
+  },
+  {
+    &quot;annotation_id&quot;: &quot;7&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;About&quot;,
+    &quot;x&quot;: 44,
+    &quot;y&quot;: 29
+  },
+  {
+    &quot;annotation_id&quot;: &quot;8&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;Store&quot;,
+    &quot;x&quot;: 99,
+    &quot;y&quot;: 29
+  },
+  {
+    &quot;annotation_id&quot;: &quot;9&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;Gmail&quot;,
+    &quot;x&quot;: 176,
+    &quot;y&quot;: 28
+  },
+  {
+    &quot;annotation_id&quot;: &quot;10&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;Search for Images&quot;,
+    &quot;x&quot;: 230,
+    &quot;y&quot;: 28
+  },
+  {
+    &quot;annotation_id&quot;: &quot;11&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;Sign in&quot;,
+    &quot;x&quot;: 352,
+    &quot;y&quot;: 28
+  },
+  {
+    &quot;annotation_id&quot;: &quot;12&quot;,
+    &quot;role&quot;: &quot;link&quot;,
+    &quot;name&quot;: &quot;.plR5qb{align-self:center;background:inherit;bo...&quot;,
+    &quot;x&quot;: 322,
+    &quot;y&quot;: 218
+  },
+  {
+    &quot;annotation_id&quot;: &quot;13&quot;,
+    &quot;role&quot;: &quot;combobox&quot;,
+    &quot;name&quot;: &quot;Search&quot;,
+    &quot;x&quot;: 124,
+    &quot;y&quot;: 218
+  },
+  {
+    &quot;annotation_id&quot;: &quot;14&quot;,
+    &quot;role&quot;: &quot;option&quot;,
+    &quot;name&quot;: &quot;death valley george strait concert&quot;,
+    &quot;x&quot;: 214,
+    &quot;y&quot;: 295
+  },
+  {
+    &quot;annotation_id&quot;: &quot;15&quot;,
+    &quot;role&quot;: &quot;option&quot;,
+    &quot;name&quot;: &quot;kansas city chiefs josh simmons&quot;,
+    &quot;x&quot;: 214,
+    &quot;y&quot;: 327
+  },
+  {
+    &quot;annotation_id&quot;: &quot;16&quot;,
+    &quot;role&quot;: &quot;option&quot;,
+    &quot;name&quot;: &quot;battlefield 6 multiplayer&quot;,
+    &quot;x&quot;: 214,
+    &quot;y&quot;: 365
+  },
+  {
+    &quot;annotation_id&quot;: &quot;17&quot;,
+    &quot;role&quot;: &quot;option&quot;,
+    &quot;name&quot;: &quot;ufc fight night reinier de ridder&quot;,
+    &quot;x&quot;: 214,
+    &quot;y&quot;: 403
+  },
+  {
+    &quot;annotation_id&quot;: &quot;18&quot;,
+    &quot;role&quot;: &quot;navigation&quot;,
+    &quot;name&quot;: &quot;.Ne6nSd{display:flex;align-items:center;padding...&quot;,
+    &quot;x&quot;: 200,
+    &quot;y&quot;: 30
+  }
+]
+
+Error Codes:
+  None</pre></div>
+                    <button class="collapsible">Element Output</button>
+                    <div class="content"><pre>[No element output]</pre></div>
+                    <button class="collapsible">LLM Output</button>
+                    <div class="content"><pre>page.keyboard.type(&#x27;hello&#x27;)</pre></div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Final Result</h2>
+        <div class="step">
+            <div class="step-header">
+                <span class="step-number">Final State</span>
+            </div>
+            <div class="step-content">
+                <div>
+                    <img src="images/screenshot_002.png" alt="Final Screenshot" class="screenshot">
+                    <br><br><strong>Annotated Final State:</strong><br><img src="annotated_images/annotated_screenshot_002.png" alt="Final Annotated Screenshot" class="screenshot">
+                </div>
+                <div>
+                    <div class="step-details-label">Task Status</div>
+                    <div>✅ Completed Successfully</div>
+                    <div class="step-details-label">Total Steps</div>
+                    <div>2</div>
+                    <div class="step-details-label">Runtime</div>
+                    <div>19.67 seconds</div>
+                    <div class="step-details-label">Total Tokens Used</div>
+                    <div>10832</div>
+                    <div class="step-details-label">GPT Output</div><div>&#x27;hello&#x27; is visible in the search bar and the suggestions are shown under the search input as expected.</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var coll = document.getElementsByClassName('collapsible');
+      for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener('click', function() {
+          this.classList.toggle('active');
+          var content = this.nextElementSibling;
+          if (content.style.display === 'block') {
+            content.style.display = 'none';
+          } else {
+            content.style.display = 'block';
+          }
+        });
+      }
+    });
+    </script>
+</body>
+</html>

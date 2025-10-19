@@ -1,0 +1,139 @@
+Goal: Type hello on google search bar
+
+Previous Actions:
+  1. Click on the visible 'Search' combobox (the main Google search bar) to focus the input field. | Code: page.get_by_role('combobox', name='Search').click()
+
+Current Page: Google (https://www.google.com/?zx=1760856447411&no_sw_cr=1)
+
+AX Tree:
+[
+  {
+    "annotation_id": "0",
+    "role": "button",
+    "name": "Google apps",
+    "x": 287,
+    "y": 28
+  },
+  {
+    "annotation_id": "1",
+    "role": "button",
+    "name": "Search by voice",
+    "x": 204,
+    "y": 219
+  },
+  {
+    "annotation_id": "2",
+    "role": "button",
+    "name": "Search by image",
+    "x": 244,
+    "y": 219
+  },
+  {
+    "annotation_id": "3",
+    "role": "button",
+    "name": "Google Search",
+    "x": 123,
+    "y": 292
+  },
+  {
+    "annotation_id": "4",
+    "role": "button",
+    "name": "I\\'m Feeling Lucky",
+    "x": 269,
+    "y": 292
+  },
+  {
+    "annotation_id": "5",
+    "role": "button",
+    "name": "Settings",
+    "x": 271,
+    "y": 643
+  },
+  {
+    "annotation_id": "6",
+    "role": "button",
+    "name": "Stay signed out",
+    "x": 99,
+    "y": 561
+  },
+  {
+    "annotation_id": "7",
+    "role": "button",
+    "name": "Sign in",
+    "x": 249,
+    "y": 561
+  },
+  {
+    "annotation_id": "8",
+    "role": "link",
+    "name": "About",
+    "x": 44,
+    "y": 29
+  },
+  {
+    "annotation_id": "9",
+    "role": "link",
+    "name": "Store",
+    "x": 99,
+    "y": 29
+  },
+  {
+    "annotation_id": "10",
+    "role": "link",
+    "name": "Gmail",
+    "x": 176,
+    "y": 28
+  },
+  {
+    "annotation_id": "11",
+    "role": "link",
+    "name": "Search for Images",
+    "x": 230,
+    "y": 28
+  },
+  {
+    "annotation_id": "12",
+    "role": "link",
+    "name": "Sign in",
+    "x": 352,
+    "y": 28
+  },
+  {
+    "annotation_id": "13",
+    "role": "link",
+    "name": ".plR5qb{align-self:center;background:inherit;bo...",
+    "x": 321,
+    "y": 219
+  },
+  {
+    "annotation_id": "14",
+    "role": "link",
+    "name": "Privacy",
+    "x": 124,
+    "y": 643
+  },
+  {
+    "annotation_id": "15",
+    "role": "link",
+    "name": "Terms",
+    "x": 196,
+    "y": 643
+  },
+  {
+    "annotation_id": "16",
+    "role": "combobox",
+    "name": "Search",
+    "x": 124,
+    "y": 219
+  },
+  {
+    "annotation_id": "17",
+    "role": "navigation",
+    "name": ".Ne6nSd{display:flex;align-items:center;padding...",
+    "x": 200,
+    "y": 30
+  }
+]
+
+Error Codes:
+  None
