@@ -182,7 +182,27 @@ export function parseBackendTestResult(backendResult: BackendTestResult) {
     `${combo.browser} ${combo.device}: ${combo.gpt_output}`
   )
   
-  // Create test steps from the first successful combination (or first if none successful)
+  // Create detailed combinations with steps for each browser/device combination
+  const detailedCombinations = combinations.map(combo => ({
+    browser: combo.browser.charAt(0).toUpperCase() + combo.browser.slice(1),
+    device: combo.device.charAt(0).toUpperCase() + combo.device.slice(1),
+    status: combo.success ? "passed" as const : "failed" as const,
+    steps: combo.task.steps.map((step, index) => ({
+      name: step,
+      duration: `${Math.round(combo.runtime_sec / combo.total_steps)}s`,
+      status: combo.success ? "passed" as const : "failed" as const,
+      thought: `Step ${index + 1}: ${step}`,
+      action: step,
+      actionDescription: step
+    })),
+    totalSteps: combo.total_steps,
+    runtimeSec: combo.runtime_sec,
+    success: combo.success,
+    gptOutput: combo.gpt_output,
+    explanation: combo.explanation
+  }))
+  
+  // Create test steps from the first successful combination (or first if none successful) for backward compatibility
   const referenceCombo = passedCombinations[0] || combinations[0]
   const steps = referenceCombo.task.steps.map((step, index) => ({
     name: step,
@@ -200,7 +220,8 @@ export function parseBackendTestResult(backendResult: BackendTestResult) {
     passRate,
     breakdown,
     issues,
-    steps
+    steps,
+    combinations: detailedCombinations
   }
 }
 

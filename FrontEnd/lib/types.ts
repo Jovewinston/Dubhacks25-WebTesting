@@ -25,6 +25,17 @@ export interface TestResult {
   }>
   issues: string[]
   steps: TestStep[]
+  combinations: Array<{
+    browser: string
+    device: string
+    status: "passed" | "failed"
+    steps: TestStep[]
+    totalSteps: number
+    runtimeSec: number
+    success: boolean
+    gptOutput?: string
+    explanation?: string
+  }>
 }
 
 export interface TestHistory {
