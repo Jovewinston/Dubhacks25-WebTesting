@@ -45,3 +45,14 @@ FrontEnd/node_modules/
 # Temporary files
 *.tmp
 *.temp
+
+# Next.js
+FrontEnd/.next/
+FrontEnd/out/
+FrontEnd/build/
+FrontEnd/dist/
+
+# Next.js cache
+FrontEnd/.next/cache/
+FrontEnd/.next/static/
+FrontEnd/.next/trace
