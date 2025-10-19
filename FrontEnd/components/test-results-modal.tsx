@@ -4,7 +4,8 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { X, ChevronDown, ChevronRight, CheckCircle2, XCircle, Clock, History } from "lucide-react"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { X, ChevronDown, ChevronRight, CheckCircle2, XCircle, Clock, History, Monitor, Smartphone } from "lucide-react"
 import type { Test, TestStep, TestResult, TestHistory } from "@/lib/types"
 
 interface TestResultsModalProps {
@@ -20,10 +21,19 @@ export function TestResultsModal({ test, onClose, onRunAgain }: TestResultsModal
   const [showHistory, setShowHistory] = useState(false)
   const [expandedHistory, setExpandedHistory] = useState<Set<string>>(new Set())
   const [expandedHistorySteps, setExpandedHistorySteps] = useState<Record<string, Set<number>>>({})
+  const [selectedCombination, setSelectedCombination] = useState<string>("")
 
   const results = test.results
 
   if (!results) return null
+
+  // Initialize selected combination to first combination if not set
+  const combinations = results.combinations || []
+  const currentCombination = selectedCombination 
+    ? combinations.find(combo => `${combo.browser}-${combo.device}` === selectedCombination)
+    : combinations[0]
+  
+  const currentSteps = currentCombination?.steps || results.steps
 
   const toggleStep = (index: number) => {
     const newExpanded = new Set(expandedSteps)
@@ -135,16 +145,94 @@ export function TestResultsModal({ test, onClose, onRunAgain }: TestResultsModal
 
         {/* Test Steps */}
         <div className="mb-6">
-          <button
-            onClick={() => setShowSteps(!showSteps)}
-            className="flex items-center gap-2 text-lg font-semibold mb-3 text-foreground hover:text-primary transition-colors"
-          >
-            {showSteps ? <ChevronDown className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
-            Test Steps
-          </button>
+          <div className="flex items-center justify-between mb-3">
+            <button
+              onClick={() => setShowSteps(!showSteps)}
+              className="flex items-center gap-2 text-lg font-semibold text-foreground hover:text-primary transition-colors"
+            >
+              {showSteps ? <ChevronDown className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
+              Test Steps
+            </button>
+            
+            {combinations.length > 1 && showSteps && (
+              <div className="flex items-center gap-2">
+                <span className="text-sm text-muted-foreground">Browser/Device:</span>
+                <Select value={selectedCombination || `${combinations[0]?.browser}-${combinations[0]?.device}`} onValueChange={setSelectedCombination}>
+                  <SelectTrigger className="w-48">
+                    <SelectValue placeholder="Select combination" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {combinations.map((combo, index) => (
+                      <SelectItem key={`${combo.browser}-${combo.device}`} value={`${combo.browser}-${combo.device}`}>
+                        <div className="flex items-center gap-2">
+                          {combo.device.toLowerCase() === 'mobile' ? (
+                            <Smartphone className="w-4 h-4" />
+                          ) : (
+                            <Monitor className="w-4 h-4" />
+                          )}
+                          <span>{combo.browser} • {combo.device}</span>
+                          {combo.status === "passed" ? (
+                            <CheckCircle2 className="w-4 h-4 text-success ml-auto" />
+                          ) : (
+                            <XCircle className="w-4 h-4 text-destructive ml-auto" />
+                          )}
+                        </div>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            )}
+          </div>
+          
           {showSteps && (
-            <div className="space-y-2">
-              {results.steps.map((step, index) => (
+            <div className="space-y-3">
+              {/* Current combination info */}
+              {currentCombination && (
+                <Card className="p-3 bg-muted/30">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      {currentCombination.device.toLowerCase() === 'mobile' ? (
+                        <Smartphone className="w-5 h-5 text-muted-foreground" />
+                      ) : (
+                        <Monitor className="w-5 h-5 text-muted-foreground" />
+                      )}
+                      <div>
+                        <p className="text-sm font-medium text-foreground">
+                          {currentCombination.browser} • {currentCombination.device}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          {currentCombination.totalSteps} steps • {Math.round(currentCombination.runtimeSec)}s runtime
+                        </p>
+                        {currentCombination.explanation && (
+                          <p className="text-xs text-muted-foreground mt-1 italic">
+                            {currentCombination.explanation}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      {currentCombination.status === "passed" ? (
+                        <CheckCircle2 className="w-5 h-5 text-success" />
+                      ) : (
+                        <XCircle className="w-5 h-5 text-destructive" />
+                      )}
+                      <Badge 
+                        className={
+                          currentCombination.status === "passed" 
+                            ? "bg-success/20 text-success border-success/30" 
+                            : "bg-destructive/20 text-destructive border-destructive/30"
+                        }
+                      >
+                        {currentCombination.status.toUpperCase()}
+                      </Badge>
+                    </div>
+                  </div>
+                </Card>
+              )}
+              
+              <div className="space-y-2">
+                {currentSteps.map((step, index) => (
                 <Card key={index} className="overflow-hidden">
                   <button
                     onClick={() => toggleStep(index)}
@@ -204,10 +292,17 @@ export function TestResultsModal({ test, onClose, onRunAgain }: TestResultsModal
                           <p className="text-sm text-foreground bg-card p-3 rounded-lg">{step.actionDescription}</p>
                         </div>
                       )}
+                      {currentCombination?.explanation && (
+                        <div>
+                          <p className="text-xs font-semibold text-muted-foreground mb-1">Explanation</p>
+                          <p className="text-sm text-foreground bg-card p-3 rounded-lg">{currentCombination.explanation}</p>
+                        </div>
+                      )}
                     </div>
                   )}
                 </Card>
               ))}
+              </div>
             </div>
           )}
         </div>

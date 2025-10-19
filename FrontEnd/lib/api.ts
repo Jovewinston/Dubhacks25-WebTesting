@@ -12,8 +12,78 @@ export interface TestData {
 export interface TestResponse {
   success: boolean
   message?: string
-  testId?: string
+  job_id?: string
   error?: string
+}
+
+export interface TestStatusResponse {
+  job_id: string
+  status: 'pending' | 'running' | 'completed' | 'failed'
+  progress?: number
+  message?: string
+  created_at: string
+  completed_at?: string
+  error?: string
+  // Include metadata fields directly (not nested under results)
+  episode_name?: string
+  task?: string
+  url?: string
+  steps?: string
+  expected_behavior?: string
+  combinations?: Array<{
+    goal: string
+    eps_name: string
+    task: {
+      steps: string[]
+    }
+    start_url: string
+    browser_context: {
+      os: string
+      viewport: string
+      cookies_enabled: boolean
+    }
+    success: boolean
+    total_steps: number
+    runtime_sec: number
+    total_tokens: number
+    gpt_output?: string
+    wrong_behavior?: boolean
+    explanation?: string
+    expected_behavior?: string
+    device: string
+    browser: string
+  }>
+}
+
+export interface BackendTestResult {
+  episode_name: string
+  task: string
+  url: string
+  steps: string
+  expected_behavior: string
+  combinations: Array<{
+    goal: string
+    eps_name: string
+    task: {
+      steps: string[]
+    }
+    start_url: string
+    browser_context: {
+      os: string
+      viewport: string
+      cookies_enabled: boolean
+    }
+    success: boolean
+    total_steps: number
+    runtime_sec: number
+    total_tokens: number
+    gpt_output?: string
+    wrong_behavior?: boolean
+    explanation?: string
+    expected_behavior?: string
+    device: string
+    browser: string
+  }>
 }
 
 /**
@@ -23,8 +93,7 @@ export interface TestResponse {
  */
 export async function sendTestToBackend(testData: TestData): Promise<TestResponse> {
   try {
-    // TODO: Replace with actual backend URL when available
-    const response = await fetch('/api/tests', {
+    const response = await fetch('http://localhost:8000/api/v1/run-pipeline', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -40,7 +109,7 @@ export async function sendTestToBackend(testData: TestData): Promise<TestRespons
     return {
       success: true,
       message: result.message || 'Test submitted successfully',
-      testId: result.testId,
+      job_id: result.job_id,
     }
   } catch (error) {
     console.error('Error sending test to backend:', error)
@@ -84,3 +153,164 @@ export function formatTestDataForBackend(test: {
     browsers: test.browsers.map(browser => browser.toLowerCase()),
   }
 }
+
+/**
+ * Parses backend test result data and converts it to frontend format
+ * @param backendResult - The result data from the backend
+ * @returns Parsed test result data for the frontend
+ */
+export function parseBackendTestResult(backendResult: BackendTestResult) {
+  const { combinations } = backendResult
+  
+  // Calculate overall statistics
+  const totalSteps = combinations.reduce((sum, combo) => sum + combo.total_steps, 0)
+  const passedCombinations = combinations.filter(combo => combo.success)
+  const failedCombinations = combinations.filter(combo => !combo.success)
+  const passed = passedCombinations.length
+  const failed = failedCombinations.length
+  const passRate = Math.round((passed / combinations.length) * 100)
+  
+  // Create breakdown by browser/device
+  const breakdown = combinations.map(combo => ({
+    browser: combo.browser.charAt(0).toUpperCase() + combo.browser.slice(1),
+    device: combo.device.charAt(0).toUpperCase() + combo.device.slice(1),
+    status: combo.success ? "passed" as const : "failed" as const
+  }))
+  
+  // Collect issues from failed combinations
+  const issues = failedCombinations.map(combo => 
+    `${combo.browser} ${combo.device}: ${combo.gpt_output}`
+  )
+  
+  // Create detailed combinations with steps for each browser/device combination
+  const detailedCombinations = combinations.map(combo => ({
+    browser: combo.browser.charAt(0).toUpperCase() + combo.browser.slice(1),
+    device: combo.device.charAt(0).toUpperCase() + combo.device.slice(1),
+    status: combo.success ? "passed" as const : "failed" as const,
+    steps: combo.task.steps.map((step, index) => ({
+      name: step,
+      duration: `${Math.round(combo.runtime_sec / combo.total_steps)}s`,
+      status: combo.success ? "passed" as const : "failed" as const,
+      thought: `Step ${index + 1}: ${step}`,
+      action: step,
+      actionDescription: step
+    })),
+    totalSteps: combo.total_steps,
+    runtimeSec: combo.runtime_sec,
+    success: combo.success,
+    gptOutput: combo.gpt_output,
+    explanation: combo.explanation
+  }))
+  
+  // Create test steps from the first successful combination (or first if none successful) for backward compatibility
+  const referenceCombo = passedCombinations[0] || combinations[0]
+  const steps = referenceCombo.task.steps.map((step, index) => ({
+    name: step,
+    duration: `${Math.round(referenceCombo.runtime_sec / referenceCombo.total_steps)}s`,
+    status: "passed" as const,
+    thought: `Step ${index + 1}: ${step}`,
+    action: step,
+    actionDescription: step
+  }))
+  
+  return {
+    totalSteps,
+    passed,
+    failed,
+    passRate,
+    breakdown,
+    issues,
+    steps,
+    combinations: detailedCombinations
+  }
+}
+
+/**
+ * Polls the backend for test status updates
+ * @param testId - The test ID to poll for
+ * @returns Promise<TestStatusResponse> - Current test status
+ */
+export async function pollTestStatus(jobId: string): Promise<TestStatusResponse> {
+  try {
+    const response = await fetch(`http://localhost:8000/api/v1/status/${jobId}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
+    }
+
+    return await response.json()
+  } catch (error) {
+    console.error('Error polling test status:', error)
+    throw error
+  }
+}
+
+/**
+ * Starts periodic polling for a test and calls update callback
+ * @param testId - The test ID to poll for
+ * @param onUpdate - Callback function called with each status update
+ * @param onComplete - Callback function called when test completes
+ * @param onError - Callback function called on error
+ * @returns Function to stop polling
+ */
+export function startTestPolling(
+  jobId: string,
+  onUpdate: (status: TestStatusResponse) => void,
+  onComplete: (results: BackendTestResult) => void,
+  onError: (error: string) => void
+): () => void {
+  let isPolling = true
+  let pollInterval: NodeJS.Timeout | null = null
+
+  const poll = async () => {
+    if (!isPolling) return
+
+    try {
+      const status = await pollTestStatus(jobId)
+      onUpdate(status)
+
+      if (status.status === 'completed' && status.combinations) {
+        isPolling = false
+        if (pollInterval) clearInterval(pollInterval)
+        // Convert status response to BackendTestResult format
+        const results: BackendTestResult = {
+          episode_name: status.episode_name || '',
+          task: status.task || '',
+          url: status.url || '',
+          steps: status.steps || '',
+          expected_behavior: status.expected_behavior || '',
+          combinations: status.combinations || []
+        }
+        onComplete(results)
+      } else if (status.status === 'failed') {
+        isPolling = false
+        if (pollInterval) clearInterval(pollInterval)
+        onError(status.error || 'Test failed')
+      }
+    } catch (error) {
+      console.error('Polling error:', error)
+      onError(error instanceof Error ? error.message : 'Unknown polling error')
+    }
+  }
+
+  // Start polling immediately
+  poll()
+  
+  // Then poll every 1 second
+  pollInterval = setInterval(poll, 1000)
+
+  // Return stop function
+  return () => {
+    isPolling = false
+    if (pollInterval) {
+      clearInterval(pollInterval)
+      pollInterval = null
+    }
+  }
+}
+

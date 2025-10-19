@@ -1,0 +1,1322 @@
+[
+  {
+    "annotation_id": 0,
+    "element_info": {
+      "name": "Google apps",
+      "name_raw": "Google apps",
+      "role": "button",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "gb_B",
+      "href": "https://www.google.com/intl/en/about/products",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 267,
+      "y": 8,
+      "width": 40,
+      "height": 39,
+      "center_x": 287,
+      "center_y": 27
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(287, 27)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Google apps')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Google apps')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Google apps')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.gb_B')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 1,
+    "element_info": {
+      "name": "Clear",
+      "name_raw": "Clear",
+      "role": "button",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "vOY7J M2vV3",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 132,
+      "y": 193,
+      "width": 48,
+      "height": 50,
+      "center_x": 156,
+      "center_y": 218
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(156, 218)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Clear')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Clear')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Clear')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.vOY7J.M2vV3')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 2,
+    "element_info": {
+      "name": "Search by voice",
+      "name_raw": "Search by voice",
+      "role": "button",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "XDyW0e",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 185,
+      "y": 193,
+      "width": 40,
+      "height": 50,
+      "center_x": 205,
+      "center_y": 218
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(205, 218)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Search by voice')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Search by voice')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Search by voice')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.XDyW0e')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 3,
+    "element_info": {
+      "name": "Search by image",
+      "name_raw": "Search by image",
+      "role": "button",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "nDcEnd",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 225,
+      "y": 193,
+      "width": 40,
+      "height": 50,
+      "center_x": 245,
+      "center_y": 218
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(245, 218)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Search by image')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Search by image')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Search by image')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.nDcEnd')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 4,
+    "element_info": {
+      "name": "About",
+      "name_raw": "About",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "MV3Tnb",
+      "href": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 21,
+      "y": 16,
+      "width": 46,
+      "height": 26,
+      "center_x": 44,
+      "center_y": 29
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(44, 29)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='About')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('About')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('About')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.MV3Tnb')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 5,
+    "element_info": {
+      "name": "Store",
+      "name_raw": "Store",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "MV3Tnb",
+      "href": "https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 77,
+      "y": 16,
+      "width": 43,
+      "height": 26,
+      "center_x": 98,
+      "center_y": 29
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(98, 29)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Store')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Store')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Store')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.MV3Tnb')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 6,
+    "element_info": {
+      "name": "Gmail",
+      "name_raw": "Gmail",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "gb_Z",
+      "href": "https://mail.google.com/mail/&ogbl",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 160,
+      "y": 16,
+      "width": 33,
+      "height": 23,
+      "center_x": 176,
+      "center_y": 27
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(176, 27)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Gmail')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Gmail')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Gmail')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.gb_Z')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 7,
+    "element_info": {
+      "name": "Search for Images",
+      "name_raw": "Search for Images",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "gb_Z",
+      "href": "https://www.google.com/imghp?hl=en&ogbl",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 209,
+      "y": 16,
+      "width": 42,
+      "height": 23,
+      "center_x": 230,
+      "center_y": 27
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(230, 27)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Search for Images')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Search for Images')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Search for Images')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.gb_Z')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 8,
+    "element_info": {
+      "name": "Sign in",
+      "name_raw": "Sign in",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "gb_A",
+      "href": "https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 315,
+      "y": 8,
+      "width": 75,
+      "height": 39,
+      "center_x": 352,
+      "center_y": 27
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(352, 27)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Sign in')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Sign in')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Sign in')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.gb_A')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 9,
+    "element_info": {
+      "name": ".plR5qb{align-self:center;background:inherit;bo...",
+      "name_raw": ".plR5qb{align-self:center;background:inherit;border-radius:100px;cursor:pointer;flex-shrink:0;font-family:Google Sans,Arial,sans-serif;font-optical-sizing:none;font-size:14px;font-weight:400;line-height:20px;margin-left:8px;padding:0 12px 0 10px;position:relative;height:36px;}.minidiv .plR5qb{height:24px}.plR5qb:hover::before{background:var(--Lm570b)}.xL0qi,.mTurwe{overflow:hidden;border-radius:100px;position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.xL0qi{opacity:0.35;filter:blur(2px)}.iydNQb{background:conic-gradient(#3186ff00 0deg,#34a853 43deg,#ffd314 65deg,#ff4641 105deg,#3186ff 144deg,#3186ff 180deg,#3186ff00 324deg,#3186ff00 360deg);height:200%;top:-50%;right:0;bottom:0;left:0;position:absolute;scale:2 1;opacity:0;transform:rotate(180deg);transition:opacity 400ms linear}.plR5qb:hover .mTurwe .iydNQb{opacity:1}.Y5MKCd .iydNQb{animation:ae-fg 2000ms linear backwards,ae-rg 2000ms cubic-bezier(0.20, 0.00, 0.00, 1.00) backwards}@keyframes ae-fg {0%{opacity:0}30%{opacity:1}50%{opacity:1}100%{opacity:0}}@keyframes ae-rg {from{transform:rotate(0deg)}to{transform:rotate(180deg)}}.bvUkz{position:absolute;top:2px;right:2px;bottom:2px;left:2px;border-radius:100px;clip-path:inset(0 0 0 0 round 100px);background:var(--XKMDxc);transition:filter 1000ms cubic-bezier(0.00, 0.00, 0.00, 1.00),background 400ms linear}.Y5MKCd .bvUkz{animation:ae-bf 2000ms linear backwards}@keyframes ae-bf {0%{background:var(--XKMDxc)}30%{background:inherit}50%{background:inherit}100%{background:var(--XKMDxc)}}.plR5qb:hover .bvUkz{background:inherit;filter:blur(2px)}.plR5qb .bvUkz::after{content:'';top:-10px;right:-10px;bottom:-10px;left:-10px;border-radius:100px;position:absolute;background:inherit;opacity:.5}.u4Uk3c{align-items:center;display:flex;justify-content:center;position:relative;z-index:1}.PD3zdc{padding-right:4px}AI Mode",
+      "role": "link",
+      "value": "",
+      "tag_name": "button",
+      "type": "button",
+      "id": "",
+      "class_name": "plR5qb Y5MKCd",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 273,
+      "y": 200,
+      "width": 98,
+      "height": 36,
+      "center_x": 322,
+      "center_y": 218
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(322, 218)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='.plR5qb{align-self:center;background:inherit;border-radius:100px;cursor:pointer;flex-shrink:0;font-family:Google Sans,Arial,sans-serif;font-optical-sizing:none;font-size:14px;font-weight:400;line-height:20px;margin-left:8px;padding:0 12px 0 10px;position:relative;height:36px;}.minidiv .plR5qb{height:24px}.plR5qb:hover::before{background:var(--Lm570b)}.xL0qi,.mTurwe{overflow:hidden;border-radius:100px;position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.xL0qi{opacity:0.35;filter:blur(2px)}.iydNQb{background:conic-gradient(#3186ff00 0deg,#34a853 43deg,#ffd314 65deg,#ff4641 105deg,#3186ff 144deg,#3186ff 180deg,#3186ff00 324deg,#3186ff00 360deg);height:200%;top:-50%;right:0;bottom:0;left:0;position:absolute;scale:2 1;opacity:0;transform:rotate(180deg);transition:opacity 400ms linear}.plR5qb:hover .mTurwe .iydNQb{opacity:1}.Y5MKCd .iydNQb{animation:ae-fg 2000ms linear backwards,ae-rg 2000ms cubic-bezier(0.20, 0.00, 0.00, 1.00) backwards}@keyframes ae-fg {0%{opacity:0}30%{opacity:1}50%{opacity:1}100%{opacity:0}}@keyframes ae-rg {from{transform:rotate(0deg)}to{transform:rotate(180deg)}}.bvUkz{position:absolute;top:2px;right:2px;bottom:2px;left:2px;border-radius:100px;clip-path:inset(0 0 0 0 round 100px);background:var(--XKMDxc);transition:filter 1000ms cubic-bezier(0.00, 0.00, 0.00, 1.00),background 400ms linear}.Y5MKCd .bvUkz{animation:ae-bf 2000ms linear backwards}@keyframes ae-bf {0%{background:var(--XKMDxc)}30%{background:inherit}50%{background:inherit}100%{background:var(--XKMDxc)}}.plR5qb:hover .bvUkz{background:inherit;filter:blur(2px)}.plR5qb .bvUkz::after{content:'';top:-10px;right:-10px;bottom:-10px;left:-10px;border-radius:100px;position:absolute;background:inherit;opacity:.5}.u4Uk3c{align-items:center;display:flex;justify-content:center;position:relative;z-index:1}.PD3zdc{padding-right:4px}AI Mode')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('.plR5qb{align-self:center;background:inherit;border-radius:100px;cursor:pointer;flex-shrink:0;font-family:Google Sans,Arial,sans-serif;font-optical-sizing:none;font-size:14px;font-weight:400;line-height:20px;margin-left:8px;padding:0 12px 0 10px;position:relative;height:36px;}.minidiv .plR5qb{height:24px}.plR5qb:hover::before{background:var(--Lm570b)}.xL0qi,.mTurwe{overflow:hidden;border-radius:100px;position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.xL0qi{opacity:0.35;filter:blur(2px)}.iydNQb{background:conic-gradient(#3186ff00 0deg,#34a853 43deg,#ffd314 65deg,#ff4641 105deg,#3186ff 144deg,#3186ff 180deg,#3186ff00 324deg,#3186ff00 360deg);height:200%;top:-50%;right:0;bottom:0;left:0;position:absolute;scale:2 1;opacity:0;transform:rotate(180deg);transition:opacity 400ms linear}.plR5qb:hover .mTurwe .iydNQb{opacity:1}.Y5MKCd .iydNQb{animation:ae-fg 2000ms linear backwards,ae-rg 2000ms cubic-bezier(0.20, 0.00, 0.00, 1.00) backwards}@keyframes ae-fg {0%{opacity:0}30%{opacity:1}50%{opacity:1}100%{opacity:0}}@keyframes ae-rg {from{transform:rotate(0deg)}to{transform:rotate(180deg)}}.bvUkz{position:absolute;top:2px;right:2px;bottom:2px;left:2px;border-radius:100px;clip-path:inset(0 0 0 0 round 100px);background:var(--XKMDxc);transition:filter 1000ms cubic-bezier(0.00, 0.00, 0.00, 1.00),background 400ms linear}.Y5MKCd .bvUkz{animation:ae-bf 2000ms linear backwards}@keyframes ae-bf {0%{background:var(--XKMDxc)}30%{background:inherit}50%{background:inherit}100%{background:var(--XKMDxc)}}.plR5qb:hover .bvUkz{background:inherit;filter:blur(2px)}.plR5qb .bvUkz::after{content:'';top:-10px;right:-10px;bottom:-10px;left:-10px;border-radius:100px;position:absolute;background:inherit;opacity:.5}.u4Uk3c{align-items:center;display:flex;justify-content:center;position:relative;z-index:1}.PD3zdc{padding-right:4px}AI Mode')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('.plR5qb{align-self:center;background:inherit;border-radius:100px;cursor:pointer;flex-shrink:0;font-family:Google Sans,Arial,sans-serif;font-optical-sizing:none;font-size:14px;font-weight:400;line-height:20px;margin-left:8px;padding:0 12px 0 10px;position:relative;height:36px;}.minidiv .plR5qb{height:24px}.plR5qb:hover::before{background:var(--Lm570b)}.xL0qi,.mTurwe{overflow:hidden;border-radius:100px;position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.xL0qi{opacity:0.35;filter:blur(2px)}.iydNQb{background:conic-gradient(#3186ff00 0deg,#34a853 43deg,#ffd314 65deg,#ff4641 105deg,#3186ff 144deg,#3186ff 180deg,#3186ff00 324deg,#3186ff00 360deg);height:200%;top:-50%;right:0;bottom:0;left:0;position:absolute;scale:2 1;opacity:0;transform:rotate(180deg);transition:opacity 400ms linear}.plR5qb:hover .mTurwe .iydNQb{opacity:1}.Y5MKCd .iydNQb{animation:ae-fg 2000ms linear backwards,ae-rg 2000ms cubic-bezier(0.20, 0.00, 0.00, 1.00) backwards}@keyframes ae-fg {0%{opacity:0}30%{opacity:1}50%{opacity:1}100%{opacity:0}}@keyframes ae-rg {from{transform:rotate(0deg)}to{transform:rotate(180deg)}}.bvUkz{position:absolute;top:2px;right:2px;bottom:2px;left:2px;border-radius:100px;clip-path:inset(0 0 0 0 round 100px);background:var(--XKMDxc);transition:filter 1000ms cubic-bezier(0.00, 0.00, 0.00, 1.00),background 400ms linear}.Y5MKCd .bvUkz{animation:ae-bf 2000ms linear backwards}@keyframes ae-bf {0%{background:var(--XKMDxc)}30%{background:inherit}50%{background:inherit}100%{background:var(--XKMDxc)}}.plR5qb:hover .bvUkz{background:inherit;filter:blur(2px)}.plR5qb .bvUkz::after{content:'';top:-10px;right:-10px;bottom:-10px;left:-10px;border-radius:100px;position:absolute;background:inherit;opacity:.5}.u4Uk3c{align-items:center;display:flex;justify-content:center;position:relative;z-index:1}.PD3zdc{padding-right:4px}AI Mode')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('button.plR5qb.Y5MKCd')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 10,
+    "element_info": {
+      "name": "Search",
+      "name_raw": "Search",
+      "role": "combobox",
+      "value": "",
+      "tag_name": "textarea",
+      "type": "",
+      "id": "APjFqb",
+      "class_name": "gLFyf",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 67,
+      "y": 193,
+      "width": 65,
+      "height": 50,
+      "center_x": 99,
+      "center_y": 218
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#APjFqb')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(99, 218)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('combobox', name='Search')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Search')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Search')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('textarea#APjFqb.gLFyf')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "select_option('value')",
+      "select_option(label='label')",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 11,
+    "element_info": {
+      "name": "HelloSong by Adele.MagqMc .ZFiwCf{background-co...",
+      "name_raw": "HelloSong by Adele.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello KittyFictional character.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHelloFreshActor.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello MollyVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello! IndiaIndian restaurant · 11419 19th Ave SE, Everett, WA.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello robinAmerican author.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello interviewVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Delete‎Hello Kitty Island AdventureVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello PhoPho restaurant · 16116 Meridian E Ste L, Puyallup, WA.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello in japaneseFictional character.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Delete",
+      "role": "listbox",
+      "value": "",
+      "tag_name": "ul",
+      "type": "",
+      "id": "",
+      "class_name": "G43f7e",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 20,
+      "y": 247,
+      "width": 360,
+      "height": 415,
+      "center_x": 200,
+      "center_y": 454
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(200, 454)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('listbox', name='HelloSong by Adele.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello KittyFictional character.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHelloFreshActor.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello MollyVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello! IndiaIndian restaurant · 11419 19th Ave SE, Everett, WA.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello robinAmerican author.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello interviewVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Delete‎Hello Kitty Island AdventureVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello PhoPho restaurant · 16116 Meridian E Ste L, Puyallup, WA.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello in japaneseFictional character.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Delete')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('HelloSong by Adele.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello KittyFictional character.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHelloFreshActor.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello MollyVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello! IndiaIndian restaurant · 11419 19th Ave SE, Everett, WA.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello robinAmerican author.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello interviewVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Delete‎Hello Kitty Island AdventureVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello PhoPho restaurant · 16116 Meridian E Ste L, Puyallup, WA.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello in japaneseFictional character.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Delete')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('HelloSong by Adele.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello KittyFictional character.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHelloFreshActor.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello MollyVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello! IndiaIndian restaurant · 11419 19th Ave SE, Everett, WA.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello robinAmerican author.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello interviewVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Delete‎Hello Kitty Island AdventureVideo game.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}DeleteHello PhoPho restaurant · 16116 Meridian E Ste L, Puyallup, WA.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Deletehello in japaneseFictional character.MagqMc .ZFiwCf{background-color:#fff;border:1px solid var(--gS5jXb);width:100%}.MagqMc.U48fD{padding:0;margin-top:16px}.MagqMc .Bi9oQd{display:none}.MagqMc{padding:0}.MagqMc:hover .LGwnxb{color:var(--YLNNHc)}.sOmPcf .ZFiwCf{background-color:#e0e2e3}.U48fD{-webkit-tap-highlight-color:transparent;cursor:pointer;display:block;line-height:18px;text-overflow:ellipsis;white-space:nowrap;padding:16px;padding-top:0;margin-top:16px;position:relative}.TQc1id .U48fD{margin-top:16px}.U48fD.df13ud{margin-top:16px}.U48fD.TOQyFc{margin-top:0}.U48fD.p8FEIf{padding-bottom:0}.jRKCUd.p8FEIf::before{bottom:-4px}.U48fD.ke7M4{padding-left:0;padding-right:0}.jRKCUd::before{bottom:12px;content:'';left:16px;position:absolute;right:16px;top:-4px}a.jRKCUd:hover{text-decoration:none}.ZFiwCf{display:flex;align-items:center;justify-content:center;position:relative;margin:0 auto;width:100%;border-radius:18px;outline:1px solid transparent;background-color:#f1f3f4;font-size:14px;font-family:Google Sans,Arial,sans-serif;line-height:20px;font-weight:400;max-width:372px;min-height:40px;border-radius:20px;}@media (forced-colors:active){.ZFiwCf{border:1px solid transparent}}.TQc1id .ZFiwCf{max-width:unset}.Zjtggb .ZFiwCf{max-width:unset}.ZFiwCf:hover{background-color:#e0e2e3}.nCFUpc .ZFiwCf{width:100%}.Bi9oQd{background-color:var(--gS5jXb);margin-top:18px;position:absolute;border:0;height:1px;left:0;width:100%;margin-top:20px;}.TQc1id .Bi9oQd{display:none}.kC8B4e .Bi9oQd{display:none}.w2fKdd svg{width:auto}.w2fKdd{color:var(--amnPwe)}.LGwnxb{-webkit-line-clamp:1;word-break:break-all;width:auto;padding-left:0;padding-right:8px;color:#202124;max-width:calc(100% - 64px);}.LGwnxb:empty{padding-right:0}.LGwnxb span,.LGwnxb div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:auto}See more.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-decoration:underline}.JCHpcb{color:#70757a;font:13px arial,sans-serif;cursor:pointer;align-self:center}@media (hover:hover){.sbai{visibility:hidden}.sbhl .sbai{visibility:inherit}}Delete')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('ul.G43f7e')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 12,
+    "element_info": {
+      "name": "hello",
+      "name_raw": "hello",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "jZ2SBf",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 253,
+      "width": 292,
+      "height": 32,
+      "center_x": 214,
+      "center_y": 269
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#jZ2SBf')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 269)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='hello')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('hello')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('hello')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#jZ2SBf.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 13,
+    "element_info": {
+      "name": "hello kitty",
+      "name_raw": "hello kitty",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "ERWdKc",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 297,
+      "width": 292,
+      "height": 32,
+      "center_x": 214,
+      "center_y": 313
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#ERWdKc')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 313)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='hello kitty')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('hello kitty')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('hello kitty')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#ERWdKc.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 14,
+    "element_info": {
+      "name": "hellofresh",
+      "name_raw": "hellofresh",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "c7mM1c",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 346,
+      "width": 292,
+      "height": 18,
+      "center_x": 214,
+      "center_y": 355
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#c7mM1c')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 355)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='hellofresh')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('hellofresh')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('hellofresh')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#c7mM1c.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 15,
+    "element_info": {
+      "name": "hello molly",
+      "name_raw": "hello molly",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "Zrbbw",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 386,
+      "width": 292,
+      "height": 18,
+      "center_x": 214,
+      "center_y": 395
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#Zrbbw')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 395)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='hello molly')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('hello molly')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('hello molly')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#Zrbbw.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 16,
+    "element_info": {
+      "name": "hello india",
+      "name_raw": "hello india",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "sBQTL",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 421,
+      "width": 292,
+      "height": 44,
+      "center_x": 214,
+      "center_y": 443
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#sBQTL')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 443)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='hello india')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('hello india')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('hello india')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#sBQTL.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 17,
+    "element_info": {
+      "name": "hello robin",
+      "name_raw": "hello robin",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "vTtioc",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 477,
+      "width": 292,
+      "height": 18,
+      "center_x": 214,
+      "center_y": 486
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#vTtioc')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 486)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='hello robin')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('hello robin')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('hello robin')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#vTtioc.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 18,
+    "element_info": {
+      "name": "hello interview",
+      "name_raw": "hello interview",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "gLuoSb",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 507,
+      "width": 292,
+      "height": 18,
+      "center_x": 214,
+      "center_y": 516
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#gLuoSb')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 516)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='hello interview')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('hello interview')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('hello interview')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#gLuoSb.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 19,
+    "element_info": {
+      "name": "hello kitty island adventure",
+      "name_raw": "hello kitty island adventure",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "mdzGzd",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 538,
+      "width": 292,
+      "height": 32,
+      "center_x": 214,
+      "center_y": 554
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#mdzGzd')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 554)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='hello kitty island adventure')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('hello kitty island adventure')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('hello kitty island adventure')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#mdzGzd.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 20,
+    "element_info": {
+      "name": "hello pho",
+      "name_raw": "hello pho",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "hwdq1",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 582,
+      "width": 292,
+      "height": 44,
+      "center_x": 214,
+      "center_y": 604
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#hwdq1')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 604)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='hello pho')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('hello pho')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('hello pho')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#hwdq1.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 21,
+    "element_info": {
+      "name": "hello in japanese",
+      "name_raw": "hello in japanese",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "HFKcI",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 638,
+      "width": 292,
+      "height": 18,
+      "center_x": 214,
+      "center_y": 647
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#HFKcI')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 647)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='hello in japanese')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('hello in japanese')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('hello in japanese')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#HFKcI.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 22,
+    "element_info": {
+      "name": ".Ne6nSd{display:flex;align-items:center;padding...",
+      "name_raw": ".Ne6nSd{display:flex;align-items:center;padding:6px}a.MV3Tnb{display:inline-block;padding:5px;margin:0 5px;color:var(--YLNNHc)}a.MV3Tnb:first-of-type{margin-left:15px}.LX3sZb{display:inline-block;flex-grow:1}AboutStoreGmailImagesSign in",
+      "role": "navigation",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "o3j99 n1xJcf Ne6nSd",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 60,
+      "center_x": 200,
+      "center_y": 30
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(200, 30)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('navigation', name='.Ne6nSd{display:flex;align-items:center;padding:6px}a.MV3Tnb{display:inline-block;padding:5px;margin:0 5px;color:var(--YLNNHc)}a.MV3Tnb:first-of-type{margin-left:15px}.LX3sZb{display:inline-block;flex-grow:1}AboutStoreGmailImagesSign in')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('.Ne6nSd{display:flex;align-items:center;padding:6px}a.MV3Tnb{display:inline-block;padding:5px;margin:0 5px;color:var(--YLNNHc)}a.MV3Tnb:first-of-type{margin-left:15px}.LX3sZb{display:inline-block;flex-grow:1}AboutStoreGmailImagesSign in')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('.Ne6nSd{display:flex;align-items:center;padding:6px}a.MV3Tnb{display:inline-block;padding:5px;margin:0 5px;color:var(--YLNNHc)}a.MV3Tnb:first-of-type{margin-left:15px}.LX3sZb{display:inline-block;flex-grow:1}AboutStoreGmailImagesSign in')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.o3j99.n1xJcf.Ne6nSd')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  }
+]

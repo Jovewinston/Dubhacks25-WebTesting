@@ -1,0 +1,219 @@
+[
+  {
+    "annotation_id": "0",
+    "role": "button",
+    "name": "Google apps",
+    "x": 1157,
+    "y": 28
+  },
+  {
+    "annotation_id": "1",
+    "role": "button",
+    "name": "Clear",
+    "x": 760,
+    "y": 271
+  },
+  {
+    "annotation_id": "2",
+    "role": "button",
+    "name": "Search by voice",
+    "x": 809,
+    "y": 271
+  },
+  {
+    "annotation_id": "3",
+    "role": "button",
+    "name": "Search by image",
+    "x": 849,
+    "y": 271
+  },
+  {
+    "annotation_id": "4",
+    "role": "button",
+    "name": "Settings",
+    "x": 1218,
+    "y": 695
+  },
+  {
+    "annotation_id": "5",
+    "role": "button",
+    "name": "Stay signed out",
+    "x": 1004,
+    "y": 614
+  },
+  {
+    "annotation_id": "6",
+    "role": "button",
+    "name": "Sign in",
+    "x": 1154,
+    "y": 614
+  },
+  {
+    "annotation_id": "7",
+    "role": "link",
+    "name": "About",
+    "x": 44,
+    "y": 29
+  },
+  {
+    "annotation_id": "8",
+    "role": "link",
+    "name": "Store",
+    "x": 99,
+    "y": 29
+  },
+  {
+    "annotation_id": "9",
+    "role": "link",
+    "name": "Gmail",
+    "x": 1046,
+    "y": 28
+  },
+  {
+    "annotation_id": "10",
+    "role": "link",
+    "name": "Search for Images",
+    "x": 1100,
+    "y": 28
+  },
+  {
+    "annotation_id": "11",
+    "role": "link",
+    "name": "Sign in",
+    "x": 1227,
+    "y": 28
+  },
+  {
+    "annotation_id": "12",
+    "role": "link",
+    "name": ".plR5qb{align-self:center;background:inherit;bo...",
+    "x": 926,
+    "y": 271
+  },
+  {
+    "annotation_id": "13",
+    "role": "link",
+    "name": "Advertising",
+    "x": 70,
+    "y": 695
+  },
+  {
+    "annotation_id": "14",
+    "role": "link",
+    "name": "Business",
+    "x": 163,
+    "y": 695
+  },
+  {
+    "annotation_id": "15",
+    "role": "link",
+    "name": "How Search works",
+    "x": 279,
+    "y": 695
+  },
+  {
+    "annotation_id": "16",
+    "role": "link",
+    "name": "Privacy",
+    "x": 1071,
+    "y": 695
+  },
+  {
+    "annotation_id": "17",
+    "role": "link",
+    "name": "Terms",
+    "x": 1143,
+    "y": 695
+  },
+  {
+    "annotation_id": "18",
+    "role": "combobox",
+    "name": "Search",
+    "x": 539,
+    "y": 271
+  },
+  {
+    "annotation_id": "19",
+    "role": "listbox",
+    "name": "HelloSong by Adele.MagqMc .ZFiwCf{background-co...",
+    "x": 640,
+    "y": 498
+  },
+  {
+    "annotation_id": "20",
+    "role": "option",
+    "name": "hello",
+    "x": 654,
+    "y": 322
+  },
+  {
+    "annotation_id": "21",
+    "role": "option",
+    "name": "hello kitty",
+    "x": 654,
+    "y": 366
+  },
+  {
+    "annotation_id": "22",
+    "role": "option",
+    "name": "hellofresh",
+    "x": 654,
+    "y": 408
+  },
+  {
+    "annotation_id": "23",
+    "role": "option",
+    "name": "hello molly",
+    "x": 654,
+    "y": 448
+  },
+  {
+    "annotation_id": "24",
+    "role": "option",
+    "name": "hello india",
+    "x": 654,
+    "y": 490
+  },
+  {
+    "annotation_id": "25",
+    "role": "option",
+    "name": "hello robin",
+    "x": 654,
+    "y": 528
+  },
+  {
+    "annotation_id": "26",
+    "role": "option",
+    "name": "hello interview",
+    "x": 654,
+    "y": 560
+  },
+  {
+    "annotation_id": "27",
+    "role": "option",
+    "name": "hello kitty island adventure",
+    "x": 654,
+    "y": 598
+  },
+  {
+    "annotation_id": "28",
+    "role": "option",
+    "name": "hello pho",
+    "x": 654,
+    "y": 642
+  },
+  {
+    "annotation_id": "29",
+    "role": "option",
+    "name": "hello in japanese",
+    "x": 654,
+    "y": 680
+  },
+  {
+    "annotation_id": "30",
+    "role": "navigation",
+    "name": ".Ne6nSd{display:flex;align-items:center;padding...",
+    "x": 640,
+    "y": 30
+  }
+]

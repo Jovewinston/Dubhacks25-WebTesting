@@ -1,0 +1,142 @@
+[
+  {
+    "annotation_id": "0",
+    "role": "button",
+    "name": "Google apps",
+    "x": 287,
+    "y": 28
+  },
+  {
+    "annotation_id": "1",
+    "role": "button",
+    "name": "Search by voice",
+    "x": 205,
+    "y": 218
+  },
+  {
+    "annotation_id": "2",
+    "role": "button",
+    "name": "Search by image",
+    "x": 245,
+    "y": 218
+  },
+  {
+    "annotation_id": "3",
+    "role": "button",
+    "name": "Google Search",
+    "x": 123,
+    "y": 648
+  },
+  {
+    "annotation_id": "4",
+    "role": "button",
+    "name": "I\\'m Feeling Lucky",
+    "x": 269,
+    "y": 648
+  },
+  {
+    "annotation_id": "5",
+    "role": "button",
+    "name": "Stay signed out",
+    "x": 99,
+    "y": 561
+  },
+  {
+    "annotation_id": "6",
+    "role": "button",
+    "name": "Sign in",
+    "x": 249,
+    "y": 561
+  },
+  {
+    "annotation_id": "7",
+    "role": "link",
+    "name": "About",
+    "x": 44,
+    "y": 29
+  },
+  {
+    "annotation_id": "8",
+    "role": "link",
+    "name": "Store",
+    "x": 99,
+    "y": 29
+  },
+  {
+    "annotation_id": "9",
+    "role": "link",
+    "name": "Gmail",
+    "x": 176,
+    "y": 28
+  },
+  {
+    "annotation_id": "10",
+    "role": "link",
+    "name": "Search for Images",
+    "x": 230,
+    "y": 28
+  },
+  {
+    "annotation_id": "11",
+    "role": "link",
+    "name": "Sign in",
+    "x": 352,
+    "y": 28
+  },
+  {
+    "annotation_id": "12",
+    "role": "link",
+    "name": ".plR5qb{align-self:center;background:inherit;bo...",
+    "x": 322,
+    "y": 218
+  },
+  {
+    "annotation_id": "13",
+    "role": "combobox",
+    "name": "Search",
+    "x": 124,
+    "y": 218
+  },
+  {
+    "annotation_id": "14",
+    "role": "option",
+    "name": "see comet lemmon",
+    "x": 214,
+    "y": 295
+  },
+  {
+    "annotation_id": "15",
+    "role": "option",
+    "name": "orionids meteor showers",
+    "x": 214,
+    "y": 327
+  },
+  {
+    "annotation_id": "16",
+    "role": "option",
+    "name": "how to see the comet tonight",
+    "x": 214,
+    "y": 359
+  },
+  {
+    "annotation_id": "17",
+    "role": "option",
+    "name": "nc state fair ride low voltage",
+    "x": 214,
+    "y": 391
+  },
+  {
+    "annotation_id": "18",
+    "role": "option",
+    "name": "severe storms",
+    "x": 214,
+    "y": 423
+  },
+  {
+    "annotation_id": "19",
+    "role": "navigation",
+    "name": ".Ne6nSd{display:flex;align-items:center;padding...",
+    "x": 200,
+    "y": 30
+  }
+]

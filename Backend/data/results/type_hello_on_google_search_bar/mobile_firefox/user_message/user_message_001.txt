@@ -1,0 +1,160 @@
+Goal: Type hello in the Google search bar
+
+Previous Actions:
+  1. Click on the search bar (combobox labeled 'Search') to focus it. | Code: page.get_by_role('combobox', name='Search').click()
+
+Current Page: Google (https://www.google.com/)
+
+AX Tree:
+[
+  {
+    "annotation_id": "0",
+    "role": "button",
+    "name": "Google apps",
+    "x": 287,
+    "y": 27
+  },
+  {
+    "annotation_id": "1",
+    "role": "button",
+    "name": "Search by voice",
+    "x": 204,
+    "y": 219
+  },
+  {
+    "annotation_id": "2",
+    "role": "button",
+    "name": "Search by image",
+    "x": 244,
+    "y": 219
+  },
+  {
+    "annotation_id": "3",
+    "role": "button",
+    "name": "Google Search",
+    "x": 122,
+    "y": 292
+  },
+  {
+    "annotation_id": "4",
+    "role": "button",
+    "name": "I\\'m Feeling Lucky",
+    "x": 269,
+    "y": 292
+  },
+  {
+    "annotation_id": "5",
+    "role": "button",
+    "name": "Settings",
+    "x": 271,
+    "y": 643
+  },
+  {
+    "annotation_id": "6",
+    "role": "link",
+    "name": "About",
+    "x": 44,
+    "y": 29
+  },
+  {
+    "annotation_id": "7",
+    "role": "link",
+    "name": "Store",
+    "x": 98,
+    "y": 29
+  },
+  {
+    "annotation_id": "8",
+    "role": "link",
+    "name": "Gmail",
+    "x": 176,
+    "y": 27
+  },
+  {
+    "annotation_id": "9",
+    "role": "link",
+    "name": "Search for Images",
+    "x": 230,
+    "y": 27
+  },
+  {
+    "annotation_id": "10",
+    "role": "link",
+    "name": "Sign in",
+    "x": 352,
+    "y": 27
+  },
+  {
+    "annotation_id": "11",
+    "role": "link",
+    "name": ".plR5qb{align-self:center;background:inherit;bo...",
+    "x": 321,
+    "y": 219
+  },
+  {
+    "annotation_id": "12",
+    "role": "link",
+    "name": "Advertising",
+    "x": 82,
+    "y": 597
+  },
+  {
+    "annotation_id": "13",
+    "role": "link",
+    "name": "Business",
+    "x": 175,
+    "y": 597
+  },
+  {
+    "annotation_id": "14",
+    "role": "link",
+    "name": "How Search works",
+    "x": 292,
+    "y": 597
+  },
+  {
+    "annotation_id": "15",
+    "role": "link",
+    "name": "Applying AI towards science and the environment",
+    "x": 199,
+    "y": 549
+  },
+  {
+    "annotation_id": "16",
+    "role": "link",
+    "name": "Privacy",
+    "x": 124,
+    "y": 643
+  },
+  {
+    "annotation_id": "17",
+    "role": "link",
+    "name": "Terms",
+    "x": 197,
+    "y": 643
+  },
+  {
+    "annotation_id": "18",
+    "role": "combobox",
+    "name": "Search",
+    "x": 124,
+    "y": 219
+  },
+  {
+    "annotation_id": "19",
+    "role": "navigation",
+    "name": ".Ne6nSd{display:flex;align-items:center;padding...",
+    "x": 200,
+    "y": 30
+  },
+  {
+    "annotation_id": "20",
+    "role": "contentinfo",
+    "name": ".c93Gbe{background:#f2f2f2}.uU7dJb{padding:15px...",
+    "x": 200,
+    "y": 596
+  }
+]
+
+Error Codes:
+  None

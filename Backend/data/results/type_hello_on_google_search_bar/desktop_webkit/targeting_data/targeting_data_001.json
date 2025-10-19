@@ -1,0 +1,1317 @@
+[
+  {
+    "annotation_id": 0,
+    "element_info": {
+      "name": "Google apps",
+      "name_raw": "Google apps",
+      "role": "button",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "gb_B",
+      "href": "https://www.google.com/intl/en/about/products",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 1137,
+      "y": 8,
+      "width": 40,
+      "height": 40,
+      "center_x": 1157,
+      "center_y": 28
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(1157, 28)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Google apps')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Google apps')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Google apps')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.gb_B')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 1,
+    "element_info": {
+      "name": "Search by voice",
+      "name_raw": "Search by voice",
+      "role": "button",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "XDyW0e",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 788,
+      "y": 247,
+      "width": 40,
+      "height": 50,
+      "center_x": 808,
+      "center_y": 272
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(808, 272)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Search by voice')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Search by voice')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Search by voice')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.XDyW0e')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 2,
+    "element_info": {
+      "name": "Search by image",
+      "name_raw": "Search by image",
+      "role": "button",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "nDcEnd",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 828,
+      "y": 247,
+      "width": 40,
+      "height": 50,
+      "center_x": 848,
+      "center_y": 272
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(848, 272)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Search by image')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Search by image')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Search by image')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.nDcEnd')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 3,
+    "element_info": {
+      "name": "Google Search",
+      "name_raw": "Google Search",
+      "role": "button",
+      "value": "Google Search",
+      "tag_name": "input",
+      "type": "submit",
+      "id": "",
+      "class_name": "gNO89b",
+      "href": "",
+      "disabled": false,
+      "checked": false,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 500,
+      "y": 327,
+      "width": 127,
+      "height": 36,
+      "center_x": 563,
+      "center_y": 345
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(563, 345)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Google Search')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Google Search')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Google Search')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('input.gNO89b')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 4,
+    "element_info": {
+      "name": "I\\'m Feeling Lucky",
+      "name_raw": "I'm Feeling Lucky",
+      "role": "button",
+      "value": "I'm Feeling Lucky",
+      "tag_name": "input",
+      "type": "submit",
+      "id": "gbqfbb",
+      "class_name": "",
+      "href": "",
+      "disabled": false,
+      "checked": false,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 639,
+      "y": 327,
+      "width": 140,
+      "height": 36,
+      "center_x": 709,
+      "center_y": 345
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#gbqfbb')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(709, 345)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='I'm Feeling Lucky')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('I'm Feeling Lucky')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('I'm Feeling Lucky')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('input#gbqfbb')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 5,
+    "element_info": {
+      "name": "Settings",
+      "name_raw": "Settings",
+      "role": "button",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "CcNe6e",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 1178,
+      "y": 672,
+      "width": 81,
+      "height": 46,
+      "center_x": 1218,
+      "center_y": 695
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(1218, 695)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Settings')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Settings')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Settings')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.CcNe6e')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 6,
+    "element_info": {
+      "name": "Stay signed out",
+      "name_raw": "Stay signed out",
+      "role": "button",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "cvSVBe btku5b NQYJvc FR7ZSc",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 923,
+      "y": 592,
+      "width": 162,
+      "height": 44,
+      "center_x": 1004,
+      "center_y": 614
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(1004, 614)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Stay signed out')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Stay signed out')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Stay signed out')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.cvSVBe.btku5b.NQYJvc')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 7,
+    "element_info": {
+      "name": "Sign in",
+      "name_raw": "Sign in",
+      "role": "button",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "cvSVBe btku5b NQYJvc expUPd",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 1101,
+      "y": 592,
+      "width": 106,
+      "height": 44,
+      "center_x": 1154,
+      "center_y": 614
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(1154, 614)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('button', name='Sign in')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Sign in')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Sign in')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.cvSVBe.btku5b.NQYJvc')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 8,
+    "element_info": {
+      "name": "About",
+      "name_raw": "About",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "MV3Tnb",
+      "href": "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 21,
+      "y": 16,
+      "width": 47,
+      "height": 26,
+      "center_x": 44,
+      "center_y": 29
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(44, 29)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='About')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('About')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('About')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.MV3Tnb')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 9,
+    "element_info": {
+      "name": "Store",
+      "name_raw": "Store",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "MV3Tnb",
+      "href": "https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 78,
+      "y": 16,
+      "width": 42,
+      "height": 26,
+      "center_x": 99,
+      "center_y": 29
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(99, 29)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Store')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Store')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Store')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.MV3Tnb')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 10,
+    "element_info": {
+      "name": "Gmail",
+      "name_raw": "Gmail",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "gb_Z",
+      "href": "https://mail.google.com/mail/&ogbl",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 1030,
+      "y": 16,
+      "width": 33,
+      "height": 24,
+      "center_x": 1046,
+      "center_y": 28
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(1046, 28)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Gmail')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Gmail')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Gmail')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.gb_Z')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 11,
+    "element_info": {
+      "name": "Search for Images",
+      "name_raw": "Search for Images",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "gb_Z",
+      "href": "https://www.google.com/imghp?hl=en&ogbl",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 1079,
+      "y": 16,
+      "width": 42,
+      "height": 24,
+      "center_x": 1100,
+      "center_y": 28
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(1100, 28)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Search for Images')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Search for Images')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Search for Images')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.gb_Z')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 12,
+    "element_info": {
+      "name": "Sign in",
+      "name_raw": "Sign in",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "gb_A",
+      "href": "https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 1185,
+      "y": 8,
+      "width": 85,
+      "height": 40,
+      "center_x": 1227,
+      "center_y": 28
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(1227, 28)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Sign in')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Sign in')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Sign in')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.gb_A')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 13,
+    "element_info": {
+      "name": ".plR5qb{align-self:center;background:inherit;bo...",
+      "name_raw": ".plR5qb{align-self:center;background:inherit;border-radius:100px;cursor:pointer;flex-shrink:0;font-family:Google Sans,Roboto,Arial,sans-serif;font-optical-sizing:none;font-size:14px;font-weight:400;line-height:20px;margin-left:8px;padding:0 12px 0 10px;position:relative;height:36px;}.minidiv .plR5qb{height:24px}.plR5qb:hover::before{background:var(--Lm570b)}.xL0qi,.mTurwe{overflow:hidden;border-radius:100px;position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.xL0qi{opacity:0.35;filter:blur(2px)}.iydNQb{background:conic-gradient(#3186ff00 0deg,#34a853 43deg,#ffd314 65deg,#ff4641 105deg,#3186ff 144deg,#3186ff 180deg,#3186ff00 324deg,#3186ff00 360deg);height:200%;top:-50%;right:0;bottom:0;left:0;position:absolute;scale:2 1;opacity:0;transform:rotate(180deg);transition:opacity 400ms linear}.plR5qb:hover .mTurwe .iydNQb{opacity:1}.Y5MKCd .iydNQb{animation:ae-fg 2000ms linear backwards,ae-rg 2000ms cubic-bezier(0.20, 0.00, 0.00, 1.00) backwards}@keyframes ae-fg {0%{opacity:0}30%{opacity:1}50%{opacity:1}100%{opacity:0}}@keyframes ae-rg {from{transform:rotate(0deg)}to{transform:rotate(180deg)}}.bvUkz{position:absolute;top:2px;right:2px;bottom:2px;left:2px;border-radius:100px;clip-path:inset(0 0 0 0 round 100px);background:var(--XKMDxc);transition:filter 1000ms cubic-bezier(0.00, 0.00, 0.00, 1.00),background 400ms linear}.Y5MKCd .bvUkz{animation:ae-bf 2000ms linear backwards}@keyframes ae-bf {0%{background:var(--XKMDxc)}30%{background:inherit}50%{background:inherit}100%{background:var(--XKMDxc)}}.plR5qb:hover .bvUkz{background:inherit;filter:blur(2px)}.plR5qb .bvUkz::after{content:'';top:-10px;right:-10px;bottom:-10px;left:-10px;border-radius:100px;position:absolute;background:inherit;opacity:.5}.u4Uk3c{align-items:center;display:flex;justify-content:center;position:relative;z-index:1}.PD3zdc{padding-right:4px}AI Mode",
+      "role": "link",
+      "value": "",
+      "tag_name": "button",
+      "type": "button",
+      "id": "",
+      "class_name": "plR5qb Y5MKCd",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 876,
+      "y": 254,
+      "width": 98,
+      "height": 36,
+      "center_x": 925,
+      "center_y": 272
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(925, 272)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='.plR5qb{align-self:center;background:inherit;border-radius:100px;cursor:pointer;flex-shrink:0;font-family:Google Sans,Roboto,Arial,sans-serif;font-optical-sizing:none;font-size:14px;font-weight:400;line-height:20px;margin-left:8px;padding:0 12px 0 10px;position:relative;height:36px;}.minidiv .plR5qb{height:24px}.plR5qb:hover::before{background:var(--Lm570b)}.xL0qi,.mTurwe{overflow:hidden;border-radius:100px;position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.xL0qi{opacity:0.35;filter:blur(2px)}.iydNQb{background:conic-gradient(#3186ff00 0deg,#34a853 43deg,#ffd314 65deg,#ff4641 105deg,#3186ff 144deg,#3186ff 180deg,#3186ff00 324deg,#3186ff00 360deg);height:200%;top:-50%;right:0;bottom:0;left:0;position:absolute;scale:2 1;opacity:0;transform:rotate(180deg);transition:opacity 400ms linear}.plR5qb:hover .mTurwe .iydNQb{opacity:1}.Y5MKCd .iydNQb{animation:ae-fg 2000ms linear backwards,ae-rg 2000ms cubic-bezier(0.20, 0.00, 0.00, 1.00) backwards}@keyframes ae-fg {0%{opacity:0}30%{opacity:1}50%{opacity:1}100%{opacity:0}}@keyframes ae-rg {from{transform:rotate(0deg)}to{transform:rotate(180deg)}}.bvUkz{position:absolute;top:2px;right:2px;bottom:2px;left:2px;border-radius:100px;clip-path:inset(0 0 0 0 round 100px);background:var(--XKMDxc);transition:filter 1000ms cubic-bezier(0.00, 0.00, 0.00, 1.00),background 400ms linear}.Y5MKCd .bvUkz{animation:ae-bf 2000ms linear backwards}@keyframes ae-bf {0%{background:var(--XKMDxc)}30%{background:inherit}50%{background:inherit}100%{background:var(--XKMDxc)}}.plR5qb:hover .bvUkz{background:inherit;filter:blur(2px)}.plR5qb .bvUkz::after{content:'';top:-10px;right:-10px;bottom:-10px;left:-10px;border-radius:100px;position:absolute;background:inherit;opacity:.5}.u4Uk3c{align-items:center;display:flex;justify-content:center;position:relative;z-index:1}.PD3zdc{padding-right:4px}AI Mode')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('.plR5qb{align-self:center;background:inherit;border-radius:100px;cursor:pointer;flex-shrink:0;font-family:Google Sans,Roboto,Arial,sans-serif;font-optical-sizing:none;font-size:14px;font-weight:400;line-height:20px;margin-left:8px;padding:0 12px 0 10px;position:relative;height:36px;}.minidiv .plR5qb{height:24px}.plR5qb:hover::before{background:var(--Lm570b)}.xL0qi,.mTurwe{overflow:hidden;border-radius:100px;position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.xL0qi{opacity:0.35;filter:blur(2px)}.iydNQb{background:conic-gradient(#3186ff00 0deg,#34a853 43deg,#ffd314 65deg,#ff4641 105deg,#3186ff 144deg,#3186ff 180deg,#3186ff00 324deg,#3186ff00 360deg);height:200%;top:-50%;right:0;bottom:0;left:0;position:absolute;scale:2 1;opacity:0;transform:rotate(180deg);transition:opacity 400ms linear}.plR5qb:hover .mTurwe .iydNQb{opacity:1}.Y5MKCd .iydNQb{animation:ae-fg 2000ms linear backwards,ae-rg 2000ms cubic-bezier(0.20, 0.00, 0.00, 1.00) backwards}@keyframes ae-fg {0%{opacity:0}30%{opacity:1}50%{opacity:1}100%{opacity:0}}@keyframes ae-rg {from{transform:rotate(0deg)}to{transform:rotate(180deg)}}.bvUkz{position:absolute;top:2px;right:2px;bottom:2px;left:2px;border-radius:100px;clip-path:inset(0 0 0 0 round 100px);background:var(--XKMDxc);transition:filter 1000ms cubic-bezier(0.00, 0.00, 0.00, 1.00),background 400ms linear}.Y5MKCd .bvUkz{animation:ae-bf 2000ms linear backwards}@keyframes ae-bf {0%{background:var(--XKMDxc)}30%{background:inherit}50%{background:inherit}100%{background:var(--XKMDxc)}}.plR5qb:hover .bvUkz{background:inherit;filter:blur(2px)}.plR5qb .bvUkz::after{content:'';top:-10px;right:-10px;bottom:-10px;left:-10px;border-radius:100px;position:absolute;background:inherit;opacity:.5}.u4Uk3c{align-items:center;display:flex;justify-content:center;position:relative;z-index:1}.PD3zdc{padding-right:4px}AI Mode')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('.plR5qb{align-self:center;background:inherit;border-radius:100px;cursor:pointer;flex-shrink:0;font-family:Google Sans,Roboto,Arial,sans-serif;font-optical-sizing:none;font-size:14px;font-weight:400;line-height:20px;margin-left:8px;padding:0 12px 0 10px;position:relative;height:36px;}.minidiv .plR5qb{height:24px}.plR5qb:hover::before{background:var(--Lm570b)}.xL0qi,.mTurwe{overflow:hidden;border-radius:100px;position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.xL0qi{opacity:0.35;filter:blur(2px)}.iydNQb{background:conic-gradient(#3186ff00 0deg,#34a853 43deg,#ffd314 65deg,#ff4641 105deg,#3186ff 144deg,#3186ff 180deg,#3186ff00 324deg,#3186ff00 360deg);height:200%;top:-50%;right:0;bottom:0;left:0;position:absolute;scale:2 1;opacity:0;transform:rotate(180deg);transition:opacity 400ms linear}.plR5qb:hover .mTurwe .iydNQb{opacity:1}.Y5MKCd .iydNQb{animation:ae-fg 2000ms linear backwards,ae-rg 2000ms cubic-bezier(0.20, 0.00, 0.00, 1.00) backwards}@keyframes ae-fg {0%{opacity:0}30%{opacity:1}50%{opacity:1}100%{opacity:0}}@keyframes ae-rg {from{transform:rotate(0deg)}to{transform:rotate(180deg)}}.bvUkz{position:absolute;top:2px;right:2px;bottom:2px;left:2px;border-radius:100px;clip-path:inset(0 0 0 0 round 100px);background:var(--XKMDxc);transition:filter 1000ms cubic-bezier(0.00, 0.00, 0.00, 1.00),background 400ms linear}.Y5MKCd .bvUkz{animation:ae-bf 2000ms linear backwards}@keyframes ae-bf {0%{background:var(--XKMDxc)}30%{background:inherit}50%{background:inherit}100%{background:var(--XKMDxc)}}.plR5qb:hover .bvUkz{background:inherit;filter:blur(2px)}.plR5qb .bvUkz::after{content:'';top:-10px;right:-10px;bottom:-10px;left:-10px;border-radius:100px;position:absolute;background:inherit;opacity:.5}.u4Uk3c{align-items:center;display:flex;justify-content:center;position:relative;z-index:1}.PD3zdc{padding-right:4px}AI Mode')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('button.plR5qb.Y5MKCd')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 14,
+    "element_info": {
+      "name": "Advertising",
+      "name_raw": "Advertising",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "pHiOh",
+      "href": "https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 20,
+      "y": 672,
+      "width": 100,
+      "height": 47,
+      "center_x": 70,
+      "center_y": 695
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(70, 695)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Advertising')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Advertising')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Advertising')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.pHiOh')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 15,
+    "element_info": {
+      "name": "Business",
+      "name_raw": "Business",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "pHiOh",
+      "href": "https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 120,
+      "y": 672,
+      "width": 86,
+      "height": 47,
+      "center_x": 163,
+      "center_y": 695
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(163, 695)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Business')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Business')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Business')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.pHiOh')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 16,
+    "element_info": {
+      "name": "How Search works",
+      "name_raw": "How Search works",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "pHiOh",
+      "href": "https://google.com/search/howsearchworks/?fg=1",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 207,
+      "y": 672,
+      "width": 145,
+      "height": 47,
+      "center_x": 279,
+      "center_y": 695
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(279, 695)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='How Search works')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('How Search works')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('How Search works')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.pHiOh')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 17,
+    "element_info": {
+      "name": "Applying AI towards science and the environment",
+      "name_raw": "Applying AI towards science and the environment",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "pHiOh",
+      "href": "https://ai.google/societal-impact/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 462,
+      "y": 672,
+      "width": 354,
+      "height": 47,
+      "center_x": 639,
+      "center_y": 695
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(639, 695)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Applying AI towards science and the environment')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Applying AI towards science and the environment')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Applying AI towards science and the environment')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.pHiOh')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 18,
+    "element_info": {
+      "name": "Privacy",
+      "name_raw": "Privacy",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "pHiOh",
+      "href": "https://policies.google.com/privacy?hl=en&fg=1",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 1034,
+      "y": 672,
+      "width": 75,
+      "height": 47,
+      "center_x": 1071,
+      "center_y": 695
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(1071, 695)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Privacy')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Privacy')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Privacy')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.pHiOh')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 19,
+    "element_info": {
+      "name": "Terms",
+      "name_raw": "Terms",
+      "role": "link",
+      "value": "",
+      "tag_name": "a",
+      "type": "",
+      "id": "",
+      "class_name": "pHiOh",
+      "href": "https://policies.google.com/terms?hl=en&fg=1",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 1109,
+      "y": 672,
+      "width": 69,
+      "height": 47,
+      "center_x": 1143,
+      "center_y": 695
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(1143, 695)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('link', name='Terms')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Terms')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Terms')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('a.pHiOh')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "click()",
+      "click(button='middle')",
+      "hover()"
+    ]
+  },
+  {
+    "annotation_id": 20,
+    "element_info": {
+      "name": "Search",
+      "name_raw": "Search",
+      "role": "combobox",
+      "value": "",
+      "tag_name": "textarea",
+      "type": "",
+      "id": "APjFqb",
+      "class_name": "gLFyf",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 344,
+      "y": 247,
+      "width": 440,
+      "height": 50,
+      "center_x": 564,
+      "center_y": 272
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#APjFqb')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(564, 272)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('combobox', name='Search')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('Search')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('Search')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('textarea#APjFqb.gLFyf')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": [
+      "select_option('value')",
+      "select_option(label='label')",
+      "focus()"
+    ]
+  },
+  {
+    "annotation_id": 21,
+    "element_info": {
+      "name": ".Ne6nSd{display:flex;align-items:center;padding...",
+      "name_raw": ".Ne6nSd{display:flex;align-items:center;padding:6px}a.MV3Tnb{display:inline-block;padding:5px;margin:0 5px;color:var(--YLNNHc)}a.MV3Tnb:first-of-type{margin-left:15px}.LX3sZb{display:inline-block;flex-grow:1}AboutStoreGmailImagesSign in",
+      "role": "navigation",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "o3j99 n1xJcf Ne6nSd",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 60,
+      "center_x": 640,
+      "center_y": 30
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(640, 30)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('navigation', name='.Ne6nSd{display:flex;align-items:center;padding:6px}a.MV3Tnb{display:inline-block;padding:5px;margin:0 5px;color:var(--YLNNHc)}a.MV3Tnb:first-of-type{margin-left:15px}.LX3sZb{display:inline-block;flex-grow:1}AboutStoreGmailImagesSign in')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('.Ne6nSd{display:flex;align-items:center;padding:6px}a.MV3Tnb{display:inline-block;padding:5px;margin:0 5px;color:var(--YLNNHc)}a.MV3Tnb:first-of-type{margin-left:15px}.LX3sZb{display:inline-block;flex-grow:1}AboutStoreGmailImagesSign in')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('.Ne6nSd{display:flex;align-items:center;padding:6px}a.MV3Tnb{display:inline-block;padding:5px;margin:0 5px;color:var(--YLNNHc)}a.MV3Tnb:first-of-type{margin-left:15px}.LX3sZb{display:inline-block;flex-grow:1}AboutStoreGmailImagesSign in')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.o3j99.n1xJcf.Ne6nSd')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 22,
+    "element_info": {
+      "name": ".c93Gbe{background:#f2f2f2}.uU7dJb{padding:15px...",
+      "name_raw": ".c93Gbe{background:#f2f2f2}.uU7dJb{padding:15px 30px;border-bottom:1px solid var(--gS5jXb);font-size:15px;color:var(--YLNNHc);display:flex;flex-wrap:wrap;justify-content:space-between}.Wymece{justify-content:flex-end}.SSwjIe{padding:0 20px}.KxwPGc{display:flex;flex-wrap:wrap;justify-content:space-between}@media only screen and (max-width:1200px){.KxwPGc{justify-content:space-evenly}}.pHiOh{display:block;padding:15px;white-space:nowrap}.pHiOh,a.pHiOh{color:var(--YLNNHc)}.ktLKi{white-space:nowrap;vertical-align:top}.Pb9hCb{height:14px;margin-right:6px}.ssOUyb{order:2}@media only screen and (max-width:1200px){.ssOUyb{order:0;width:100%;justify-content:center}}.waLeGd .ssOUyb{order:0;width:100%;justify-content:center}.AghGtd{justify-content:flex-start;min-width:30%;order:1}.iTjxkf{justify-content:flex-end;min-width:30%;order:3}AdvertisingBusiness How Search works Applying AI towards science and the environmentPrivacyTerms.ayzqOc:hover{text-decoration:underline}.cF4V5c{background-color:var(--xhUGwc)}.cF4V5c g-menu-item{display:block;font-size:14px;line-height:23px;white-space:nowrap}.cF4V5c g-menu-item a,.cF4V5c .y0fQ9c{display:block;padding-top:4px;padding-bottom:4px;cursor:pointer}.cF4V5c g-menu-item a,.cF4V5c g-menu-item a:visited,.cF4V5c g-menu-item a:hover{text-decoration:inherit;color:inherit}SettingsSearch settingsAdvanced searchYour data in SearchSearch historySearch helpSend feedback.tFYjZe{align-items:center;display:flex;justify-content:space-between;padding-bottom:4px;padding-top:4px}.tFYjZe:hover .iOHNLb,.tFYjZe:focus .iOHNLb{opacity:1}.iOHNLb{color:var(--amnPwe);height:20px;margin-top:-2px;opacity:0;width:20px}Dark theme: Off",
+      "role": "contentinfo",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "",
+      "class_name": "c93Gbe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 0,
+      "y": 672,
+      "width": 1280,
+      "height": 47,
+      "center_x": 640,
+      "center_y": 695
+    },
+    "playwright_selectors": [
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(640, 695)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('contentinfo', name='.c93Gbe{background:#f2f2f2}.uU7dJb{padding:15px 30px;border-bottom:1px solid var(--gS5jXb);font-size:15px;color:var(--YLNNHc);display:flex;flex-wrap:wrap;justify-content:space-between}.Wymece{justify-content:flex-end}.SSwjIe{padding:0 20px}.KxwPGc{display:flex;flex-wrap:wrap;justify-content:space-between}@media only screen and (max-width:1200px){.KxwPGc{justify-content:space-evenly}}.pHiOh{display:block;padding:15px;white-space:nowrap}.pHiOh,a.pHiOh{color:var(--YLNNHc)}.ktLKi{white-space:nowrap;vertical-align:top}.Pb9hCb{height:14px;margin-right:6px}.ssOUyb{order:2}@media only screen and (max-width:1200px){.ssOUyb{order:0;width:100%;justify-content:center}}.waLeGd .ssOUyb{order:0;width:100%;justify-content:center}.AghGtd{justify-content:flex-start;min-width:30%;order:1}.iTjxkf{justify-content:flex-end;min-width:30%;order:3}AdvertisingBusiness How Search works Applying AI towards science and the environmentPrivacyTerms.ayzqOc:hover{text-decoration:underline}.cF4V5c{background-color:var(--xhUGwc)}.cF4V5c g-menu-item{display:block;font-size:14px;line-height:23px;white-space:nowrap}.cF4V5c g-menu-item a,.cF4V5c .y0fQ9c{display:block;padding-top:4px;padding-bottom:4px;cursor:pointer}.cF4V5c g-menu-item a,.cF4V5c g-menu-item a:visited,.cF4V5c g-menu-item a:hover{text-decoration:inherit;color:inherit}SettingsSearch settingsAdvanced searchYour data in SearchSearch historySearch helpSend feedback.tFYjZe{align-items:center;display:flex;justify-content:space-between;padding-bottom:4px;padding-top:4px}.tFYjZe:hover .iOHNLb,.tFYjZe:focus .iOHNLb{opacity:1}.iOHNLb{color:var(--amnPwe);height:20px;margin-top:-2px;opacity:0;width:20px}Dark theme: Off')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('.c93Gbe{background:#f2f2f2}.uU7dJb{padding:15px 30px;border-bottom:1px solid var(--gS5jXb);font-size:15px;color:var(--YLNNHc);display:flex;flex-wrap:wrap;justify-content:space-between}.Wymece{justify-content:flex-end}.SSwjIe{padding:0 20px}.KxwPGc{display:flex;flex-wrap:wrap;justify-content:space-between}@media only screen and (max-width:1200px){.KxwPGc{justify-content:space-evenly}}.pHiOh{display:block;padding:15px;white-space:nowrap}.pHiOh,a.pHiOh{color:var(--YLNNHc)}.ktLKi{white-space:nowrap;vertical-align:top}.Pb9hCb{height:14px;margin-right:6px}.ssOUyb{order:2}@media only screen and (max-width:1200px){.ssOUyb{order:0;width:100%;justify-content:center}}.waLeGd .ssOUyb{order:0;width:100%;justify-content:center}.AghGtd{justify-content:flex-start;min-width:30%;order:1}.iTjxkf{justify-content:flex-end;min-width:30%;order:3}AdvertisingBusiness How Search works Applying AI towards science and the environmentPrivacyTerms.ayzqOc:hover{text-decoration:underline}.cF4V5c{background-color:var(--xhUGwc)}.cF4V5c g-menu-item{display:block;font-size:14px;line-height:23px;white-space:nowrap}.cF4V5c g-menu-item a,.cF4V5c .y0fQ9c{display:block;padding-top:4px;padding-bottom:4px;cursor:pointer}.cF4V5c g-menu-item a,.cF4V5c g-menu-item a:visited,.cF4V5c g-menu-item a:hover{text-decoration:inherit;color:inherit}SettingsSearch settingsAdvanced searchYour data in SearchSearch historySearch helpSend feedback.tFYjZe{align-items:center;display:flex;justify-content:space-between;padding-bottom:4px;padding-top:4px}.tFYjZe:hover .iOHNLb,.tFYjZe:focus .iOHNLb{opacity:1}.iOHNLb{color:var(--amnPwe);height:20px;margin-top:-2px;opacity:0;width:20px}Dark theme: Off')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('.c93Gbe{background:#f2f2f2}.uU7dJb{padding:15px 30px;border-bottom:1px solid var(--gS5jXb);font-size:15px;color:var(--YLNNHc);display:flex;flex-wrap:wrap;justify-content:space-between}.Wymece{justify-content:flex-end}.SSwjIe{padding:0 20px}.KxwPGc{display:flex;flex-wrap:wrap;justify-content:space-between}@media only screen and (max-width:1200px){.KxwPGc{justify-content:space-evenly}}.pHiOh{display:block;padding:15px;white-space:nowrap}.pHiOh,a.pHiOh{color:var(--YLNNHc)}.ktLKi{white-space:nowrap;vertical-align:top}.Pb9hCb{height:14px;margin-right:6px}.ssOUyb{order:2}@media only screen and (max-width:1200px){.ssOUyb{order:0;width:100%;justify-content:center}}.waLeGd .ssOUyb{order:0;width:100%;justify-content:center}.AghGtd{justify-content:flex-start;min-width:30%;order:1}.iTjxkf{justify-content:flex-end;min-width:30%;order:3}AdvertisingBusiness How Search works Applying AI towards science and the environmentPrivacyTerms.ayzqOc:hover{text-decoration:underline}.cF4V5c{background-color:var(--xhUGwc)}.cF4V5c g-menu-item{display:block;font-size:14px;line-height:23px;white-space:nowrap}.cF4V5c g-menu-item a,.cF4V5c .y0fQ9c{display:block;padding-top:4px;padding-bottom:4px;cursor:pointer}.cF4V5c g-menu-item a,.cF4V5c g-menu-item a:visited,.cF4V5c g-menu-item a:hover{text-decoration:inherit;color:inherit}SettingsSearch settingsAdvanced searchYour data in SearchSearch historySearch helpSend feedback.tFYjZe{align-items:center;display:flex;justify-content:space-between;padding-bottom:4px;padding-top:4px}.tFYjZe:hover .iOHNLb,.tFYjZe:focus .iOHNLb{opacity:1}.iOHNLb{color:var(--amnPwe);height:20px;margin-top:-2px;opacity:0;width:20px}Dark theme: Off')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div.c93Gbe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  }
+]

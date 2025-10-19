@@ -12,7 +12,7 @@ import { useToast } from "@/hooks/use-toast"
 import { TestSettingsModal } from "@/components/test-settings-modal"
 import { TestResultsModal } from "@/components/test-results-modal"
 import { Play, Settings, Copy, Trash2, CheckSquare, Square } from "lucide-react"
-import { sendTestToBackend, formatTestDataForBackend } from "@/lib/api"
+import { sendTestToBackend, formatTestDataForBackend, parseBackendTestResult, startTestPolling, type TestStatusResponse } from "@/lib/api"
 import type { Test, TestHistory, TestResult, TestStep } from "@/lib/types"
 
 const STORAGE_KEY = "tm_dashboard_v0_tests"
@@ -31,6 +31,8 @@ export function TestDashboard() {
   const [settingsModalTest, setSettingsModalTest] = useState<Test | null>(null)
   const [resultsModalTest, setResultsModalTest] = useState<Test | null>(null)
   const [runningTests, setRunningTests] = useState<Set<string>>(new Set())
+  const [testStatuses, setTestStatuses] = useState<Record<string, TestStatusResponse>>({})
+  const [pollingStoppers, setPollingStoppers] = useState<Record<string, () => void>>({})
   const { toast } = useToast()
 
   useEffect(() => {
@@ -43,6 +45,13 @@ export function TestDashboard() {
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(tests))
   }, [tests])
+
+  // Cleanup polling on unmount
+  useEffect(() => {
+    return () => {
+      Object.values(pollingStoppers).forEach(stop => stop())
+    }
+  }, [pollingStoppers])
 
   const createTest = () => {
     if (!newTest.name.trim()) {
@@ -179,80 +188,119 @@ export function TestDashboard() {
       return
     }
 
+    if (!backendResponse.job_id) {
+      toast({
+        title: "Error",
+        description: "No job ID received from backend",
+        variant: "destructive",
+      })
+      return
+    }
+
     toast({
       title: "Test sent to backend",
       description: backendResponse.message || "Test is being processed",
     })
 
-    // Simulate test execution (this will be replaced by actual backend response)
-    await new Promise((resolve) => setTimeout(resolve, 3000))
+    // Start polling for test updates
+    const stopPolling = startTestPolling(
+      backendResponse.job_id,
+      // onUpdate callback
+      (status: TestStatusResponse) => {
+        setTestStatuses(prev => ({ ...prev, [test.id]: status }))
+        
+        // Update test with current progress
+        const progressTest = { 
+          ...test, 
+          status: status.status === 'running' ? "running" as const : 
+                  status.status === 'completed' ? "completed" as const : 
+                  "draft" as const
+        }
+        setTests(tests.map((t) => (t.id === test.id ? progressTest : t)))
+        
+        // Show progress toast
+        if (status.message) {
+          toast({
+            title: "Test Progress",
+            description: status.message,
+            duration: 2000,
+          })
+        }
+      },
+      // onComplete callback
+      (results) => {
+        const parsedResults = parseBackendTestResult(results)
+        
+        const historyEntry: TestHistory = {
+          id: Date.now().toString(),
+          runDate: new Date().toISOString(),
+          passRate: parsedResults.passRate,
+          totalSteps: parsedResults.totalSteps,
+          passed: parsedResults.passed,
+          failed: parsedResults.failed,
+          status: parsedResults.passRate >= 80 ? "passed" : "failed",
+          breakdown: parsedResults.breakdown,
+          issues: parsedResults.issues,
+          steps: parsedResults.steps,
+        }
 
-    const testSteps = generateTestSteps(test)
-    const totalSteps = testSteps.length
-    const failedStepsCount = Math.floor(Math.random() * 3) // 0-2 failed steps
-    const passedStepsCount = totalSteps - failedStepsCount
-    const passRate = Math.floor((passedStepsCount / totalSteps) * 100)
+        const updatedHistory = [historyEntry, ...(test.history || [])].slice(0, 10)
 
-    const stepsWithStatus = testSteps.map((step, index) => ({
-      ...step,
-      status: (index < totalSteps - failedStepsCount ? "passed" : "failed") as "passed" | "failed",
-    }))
+        const completedTest = {
+          ...test,
+          status: "completed" as const,
+          passRate: parsedResults.passRate,
+          results: parsedResults,
+          history: updatedHistory,
+        }
+        
+        setTests(tests.map((t) => (t.id === test.id ? completedTest : t)))
+        setRunningTests(prev => {
+          const newSet = new Set(prev)
+          newSet.delete(test.id)
+          return newSet
+        })
 
-    const results: TestResult = {
-      totalSteps,
-      passed: passedStepsCount,
-      failed: failedStepsCount,
-      passRate,
-      breakdown: test.browsers.flatMap((browser) =>
-        test.devices.map((device) => ({
-          browser,
-          device,
-          status: (Math.random() > 0.15 ? "passed" : "failed") as "passed" | "failed",
-        })),
-      ),
-      issues:
-        failedStepsCount > 0
-          ? [
-              "Expected 5 remaining POI elements (places only, not hotels), but found 8",
-              "Timeout waiting for element to be visible",
-            ]
-          : [],
-      steps: stepsWithStatus,
-    }
+        // Clean up polling
+        setPollingStoppers(prev => {
+          const newStoppers = { ...prev }
+          delete newStoppers[test.id]
+          return newStoppers
+        })
 
-    const historyEntry: TestHistory = {
-      id: Date.now().toString(),
-      runDate: new Date().toISOString(),
-      passRate,
-      totalSteps,
-      passed: passedStepsCount,
-      failed: failedStepsCount,
-      status: passRate >= 80 ? "passed" : "failed",
-      breakdown: results.breakdown,
-      issues: results.issues,
-      steps: stepsWithStatus,
-    }
+        toast({
+          title: parsedResults.passRate >= 80 ? "✅ Test completed successfully!" : "⚠️ Test completed with failures",
+          description: `Pass rate: ${parsedResults.passRate}%`,
+        })
+      },
+      // onError callback
+      (error) => {
+        toast({
+          title: "Test Error",
+          description: error,
+          variant: "destructive",
+        })
+        
+        // Reset test status to draft on error
+        const errorTest = { ...test, status: "draft" as const }
+        setTests(tests.map((t) => (t.id === test.id ? errorTest : t)))
+        setRunningTests(prev => {
+          const newSet = new Set(prev)
+          newSet.delete(test.id)
+          return newSet
+        })
 
-    const updatedHistory = [historyEntry, ...(test.history || [])].slice(0, 10)
+        // Clean up polling
+        setPollingStoppers(prev => {
+          const newStoppers = { ...prev }
+          delete newStoppers[test.id]
+          return newStoppers
+        })
+      }
+    )
 
-    const completedTest = {
-      ...test,
-      status: "completed" as const,
-      passRate,
-      results,
-      history: updatedHistory,
-    }
-    setTests(tests.map((t) => (t.id === test.id ? completedTest : t)))
-    setRunningTests(prev => {
-      const newSet = new Set(prev)
-      newSet.delete(test.id)
-      return newSet
-    })
-
-    toast({
-      title: passRate >= 80 ? "✅ Test completed successfully!" : "⚠️ Test completed with failures",
-      description: `Pass rate: ${passRate}%`,
-    })
+    // Store the stop function
+    setPollingStoppers(prev => ({ ...prev, [test.id]: stopPolling }))
   }
 
   const runSelectedTests = async () => {
@@ -438,7 +486,23 @@ export function TestDashboard() {
                             </Badge>
                           )}
                           {test.status === "running" && (
-                            <Badge className="bg-warning/15 text-warning border-warning/30 font-medium">Running</Badge>
+                            <div className="flex flex-col items-end gap-1">
+                              <Badge className="bg-warning/15 text-warning border-warning/30 font-medium">
+                                Running
+                              </Badge>
+                              {testStatuses[test.id] && (
+                                <div className="text-xs text-muted-foreground">
+                                  {testStatuses[test.id].progress && (
+                                    <span>{testStatuses[test.id].progress}%</span>
+                                  )}
+                                  {testStatuses[test.id].message && (
+                                    <div className="max-w-32 truncate" title={testStatuses[test.id].message}>
+                                      {testStatuses[test.id].message}
+                                    </div>
+                                  )}
+                                </div>
+                              )}
+                            </div>
                           )}
                           {test.status === "completed" && (
                             <Badge

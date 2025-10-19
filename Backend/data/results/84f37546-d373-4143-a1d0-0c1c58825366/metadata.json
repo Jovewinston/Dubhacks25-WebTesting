@@ -1,0 +1,165 @@
+{
+  "episode_name": "type_hello_on_google_search_bar",
+  "task": "Type hello on google search bar",
+  "url": "https://www.google.com",
+  "steps": "1. Click on the search bar, 2. Type Hello",
+  "expected_behavior": "You should see hello in the search bar",
+  "combinations": [
+    {
+      "goal": "Type hello on google search bar",
+      "eps_name": "type_hello_on_google_search_bar/mobile_webkit",
+      "task": {
+        "steps": [
+          "Click on the Google search bar (the combobox labeled 'Search') to focus it.",
+          "Type 'hello' into the Google search bar after it has been clicked/focused."
+        ]
+      },
+      "start_url": "https://www.google.com",
+      "browser_context": {
+        "os": "darwin",
+        "viewport": "375x667",
+        "cookies_enabled": true
+      },
+      "success": true,
+      "total_steps": 2,
+      "runtime_sec": 19.538459062576294,
+      "total_tokens": 10915,
+      "gpt_output": "The word 'hello' appears in the Google search bar, and relevant suggestions are shown below.",
+      "wrong_behavior": false,
+      "explanation": "The screenshot confirms that 'hello' has been typed into the Google search bar, as requested. The query is visible and the autocomplete suggestions appear, matching the expected behavior.",
+      "expected_behavior": "You should see hello in the search bar",
+      "device": "mobile",
+      "browser": "webkit"
+    },
+    {
+      "goal": "Type hello on google search bar",
+      "eps_name": "type_hello_on_google_search_bar/desktop_chromium",
+      "task": {
+        "steps": [
+          "Click on the Google search bar (combobox with name 'Search') to focus it before typing.",
+          "Type 'hello' into the Google search bar after it has been focused."
+        ]
+      },
+      "start_url": "https://www.google.com",
+      "browser_context": {
+        "os": "darwin",
+        "viewport": "1280x720",
+        "cookies_enabled": true
+      },
+      "success": true,
+      "total_steps": 2,
+      "runtime_sec": 20.135738849639893,
+      "total_tokens": 11638,
+      "gpt_output": "The word 'hello' appears in the Google search bar as intended.",
+      "wrong_behavior": false,
+      "explanation": "The search bar contains the text 'hello', matching the expected behavior that 'hello' should be seen in the search bar.",
+      "expected_behavior": "You should see hello in the search bar",
+      "device": "desktop",
+      "browser": "chromium"
+    },
+    {
+      "goal": "Type hello on google search bar",
+      "eps_name": "type_hello_on_google_search_bar/desktop_webkit",
+      "task": {
+        "steps": [
+          "Click on the search bar (combobox labeled 'Search') to focus it so that we can type 'hello'.",
+          "Type the text 'hello' into the Google search bar after it has been clicked and focused."
+        ]
+      },
+      "start_url": "https://www.google.com",
+      "browser_context": {
+        "os": "darwin",
+        "viewport": "1280x720",
+        "cookies_enabled": true
+      },
+      "success": true,
+      "total_steps": 2,
+      "runtime_sec": 19.624806880950928,
+      "total_tokens": 11652,
+      "gpt_output": "The search bar on Google has 'hello' typed into it.",
+      "wrong_behavior": false,
+      "explanation": "Both steps—clicking the search bar and typing 'hello'—have been executed as required. The screenshot confirms that 'hello' is present in the search bar, matching the expected behavior.",
+      "expected_behavior": "You should see hello in the search bar",
+      "device": "desktop",
+      "browser": "webkit"
+    },
+    {
+      "goal": "Type hello on google search bar",
+      "eps_name": "type_hello_on_google_search_bar/mobile_chromium",
+      "task": {
+        "steps": [
+          "Click on the visible 'Search' combobox (the main Google search bar) to focus the input field.",
+          "Type 'hello' in the Google search bar, assuming the search bar has already been focused."
+        ]
+      },
+      "start_url": "https://www.google.com",
+      "browser_context": {
+        "os": "darwin",
+        "viewport": "375x667",
+        "cookies_enabled": true
+      },
+      "success": true,
+      "total_steps": 2,
+      "runtime_sec": 19.67305588722229,
+      "total_tokens": 10832,
+      "gpt_output": "'hello' is visible in the search bar and the suggestions are shown under the search input as expected.",
+      "wrong_behavior": false,
+      "explanation": "The task executed matches the expected behavior because 'hello' appears in the Google search bar, and the relevant search suggestions are shown, confirming the text was entered successfully.",
+      "expected_behavior": "You should see hello in the search bar",
+      "device": "mobile",
+      "browser": "chromium"
+    },
+    {
+      "goal": "Type hello on google search bar",
+      "eps_name": "type_hello_on_google_search_bar/mobile_firefox",
+      "task": {
+        "steps": [
+          "Click on the search bar (combobox labeled 'Search') to focus it.",
+          "Type 'hello' into the Google search bar after it has been clicked and focused."
+        ]
+      },
+      "start_url": "https://www.google.com",
+      "browser_context": {
+        "os": "darwin",
+        "viewport": "375x667",
+        "cookies_enabled": true
+      },
+      "success": true,
+      "total_steps": 2,
+      "runtime_sec": 30.648709297180176,
+      "total_tokens": 11403,
+      "gpt_output": "The word 'hello' is visible in the Google search bar as expected.",
+      "wrong_behavior": false,
+      "explanation": "The screenshot shows that 'hello' has been typed into the search bar, matching the expected behavior of having 'hello' present in the search input.",
+      "expected_behavior": "You should see hello in the search bar",
+      "device": "mobile",
+      "browser": "firefox"
+    },
+    {
+      "goal": "Type hello on google search bar",
+      "eps_name": "type_hello_on_google_search_bar/desktop_firefox",
+      "task": {
+        "steps": [
+          "Click on the Google search bar (combobox labeled 'Search') to focus it.",
+          "Type the text 'hello' into the focused Google search bar."
+        ]
+      },
+      "start_url": "https://www.google.com",
+      "browser_context": {
+        "os": "darwin",
+        "viewport": "1280x720",
+        "cookies_enabled": true
+      },
+      "success": true,
+      "total_steps": 2,
+      "runtime_sec": 43.17397689819336,
+      "total_tokens": 11506,
+      "gpt_output": "'hello' is visible in the Google search bar as expected.",
+      "wrong_behavior": false,
+      "explanation": "The task was completed correctly: 'hello' has been typed in the search bar, and it is visible as intended, matching the expected behavior.",
+      "expected_behavior": "You should see hello in the search bar",
+      "device": "desktop",
+      "browser": "firefox"
+    }
+  ]
+}
