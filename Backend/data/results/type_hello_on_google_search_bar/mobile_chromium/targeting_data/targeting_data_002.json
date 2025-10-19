@@ -189,16 +189,16 @@
     },
     "bounding_box": {
       "x": 60,
-      "y": 642,
+      "y": 638,
       "width": 127,
       "height": 36,
       "center_x": 123,
-      "center_y": 660
+      "center_y": 656
     },
     "playwright_selectors": [
       {
         "type": "coordinates",
-        "selector": "page.mouse.click(123, 660)",
+        "selector": "page.mouse.click(123, 656)",
         "priority": "high"
       },
       {
@@ -246,16 +246,16 @@
     },
     "bounding_box": {
       "x": 199,
-      "y": 642,
+      "y": 638,
       "width": 140,
       "height": 36,
       "center_x": 269,
-      "center_y": 660
+      "center_y": 656
     },
     "playwright_selectors": [
       {
         "type": "coordinates",
-        "selector": "page.mouse.click(269, 660)",
+        "selector": "page.mouse.click(269, 656)",
         "priority": "high"
       },
       {
@@ -807,8 +807,8 @@
   {
     "annotation_id": 14,
     "element_info": {
-      "name": "death valley george strait concert",
-      "name_raw": "death valley george strait concert",
+      "name": "byu nebraska basketball exhibition",
+      "name_raw": "byu nebraska basketball exhibition",
       "role": "option",
       "value": "",
       "tag_name": "div",
@@ -841,17 +841,17 @@
       },
       {
         "type": "role_name",
-        "selector": "page.get_by_role('option', name='death valley george strait concert')",
+        "selector": "page.get_by_role('option', name='byu nebraska basketball exhibition')",
         "priority": "high"
       },
       {
         "type": "label",
-        "selector": "page.get_by_label('death valley george strait concert')",
+        "selector": "page.get_by_label('byu nebraska basketball exhibition')",
         "priority": "high"
       },
       {
         "type": "text",
-        "selector": "page.get_by_text('death valley george strait concert')",
+        "selector": "page.get_by_text('byu nebraska basketball exhibition')",
         "priority": "medium"
       },
       {
@@ -865,8 +865,8 @@
   {
     "annotation_id": 15,
     "element_info": {
-      "name": "kansas city chiefs josh simmons",
-      "name_raw": "kansas city chiefs josh simmons",
+      "name": "t mobile discontinue perk",
+      "name_raw": "t mobile discontinue perk",
       "role": "option",
       "value": "",
       "tag_name": "div",
@@ -899,17 +899,17 @@
       },
       {
         "type": "role_name",
-        "selector": "page.get_by_role('option', name='kansas city chiefs josh simmons')",
+        "selector": "page.get_by_role('option', name='t mobile discontinue perk')",
         "priority": "high"
       },
       {
         "type": "label",
-        "selector": "page.get_by_label('kansas city chiefs josh simmons')",
+        "selector": "page.get_by_label('t mobile discontinue perk')",
         "priority": "high"
       },
       {
         "type": "text",
-        "selector": "page.get_by_text('kansas city chiefs josh simmons')",
+        "selector": "page.get_by_text('t mobile discontinue perk')",
         "priority": "medium"
       },
       {
@@ -923,8 +923,8 @@
   {
     "annotation_id": 16,
     "element_info": {
-      "name": "battlefield 6 multiplayer",
-      "name_raw": "battlefield 6 multiplayer",
+      "name": "social security cola increase 2026",
+      "name_raw": "social security cola increase 2026",
       "role": "option",
       "value": "",
       "tag_name": "div",
@@ -940,9 +940,9 @@
       "x": 68,
       "y": 349,
       "width": 292,
-      "height": 32,
+      "height": 20,
       "center_x": 214,
-      "center_y": 365
+      "center_y": 359
     },
     "playwright_selectors": [
       {
@@ -952,22 +952,22 @@
       },
       {
         "type": "coordinates",
-        "selector": "page.mouse.click(214, 365)",
+        "selector": "page.mouse.click(214, 359)",
         "priority": "high"
       },
       {
         "type": "role_name",
-        "selector": "page.get_by_role('option', name='battlefield 6 multiplayer')",
+        "selector": "page.get_by_role('option', name='social security cola increase 2026')",
         "priority": "high"
       },
       {
         "type": "label",
-        "selector": "page.get_by_label('battlefield 6 multiplayer')",
+        "selector": "page.get_by_label('social security cola increase 2026')",
         "priority": "high"
       },
       {
         "type": "text",
-        "selector": "page.get_by_text('battlefield 6 multiplayer')",
+        "selector": "page.get_by_text('social security cola increase 2026')",
         "priority": "medium"
       },
       {
@@ -981,8 +981,8 @@
   {
     "annotation_id": 17,
     "element_info": {
-      "name": "ufc fight night reinier de ridder",
-      "name_raw": "ufc fight night reinier de ridder",
+      "name": "see comet",
+      "name_raw": "see comet",
       "role": "option",
       "value": "",
       "tag_name": "div",
@@ -996,11 +996,11 @@
     },
     "bounding_box": {
       "x": 68,
-      "y": 393,
+      "y": 381,
       "width": 292,
       "height": 20,
       "center_x": 214,
-      "center_y": 403
+      "center_y": 391
     },
     "playwright_selectors": [
       {
@@ -1010,22 +1010,22 @@
       },
       {
         "type": "coordinates",
-        "selector": "page.mouse.click(214, 403)",
+        "selector": "page.mouse.click(214, 391)",
         "priority": "high"
       },
       {
         "type": "role_name",
-        "selector": "page.get_by_role('option', name='ufc fight night reinier de ridder')",
+        "selector": "page.get_by_role('option', name='see comet')",
         "priority": "high"
       },
       {
         "type": "label",
-        "selector": "page.get_by_label('ufc fight night reinier de ridder')",
+        "selector": "page.get_by_label('see comet')",
         "priority": "high"
       },
       {
         "type": "text",
-        "selector": "page.get_by_text('ufc fight night reinier de ridder')",
+        "selector": "page.get_by_text('see comet')",
         "priority": "medium"
       },
       {
@@ -1038,6 +1038,64 @@
   },
   {
     "annotation_id": 18,
+    "element_info": {
+      "name": "paul mccartney concert review",
+      "name_raw": "paul mccartney concert review",
+      "role": "option",
+      "value": "",
+      "tag_name": "div",
+      "type": "",
+      "id": "sBQTL",
+      "class_name": "lnnVSe",
+      "href": "",
+      "disabled": false,
+      "checked": null,
+      "selected": null
+    },
+    "bounding_box": {
+      "x": 68,
+      "y": 413,
+      "width": 292,
+      "height": 20,
+      "center_x": 214,
+      "center_y": 423
+    },
+    "playwright_selectors": [
+      {
+        "type": "id",
+        "selector": "page.locator('#sBQTL')",
+        "priority": "high"
+      },
+      {
+        "type": "coordinates",
+        "selector": "page.mouse.click(214, 423)",
+        "priority": "high"
+      },
+      {
+        "type": "role_name",
+        "selector": "page.get_by_role('option', name='paul mccartney concert review')",
+        "priority": "high"
+      },
+      {
+        "type": "label",
+        "selector": "page.get_by_label('paul mccartney concert review')",
+        "priority": "high"
+      },
+      {
+        "type": "text",
+        "selector": "page.get_by_text('paul mccartney concert review')",
+        "priority": "medium"
+      },
+      {
+        "type": "css_combined",
+        "selector": "page.locator('div#sBQTL.lnnVSe')",
+        "priority": "medium"
+      }
+    ],
+    "interaction_suggestions": []
+  },
+  {
+    "annotation_id": 19,
     "element_info": {
       "name": ".Ne6nSd{display:flex;align-items:center;padding...",
       "name_raw": ".Ne6nSd{display:flex;align-items:center;padding:6px}a.MV3Tnb{display:inline-block;padding:5px;margin:0 5px;color:var(--YLNNHc)}a.MV3Tnb:first-of-type{margin-left:15px}.LX3sZb{display:inline-block;flex-grow:1}AboutStoreGmailImagesSign in",

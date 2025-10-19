@@ -1,5 +1,5 @@
 Step: 1
-Current Goal: Type 'hello' in the Google search bar
+Current Goal: Type hello on google search bar
 URL: https://www.google.com
 Task Goal: Type hello on google search bar
 
@@ -40,199 +40,206 @@ Available Interactive Elements:
     "role": "button",
     "name": "Google Search",
     "x": 562,
-    "y": 701
+    "y": 674
   },
   {
     "annotation_id": "4",
     "role": "button",
     "name": "I\\'m Feeling Lucky",
     "x": 709,
-    "y": 701
+    "y": 674
   },
   {
     "annotation_id": "5",
+    "role": "button",
+    "name": "Report inappropriate predictions",
+    "x": 885,
+    "y": 709
+  },
+  {
+    "annotation_id": "6",
     "role": "button",
     "name": "Settings",
     "x": 1219,
     "y": 695
   },
   {
-    "annotation_id": "6",
+    "annotation_id": "7",
     "role": "button",
     "name": "Stay signed out",
     "x": 1004,
     "y": 614
   },
   {
-    "annotation_id": "7",
+    "annotation_id": "8",
     "role": "button",
     "name": "Sign in",
     "x": 1154,
     "y": 614
   },
   {
-    "annotation_id": "8",
+    "annotation_id": "9",
     "role": "link",
     "name": "About",
     "x": 44,
     "y": 29
   },
   {
-    "annotation_id": "9",
+    "annotation_id": "10",
     "role": "link",
     "name": "Store",
     "x": 98,
     "y": 29
   },
   {
-    "annotation_id": "10",
+    "annotation_id": "11",
     "role": "link",
     "name": "Gmail",
     "x": 1046,
     "y": 27
   },
   {
-    "annotation_id": "11",
+    "annotation_id": "12",
     "role": "link",
     "name": "Search for Images",
     "x": 1100,
     "y": 27
   },
   {
-    "annotation_id": "12",
+    "annotation_id": "13",
     "role": "link",
     "name": "Sign in",
     "x": 1227,
     "y": 27
   },
   {
-    "annotation_id": "13",
+    "annotation_id": "14",
     "role": "link",
     "name": ".plR5qb{align-self:center;background:inherit;bo...",
     "x": 926,
     "y": 271
   },
   {
-    "annotation_id": "14",
+    "annotation_id": "15",
     "role": "link",
     "name": "Advertising",
     "x": 69,
     "y": 695
   },
   {
-    "annotation_id": "15",
+    "annotation_id": "16",
     "role": "link",
     "name": "Business",
     "x": 162,
     "y": 695
   },
   {
-    "annotation_id": "16",
+    "annotation_id": "17",
     "role": "link",
     "name": "How Search works",
     "x": 279,
     "y": 695
   },
   {
-    "annotation_id": "17",
+    "annotation_id": "18",
     "role": "link",
     "name": "Privacy",
     "x": 1072,
     "y": 695
   },
   {
-    "annotation_id": "18",
+    "annotation_id": "19",
     "role": "link",
     "name": "Terms",
     "x": 1145,
     "y": 695
   },
   {
-    "annotation_id": "19",
+    "annotation_id": "20",
     "role": "combobox",
     "name": "Search",
     "x": 564,
     "y": 271
   },
   {
-    "annotation_id": "20",
-    "role": "listbox",
-    "name": "amelia greys anatomyAmelia Shepherd \u2014 Fictional...",
-    "x": 640,
-    "y": 498
-  },
-  {
     "annotation_id": "21",
-    "role": "option",
-    "name": "amelia greys anatomy",
-    "x": 654,
-    "y": 354
+    "role": "listbox",
+    "name": "byu nebraska basketball exhibition.MagqMc .ZFiw...",
+    "x": 640,
+    "y": 484
   },
   {
     "annotation_id": "22",
     "role": "option",
-    "name": "ohio state buckeyes football",
+    "name": "byu nebraska basketball exhibition",
     "x": 654,
-    "y": 398
+    "y": 347
   },
   {
     "annotation_id": "23",
     "role": "option",
-    "name": "stimulus checks",
+    "name": "t mobile discontinue perk",
     "x": 654,
-    "y": 435
+    "y": 377
   },
   {
     "annotation_id": "24",
     "role": "option",
-    "name": "government shutdown",
+    "name": "social security cola increase 2026",
     "x": 654,
-    "y": 465
+    "y": 408
   },
   {
     "annotation_id": "25",
     "role": "option",
-    "name": "six kings slam tennis tournament",
+    "name": "southwest florida international airport",
     "x": 654,
-    "y": 496
+    "y": 438
   },
   {
     "annotation_id": "26",
     "role": "option",
-    "name": "golden knights carter hart",
+    "name": "see comet",
     "x": 654,
-    "y": 526
+    "y": 469
   },
   {
     "annotation_id": "27",
     "role": "option",
-    "name": "2026 social security cola increase",
+    "name": "paul mccartney concert review",
     "x": 654,
-    "y": 557
+    "y": 499
   },
   {
     "annotation_id": "28",
     "role": "option",
-    "name": "h1b visas",
+    "name": "ps5 games on sale",
     "x": 654,
-    "y": 587
+    "y": 530
   },
   {
     "annotation_id": "29",
     "role": "option",
-    "name": "kpop demon hunters theaters",
+    "name": "supreme court voting rights act",
     "x": 654,
-    "y": 618
+    "y": 560
   },
   {
     "annotation_id": "30",
     "role": "option",
-    "name": "plane crashed",
+    "name": "john summit accounting to dj",
     "x": 654,
-    "y": 648
+    "y": 591
   },
   {
     "annotation_id": "31",
+    "role": "option",
+    "name": "baldur\\'s gate 3 expansion",
+    "x": 654,
+    "y": 621
+  },
+  {
+    "annotation_id": "32",
     "role": "navigation",
     "name": ".Ne6nSd{display:flex;align-items:center;padding...",
     "x": 640,

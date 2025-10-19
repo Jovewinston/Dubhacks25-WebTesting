@@ -924,8 +924,8 @@
   {
     "annotation_id": 16,
     "element_info": {
-      "name": "hello molly",
-      "name_raw": "hello molly",
+      "name": "hello india",
+      "name_raw": "hello india",
       "role": "option",
       "value": "",
       "tag_name": "div",
@@ -939,11 +939,11 @@
     },
     "bounding_box": {
       "x": 68,
-      "y": 386,
+      "y": 381,
       "width": 292,
-      "height": 18,
+      "height": 32,
       "center_x": 214,
-      "center_y": 395
+      "center_y": 397
     },
     "playwright_selectors": [
       {
@@ -953,22 +953,22 @@
       },
       {
         "type": "coordinates",
-        "selector": "page.mouse.click(214, 395)",
+        "selector": "page.mouse.click(214, 397)",
         "priority": "high"
       },
       {
         "type": "role_name",
-        "selector": "page.get_by_role('option', name='hello molly')",
+        "selector": "page.get_by_role('option', name='hello india')",
         "priority": "high"
       },
       {
         "type": "label",
-        "selector": "page.get_by_label('hello molly')",
+        "selector": "page.get_by_label('hello india')",
         "priority": "high"
       },
       {
         "type": "text",
-        "selector": "page.get_by_text('hello molly')",
+        "selector": "page.get_by_text('hello india')",
         "priority": "medium"
       },
       {

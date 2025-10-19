@@ -1,6 +1,6 @@
 [
   {
-    "url": "http://localhost:8000",
+    "url": "http://localhost:3000",
     "task": "Test the calculator app by performing various mathematical operations",
     "steps": 
       "1. Click on the number '5' button 2. Click on the '+' operator button 3. Click on the number '3' button 4. Click on the '=' button to calculate 5. Clear the display using 'C' button 6. Test multiplication by clicking '4', '×', '7', '=' 7. Test division by clicking 'C', '1', '5', '/', '3', '=' 8. Test decimal operations by clicking 'C', '2', '.', '5', '+', '1', '.', '5', '='",

@@ -10,21 +10,21 @@
     "annotation_id": "1",
     "role": "button",
     "name": "Clear",
-    "x": 760,
+    "x": 758,
     "y": 271
   },
   {
     "annotation_id": "2",
     "role": "button",
     "name": "Search by voice",
-    "x": 809,
+    "x": 807,
     "y": 271
   },
   {
     "annotation_id": "3",
     "role": "button",
     "name": "Search by image",
-    "x": 849,
+    "x": 847,
     "y": 271
   },
   {
@@ -38,14 +38,14 @@
     "annotation_id": "5",
     "role": "button",
     "name": "Stay signed out",
-    "x": 1004,
+    "x": 1000,
     "y": 614
   },
   {
     "annotation_id": "6",
     "role": "button",
     "name": "Sign in",
-    "x": 1154,
+    "x": 1153,
     "y": 614
   },
   {
@@ -87,7 +87,7 @@
     "annotation_id": "12",
     "role": "link",
     "name": ".plR5qb{align-self:center;background:inherit;bo...",
-    "x": 926,
+    "x": 925,
     "y": 271
   },
   {
@@ -129,7 +129,7 @@
     "annotation_id": "18",
     "role": "combobox",
     "name": "Search",
-    "x": 539,
+    "x": 538,
     "y": 271
   },
   {
@@ -163,16 +163,16 @@
   {
     "annotation_id": "23",
     "role": "option",
-    "name": "hello molly",
+    "name": "hello india",
     "x": 654,
-    "y": 448
+    "y": 450
   },
   {
     "annotation_id": "24",
     "role": "option",
-    "name": "hello india",
+    "name": "hello molly",
     "x": 654,
-    "y": 490
+    "y": 492
   },
   {
     "annotation_id": "25",

@@ -1,10 +1,10 @@
-Goal: Type hello in the Google search bar
+Goal: Type 'hello' in the Google search bar
 
 Previous Actions:
-  1. Click on the search bar (combobox labeled 'Search') to focus it. | Code: page.get_by_role('combobox', name='Search').click()
-  2. Type 'hello' into the Google search bar after it has been clicked and focused. | Code: page.keyboard.type('hello')
+  1. Click the search bar (combobox labeled 'Search') to focus it before typing. | Code: page.get_by_role('combobox', name='Search').click()
+  2. Type 'hello' into the focused Google search bar. | Code: page.keyboard.type('hello')
 
-Current Page: Google (https://www.google.com/)
+Current Page: Google (https://www.google.com/?zx=1760866394763&no_sw_cr=1)
 
 AX Tree:
 [
@@ -34,150 +34,115 @@ AX Tree:
     "role": "button",
     "name": "Google Search",
     "x": 122,
-    "y": 621
+    "y": 634
   },
   {
     "annotation_id": "4",
     "role": "button",
     "name": "I\\'m Feeling Lucky",
     "x": 269,
-    "y": 621
+    "y": 634
   },
   {
     "annotation_id": "5",
     "role": "button",
-    "name": "Report inappropriate predictions",
-    "x": 281,
-    "y": 656
+    "name": "Stay signed out",
+    "x": 99,
+    "y": 561
   },
   {
     "annotation_id": "6",
+    "role": "button",
+    "name": "Sign in",
+    "x": 249,
+    "y": 561
+  },
+  {
+    "annotation_id": "7",
     "role": "link",
     "name": "About",
     "x": 44,
     "y": 29
   },
   {
-    "annotation_id": "7",
+    "annotation_id": "8",
     "role": "link",
     "name": "Store",
     "x": 98,
     "y": 29
   },
   {
-    "annotation_id": "8",
+    "annotation_id": "9",
     "role": "link",
     "name": "Gmail",
     "x": 176,
     "y": 27
   },
   {
-    "annotation_id": "9",
+    "annotation_id": "10",
     "role": "link",
     "name": "Search for Images",
     "x": 230,
     "y": 27
   },
   {
-    "annotation_id": "10",
+    "annotation_id": "11",
     "role": "link",
     "name": "Sign in",
     "x": 352,
     "y": 27
   },
   {
-    "annotation_id": "11",
+    "annotation_id": "12",
     "role": "link",
     "name": ".plR5qb{align-self:center;background:inherit;bo...",
     "x": 322,
     "y": 218
   },
   {
-    "annotation_id": "12",
+    "annotation_id": "13",
     "role": "combobox",
     "name": "Search",
     "x": 124,
     "y": 218
   },
   {
-    "annotation_id": "13",
-    "role": "listbox",
-    "name": "see comet lemmon.MagqMc .ZFiwCf{background-colo...",
-    "x": 200,
-    "y": 431
-  },
-  {
     "annotation_id": "14",
     "role": "option",
-    "name": "see comet lemmon",
+    "name": "ghost of yotei update 1.010 patch notes",
     "x": 214,
     "y": 294
   },
   {
     "annotation_id": "15",
     "role": "option",
-    "name": "army north army south",
+    "name": "walmart iot sensors supply chain",
     "x": 214,
     "y": 324
   },
   {
     "annotation_id": "16",
     "role": "option",
-    "name": "shiny mareep pokemon za",
+    "name": "netflix the diplomat season 3",
     "x": 214,
     "y": 355
   },
   {
     "annotation_id": "17",
     "role": "option",
-    "name": "vermont republicans",
+    "name": "senate government shutdown vote",
     "x": 214,
     "y": 385
   },
   {
     "annotation_id": "18",
     "role": "option",
-    "name": "verizon outages",
+    "name": "nba boston celtics",
     "x": 214,
-    "y": 416
+    "y": 423
   },
   {
     "annotation_id": "19",
-    "role": "option",
-    "name": "hallmark channel christmas movies",
-    "x": 214,
-    "y": 446
-  },
-  {
-    "annotation_id": "20",
-    "role": "option",
-    "name": "chris brown ft usher it depends remix",
-    "x": 214,
-    "y": 477
-  },
-  {
-    "annotation_id": "21",
-    "role": "option",
-    "name": "flamin hot grilled cheese burrito",
-    "x": 214,
-    "y": 507
-  },
-  {
-    "annotation_id": "22",
-    "role": "option",
-    "name": "zodiac signs daily horoscope today",
-    "x": 214,
-    "y": 538
-  },
-  {
-    "annotation_id": "23",
-    "role": "option",
-    "name": "cincinnati bengals pittsburgh steelers",
-    "x": 214,
-    "y": 568
-  },
-  {
-    "annotation_id": "24",
     "role": "navigation",
     "name": ".Ne6nSd{display:flex;align-items:center;padding...",
     "x": 200,

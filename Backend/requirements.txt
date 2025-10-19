@@ -49,4 +49,6 @@ urllib3==2.4.0
 xxhash==3.5.0
 yarl==1.20.0
 aiohttp-cors==0.7.0
-statsig==0.0.1
+statsig==0.66.0
+fastapi==0.115.6
+uvicorn==0.34.0

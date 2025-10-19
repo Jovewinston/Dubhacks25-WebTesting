@@ -1,10 +1,10 @@
-Goal: Type hello in the Google search bar by first clicking the search bar and then typing 'hello'.
+Goal: Type hello in the Google search bar
 
 Previous Actions:
-  1. Click on the Google search bar (the combobox labeled 'Search') to focus it. | Code: page.get_by_role('combobox', name='Search').click()
-  2. Type 'hello' into the Google search bar after it has been clicked/focused. | Code: page.keyboard.type('hello')
+  1. Click on the Google search bar (combobox labeled 'Search') to focus it for typing. | Code: page.get_by_role('combobox', name='Search').click()
+  2. Type 'hello' into the already focused Google search bar. | Code: page.keyboard.type('hello')
 
-Current Page: Google (https://www.google.com/?zx=1760856446506&no_sw_cr=1)
+Current Page: Google (https://www.google.com/)
 
 AX Tree:
 [
@@ -31,118 +31,132 @@ AX Tree:
   },
   {
     "annotation_id": "3",
-    "role": "button",
-    "name": "Google Search",
-    "x": 123,
-    "y": 648
-  },
-  {
-    "annotation_id": "4",
-    "role": "button",
-    "name": "I\\'m Feeling Lucky",
-    "x": 269,
-    "y": 648
-  },
-  {
-    "annotation_id": "5",
-    "role": "button",
-    "name": "Stay signed out",
-    "x": 99,
-    "y": 561
-  },
-  {
-    "annotation_id": "6",
-    "role": "button",
-    "name": "Sign in",
-    "x": 249,
-    "y": 561
-  },
-  {
-    "annotation_id": "7",
     "role": "link",
     "name": "About",
     "x": 44,
     "y": 29
   },
   {
-    "annotation_id": "8",
+    "annotation_id": "4",
     "role": "link",
     "name": "Store",
     "x": 99,
     "y": 29
   },
   {
-    "annotation_id": "9",
+    "annotation_id": "5",
     "role": "link",
     "name": "Gmail",
     "x": 176,
     "y": 28
   },
   {
-    "annotation_id": "10",
+    "annotation_id": "6",
     "role": "link",
     "name": "Search for Images",
     "x": 230,
     "y": 28
   },
   {
-    "annotation_id": "11",
+    "annotation_id": "7",
     "role": "link",
     "name": "Sign in",
     "x": 352,
     "y": 28
   },
   {
-    "annotation_id": "12",
+    "annotation_id": "8",
     "role": "link",
     "name": ".plR5qb{align-self:center;background:inherit;bo...",
     "x": 322,
     "y": 218
   },
   {
-    "annotation_id": "13",
+    "annotation_id": "9",
     "role": "combobox",
     "name": "Search",
     "x": 124,
     "y": 218
   },
   {
-    "annotation_id": "14",
+    "annotation_id": "10",
+    "role": "listbox",
+    "name": "nyt crossword answers.MagqMc .ZFiwCf{background...",
+    "x": 200,
+    "y": 457
+  },
+  {
+    "annotation_id": "11",
     "role": "option",
-    "name": "see comet lemmon",
+    "name": "nyt crossword answers",
     "x": 214,
     "y": 295
   },
   {
-    "annotation_id": "15",
+    "annotation_id": "12",
     "role": "option",
-    "name": "orionids meteor showers",
+    "name": "uscis visa bulletin",
     "x": 214,
     "y": 327
   },
   {
-    "annotation_id": "16",
+    "annotation_id": "13",
     "role": "option",
-    "name": "how to see the comet tonight",
+    "name": "heb heavy metal shirts",
     "x": 214,
     "y": 359
   },
   {
-    "annotation_id": "17",
+    "annotation_id": "14",
     "role": "option",
-    "name": "nc state fair ride low voltage",
+    "name": "arc raiders server slam",
     "x": 214,
     "y": 391
   },
   {
+    "annotation_id": "15",
+    "role": "option",
+    "name": "pokémon legends",
+    "x": 214,
+    "y": 429
+  },
+  {
+    "annotation_id": "16",
+    "role": "option",
+    "name": "seattle mariners baseball",
+    "x": 214,
+    "y": 473
+  },
+  {
+    "annotation_id": "17",
+    "role": "option",
+    "name": "american flag",
+    "x": 214,
+    "y": 511
+  },
+  {
     "annotation_id": "18",
     "role": "option",
-    "name": "severe storms",
+    "name": "wells fargo settlement",
     "x": 214,
-    "y": 423
+    "y": 543
   },
   {
     "annotation_id": "19",
+    "role": "option",
+    "name": "wwe smackdown",
+    "x": 214,
+    "y": 581
+  },
+  {
+    "annotation_id": "20",
+    "role": "option",
+    "name": "snap benefits government shutdown",
+    "x": 214,
+    "y": 619
+  },
+  {
+    "annotation_id": "21",
     "role": "navigation",
     "name": ".Ne6nSd{display:flex;align-items:center;padding...",
     "x": 200,

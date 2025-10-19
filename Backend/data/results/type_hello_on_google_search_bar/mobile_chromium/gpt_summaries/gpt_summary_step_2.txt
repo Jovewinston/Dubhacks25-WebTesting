@@ -1,5 +1,5 @@
 Step: 2
-Current Goal: Type hello in the Google search bar
+Current Goal: Type 'hello' in the Google search bar
 URL: https://www.google.com
 Task Goal: Type hello on google search bar
 
@@ -129,9 +129,9 @@ Available Interactive Elements:
   {
     "annotation_id": "16",
     "role": "option",
-    "name": "hello molly",
+    "name": "hello india",
     "x": 214,
-    "y": 395
+    "y": 397
   },
   {
     "annotation_id": "17",

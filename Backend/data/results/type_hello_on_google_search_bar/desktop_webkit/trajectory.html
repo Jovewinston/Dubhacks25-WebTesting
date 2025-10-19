@@ -33,7 +33,7 @@
         <table class="instruction-table">
             <tr><th>Field</th><th>Value</th></tr>
             <tr><td><em>Goal</em></td><td>Type hello on google search bar</td></tr>
-            <tr><td><em>Steps</em></td><td><ul class="steps-list"><li>Click on the search bar (combobox labeled &#x27;Search&#x27;) to focus it so that we can type &#x27;hello&#x27;.</li><li>Type the text &#x27;hello&#x27; into the Google search bar after it has been clicked and focused.</li></ul></td></tr>
+            <tr><td><em>Steps</em></td><td><ul class="steps-list"><li>Click on the Google search bar (combobox labeled &#x27;Search&#x27;) to focus the input field.</li><li>Type the word &#x27;hello&#x27; into the Google search bar after clicking on it.</li></ul></td></tr>
             <tr><td><em>Expected Behavior</em></td><td>You should see hello in the search bar</td></tr>
         </table>
         <h2>Trajectory Steps</h2>
@@ -53,7 +53,7 @@
                     <div class="step-details-label">Action Code</div>
                     <div><pre>page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()</pre></div>
                     <div class="step-details-label">Action Description</div>
-                    <div>Click on the search bar (combobox labeled &#x27;Search&#x27;) to focus it so that we can type &#x27;hello&#x27;.</div>
+                    <div>Click on the Google search bar (combobox labeled &#x27;Search&#x27;) to focus the input field.</div>
                     
                         <div class="step-details-label">Selected Element (ID: 20)</div>
                         <div>
@@ -70,9 +70,9 @@
                     <div class="content"><pre>Goal: Type hello on google search bar
 
 Previous Actions:
-  1. Click on the search bar (combobox labeled &#x27;Search&#x27;) to focus it so that we can type &#x27;hello&#x27;. | Code: page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()
+  1. Click on the Google search bar (combobox labeled &#x27;Search&#x27;) to focus the input field. | Code: page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()
 
-Current Page: Google (https://www.google.com/?zx=1760856447441&amp;no_sw_cr=1)
+Current Page: Google (https://www.google.com/?zx=1760866394017&amp;no_sw_cr=1)
 
 AX Tree:
 [
@@ -284,18 +284,18 @@ Error Codes:
                     <div class="step-details-label">Action Code</div>
                     <div><pre>page.keyboard.type(&#x27;hello&#x27;)</pre></div>
                     <div class="step-details-label">Action Description</div>
-                    <div>Type the text &#x27;hello&#x27; into the Google search bar after it has been clicked and focused.</div>
+                    <div>Type the word &#x27;hello&#x27; into the Google search bar after clicking on it.</div>
                     
                     <button class="collapsible">System Message</button>
                     <div class="content"><pre>System message for this step (placeholder)</pre></div>
                     <button class="collapsible">User Message</button>
-                    <div class="content"><pre>Goal: Type hello on google search bar
+                    <div class="content"><pre>Goal: Type &#x27;hello&#x27; in the Google search bar
 
 Previous Actions:
-  1. Click on the search bar (combobox labeled &#x27;Search&#x27;) to focus it so that we can type &#x27;hello&#x27;. | Code: page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()
-  2. Type the text &#x27;hello&#x27; into the Google search bar after it has been clicked and focused. | Code: page.keyboard.type(&#x27;hello&#x27;)
+  1. Click on the Google search bar (combobox labeled &#x27;Search&#x27;) to focus the input field. | Code: page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()
+  2. Type the word &#x27;hello&#x27; into the Google search bar after clicking on it. | Code: page.keyboard.type(&#x27;hello&#x27;)
 
-Current Page: Google (https://www.google.com/?zx=1760856447441&amp;no_sw_cr=1)
+Current Page: Google (https://www.google.com/?zx=1760866394017&amp;no_sw_cr=1)
 
 AX Tree:
 [
@@ -325,14 +325,14 @@ AX Tree:
     &quot;role&quot;: &quot;button&quot;,
     &quot;name&quot;: &quot;Google Search&quot;,
     &quot;x&quot;: 563,
-    &quot;y&quot;: 713
+    &quot;y&quot;: 701
   },
   {
     &quot;annotation_id&quot;: &quot;4&quot;,
     &quot;role&quot;: &quot;button&quot;,
     &quot;name&quot;: &quot;I\\&#x27;m Feeling Lucky&quot;,
     &quot;x&quot;: 709,
-    &quot;y&quot;: 713
+    &quot;y&quot;: 701
   },
   {
     &quot;annotation_id&quot;: &quot;5&quot;,
@@ -442,79 +442,79 @@ AX Tree:
   {
     &quot;annotation_id&quot;: &quot;20&quot;,
     &quot;role&quot;: &quot;listbox&quot;,
-    &quot;name&quot;: &quot;death valley george strait concert.MagqMc .ZFiw...&quot;,
+    &quot;name&quot;: &quot;clemson bryant wesco jr injury.MagqMc .ZFiwCf{b...&quot;,
     &quot;x&quot;: 640,
-    &quot;y&quot;: 504
+    &quot;y&quot;: 498
   },
   {
     &quot;annotation_id&quot;: &quot;21&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;death valley george strait concert&quot;,
+    &quot;name&quot;: &quot;clemson bryant wesco jr injury&quot;,
     &quot;x&quot;: 654,
     &quot;y&quot;: 348
   },
   {
     &quot;annotation_id&quot;: &quot;22&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;kansas city chiefs josh simmons&quot;,
+    &quot;name&quot;: &quot;epcot spaceship earth&quot;,
     &quot;x&quot;: 654,
     &quot;y&quot;: 380
   },
   {
     &quot;annotation_id&quot;: &quot;23&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;battlefield 6 multiplayer&quot;,
+    &quot;name&quot;: &quot;ufc fight night reinier de ridder&quot;,
     &quot;x&quot;: 654,
-    &quot;y&quot;: 418
+    &quot;y&quot;: 412
   },
   {
     &quot;annotation_id&quot;: &quot;24&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;ufc fight night reinier de ridder&quot;,
+    &quot;name&quot;: &quot;taming my bullies full movie&quot;,
     &quot;x&quot;: 654,
-    &quot;y&quot;: 456
+    &quot;y&quot;: 444
   },
   {
     &quot;annotation_id&quot;: &quot;25&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;aaron rodgers steelers broderick jones&quot;,
+    &quot;name&quot;: &quot;wings over north georgia&quot;,
     &quot;x&quot;: 654,
-    &quot;y&quot;: 488
+    &quot;y&quot;: 482
   },
   {
     &quot;annotation_id&quot;: &quot;26&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;hurricanes tropical storms&quot;,
+    &quot;name&quot;: &quot;mls playoffs matchups&quot;,
     &quot;x&quot;: 654,
     &quot;y&quot;: 520
   },
   {
     &quot;annotation_id&quot;: &quot;27&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;new england patriots tennessee titans&quot;,
+    &quot;name&quot;: &quot;winter snowfall forecast&quot;,
     &quot;x&quot;: 654,
     &quot;y&quot;: 552
   },
   {
     &quot;annotation_id&quot;: &quot;28&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;limp bizkit bassist sam rivers death&quot;,
+    &quot;name&quot;: &quot;dratini pokemon legends za&quot;,
     &quot;x&quot;: 654,
     &quot;y&quot;: 584
   },
   {
     &quot;annotation_id&quot;: &quot;29&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;refinance mortgage rates&quot;,
+    &quot;name&quot;: &quot;pokemon wild zone 4&quot;,
     &quot;x&quot;: 654,
     &quot;y&quot;: 616
   },
   {
     &quot;annotation_id&quot;: &quot;30&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;wings over north georgia&quot;,
+    &quot;name&quot;: &quot;nc state fair ride low voltage&quot;,
     &quot;x&quot;: 654,
-    &quot;y&quot;: 654
+    &quot;y&quot;: 648
   },
   {
     &quot;annotation_id&quot;: &quot;31&quot;,
@@ -551,10 +551,10 @@ Error Codes:
                     <div class="step-details-label">Total Steps</div>
                     <div>2</div>
                     <div class="step-details-label">Runtime</div>
-                    <div>19.62 seconds</div>
+                    <div>18.22 seconds</div>
                     <div class="step-details-label">Total Tokens Used</div>
-                    <div>11652</div>
-                    <div class="step-details-label">GPT Output</div><div>The search bar on Google has &#x27;hello&#x27; typed into it.</div>
+                    <div>11619</div>
+                    <div class="step-details-label">GPT Output</div><div>The word &#x27;hello&#x27; appears in the Google search bar.</div>
                 </div>
             </div>
         </div>

@@ -33,7 +33,7 @@
         <table class="instruction-table">
             <tr><th>Field</th><th>Value</th></tr>
             <tr><td><em>Goal</em></td><td>Type hello on google search bar</td></tr>
-            <tr><td><em>Steps</em></td><td><ul class="steps-list"><li>Click on the search bar (combobox labeled &#x27;Search&#x27;) to focus it.</li><li>Type &#x27;hello&#x27; into the Google search bar after it has been clicked and focused.</li></ul></td></tr>
+            <tr><td><em>Steps</em></td><td><ul class="steps-list"><li>Click the search bar (combobox labeled &#x27;Search&#x27;) to focus it before typing.</li><li>Type &#x27;hello&#x27; into the focused Google search bar.</li></ul></td></tr>
             <tr><td><em>Expected Behavior</em></td><td>You should see hello in the search bar</td></tr>
         </table>
         <h2>Trajectory Steps</h2>
@@ -53,9 +53,9 @@
                     <div class="step-details-label">Action Code</div>
                     <div><pre>page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()</pre></div>
                     <div class="step-details-label">Action Description</div>
-                    <div>Click on the search bar (combobox labeled &#x27;Search&#x27;) to focus it.</div>
+                    <div>Click the search bar (combobox labeled &#x27;Search&#x27;) to focus it before typing.</div>
                     
-                        <div class="step-details-label">Selected Element (ID: 18)</div>
+                        <div class="step-details-label">Selected Element (ID: 16)</div>
                         <div>
                             <strong>Name:</strong> Search<br>
                             <strong>Role:</strong> combobox<br>
@@ -67,12 +67,12 @@
                     <button class="collapsible">System Message</button>
                     <div class="content"><pre>System message for this step (placeholder)</pre></div>
                     <button class="collapsible">User Message</button>
-                    <div class="content"><pre>Goal: Type hello in the Google search bar
+                    <div class="content"><pre>Goal: Type hello on google search bar
 
 Previous Actions:
-  1. Click on the search bar (combobox labeled &#x27;Search&#x27;) to focus it. | Code: page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()
+  1. Click the search bar (combobox labeled &#x27;Search&#x27;) to focus it before typing. | Code: page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()
 
-Current Page: Google (https://www.google.com/)
+Current Page: Google (https://www.google.com/?zx=1760866394763&amp;no_sw_cr=1)
 
 AX Tree:
 [
@@ -120,108 +120,87 @@ AX Tree:
   },
   {
     &quot;annotation_id&quot;: &quot;6&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Stay signed out&quot;,
+    &quot;x&quot;: 99,
+    &quot;y&quot;: 561
+  },
+  {
+    &quot;annotation_id&quot;: &quot;7&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Sign in&quot;,
+    &quot;x&quot;: 249,
+    &quot;y&quot;: 561
+  },
+  {
+    &quot;annotation_id&quot;: &quot;8&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;About&quot;,
     &quot;x&quot;: 44,
     &quot;y&quot;: 29
   },
   {
-    &quot;annotation_id&quot;: &quot;7&quot;,
+    &quot;annotation_id&quot;: &quot;9&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;Store&quot;,
     &quot;x&quot;: 98,
     &quot;y&quot;: 29
   },
   {
-    &quot;annotation_id&quot;: &quot;8&quot;,
+    &quot;annotation_id&quot;: &quot;10&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;Gmail&quot;,
     &quot;x&quot;: 176,
     &quot;y&quot;: 27
   },
   {
-    &quot;annotation_id&quot;: &quot;9&quot;,
+    &quot;annotation_id&quot;: &quot;11&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;Search for Images&quot;,
     &quot;x&quot;: 230,
     &quot;y&quot;: 27
   },
   {
-    &quot;annotation_id&quot;: &quot;10&quot;,
+    &quot;annotation_id&quot;: &quot;12&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;Sign in&quot;,
     &quot;x&quot;: 352,
     &quot;y&quot;: 27
   },
   {
-    &quot;annotation_id&quot;: &quot;11&quot;,
+    &quot;annotation_id&quot;: &quot;13&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;.plR5qb{align-self:center;background:inherit;bo...&quot;,
     &quot;x&quot;: 321,
     &quot;y&quot;: 219
   },
   {
-    &quot;annotation_id&quot;: &quot;12&quot;,
-    &quot;role&quot;: &quot;link&quot;,
-    &quot;name&quot;: &quot;Advertising&quot;,
-    &quot;x&quot;: 82,
-    &quot;y&quot;: 597
-  },
-  {
-    &quot;annotation_id&quot;: &quot;13&quot;,
-    &quot;role&quot;: &quot;link&quot;,
-    &quot;name&quot;: &quot;Business&quot;,
-    &quot;x&quot;: 175,
-    &quot;y&quot;: 597
-  },
-  {
     &quot;annotation_id&quot;: &quot;14&quot;,
-    &quot;role&quot;: &quot;link&quot;,
-    &quot;name&quot;: &quot;How Search works&quot;,
-    &quot;x&quot;: 292,
-    &quot;y&quot;: 597
-  },
-  {
-    &quot;annotation_id&quot;: &quot;15&quot;,
-    &quot;role&quot;: &quot;link&quot;,
-    &quot;name&quot;: &quot;Applying AI towards science and the environment&quot;,
-    &quot;x&quot;: 199,
-    &quot;y&quot;: 549
-  },
-  {
-    &quot;annotation_id&quot;: &quot;16&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;Privacy&quot;,
     &quot;x&quot;: 124,
     &quot;y&quot;: 643
   },
   {
-    &quot;annotation_id&quot;: &quot;17&quot;,
+    &quot;annotation_id&quot;: &quot;15&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;Terms&quot;,
     &quot;x&quot;: 197,
     &quot;y&quot;: 643
   },
   {
-    &quot;annotation_id&quot;: &quot;18&quot;,
+    &quot;annotation_id&quot;: &quot;16&quot;,
     &quot;role&quot;: &quot;combobox&quot;,
     &quot;name&quot;: &quot;Search&quot;,
     &quot;x&quot;: 124,
     &quot;y&quot;: 219
   },
   {
-    &quot;annotation_id&quot;: &quot;19&quot;,
+    &quot;annotation_id&quot;: &quot;17&quot;,
     &quot;role&quot;: &quot;navigation&quot;,
     &quot;name&quot;: &quot;.Ne6nSd{display:flex;align-items:center;padding...&quot;,
     &quot;x&quot;: 200,
     &quot;y&quot;: 30
-  },
-  {
-    &quot;annotation_id&quot;: &quot;20&quot;,
-    &quot;role&quot;: &quot;contentinfo&quot;,
-    &quot;name&quot;: &quot;.c93Gbe{background:#f2f2f2}.uU7dJb{padding:15px...&quot;,
-    &quot;x&quot;: 200,
-    &quot;y&quot;: 596
   }
 ]
 
@@ -270,18 +249,18 @@ Error Codes:
                     <div class="step-details-label">Action Code</div>
                     <div><pre>page.keyboard.type(&#x27;hello&#x27;)</pre></div>
                     <div class="step-details-label">Action Description</div>
-                    <div>Type &#x27;hello&#x27; into the Google search bar after it has been clicked and focused.</div>
+                    <div>Type &#x27;hello&#x27; into the focused Google search bar.</div>
                     
                     <button class="collapsible">System Message</button>
                     <div class="content"><pre>System message for this step (placeholder)</pre></div>
                     <button class="collapsible">User Message</button>
-                    <div class="content"><pre>Goal: Type hello in the Google search bar
+                    <div class="content"><pre>Goal: Type &#x27;hello&#x27; in the Google search bar
 
 Previous Actions:
-  1. Click on the search bar (combobox labeled &#x27;Search&#x27;) to focus it. | Code: page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()
-  2. Type &#x27;hello&#x27; into the Google search bar after it has been clicked and focused. | Code: page.keyboard.type(&#x27;hello&#x27;)
+  1. Click the search bar (combobox labeled &#x27;Search&#x27;) to focus it before typing. | Code: page.get_by_role(&#x27;combobox&#x27;, name=&#x27;Search&#x27;).click()
+  2. Type &#x27;hello&#x27; into the focused Google search bar. | Code: page.keyboard.type(&#x27;hello&#x27;)
 
-Current Page: Google (https://www.google.com/)
+Current Page: Google (https://www.google.com/?zx=1760866394763&amp;no_sw_cr=1)
 
 AX Tree:
 [
@@ -311,150 +290,115 @@ AX Tree:
     &quot;role&quot;: &quot;button&quot;,
     &quot;name&quot;: &quot;Google Search&quot;,
     &quot;x&quot;: 122,
-    &quot;y&quot;: 621
+    &quot;y&quot;: 634
   },
   {
     &quot;annotation_id&quot;: &quot;4&quot;,
     &quot;role&quot;: &quot;button&quot;,
     &quot;name&quot;: &quot;I\\&#x27;m Feeling Lucky&quot;,
     &quot;x&quot;: 269,
-    &quot;y&quot;: 621
+    &quot;y&quot;: 634
   },
   {
     &quot;annotation_id&quot;: &quot;5&quot;,
     &quot;role&quot;: &quot;button&quot;,
-    &quot;name&quot;: &quot;Report inappropriate predictions&quot;,
-    &quot;x&quot;: 281,
-    &quot;y&quot;: 656
+    &quot;name&quot;: &quot;Stay signed out&quot;,
+    &quot;x&quot;: 99,
+    &quot;y&quot;: 561
   },
   {
     &quot;annotation_id&quot;: &quot;6&quot;,
+    &quot;role&quot;: &quot;button&quot;,
+    &quot;name&quot;: &quot;Sign in&quot;,
+    &quot;x&quot;: 249,
+    &quot;y&quot;: 561
+  },
+  {
+    &quot;annotation_id&quot;: &quot;7&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;About&quot;,
     &quot;x&quot;: 44,
     &quot;y&quot;: 29
   },
   {
-    &quot;annotation_id&quot;: &quot;7&quot;,
+    &quot;annotation_id&quot;: &quot;8&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;Store&quot;,
     &quot;x&quot;: 98,
     &quot;y&quot;: 29
   },
   {
-    &quot;annotation_id&quot;: &quot;8&quot;,
+    &quot;annotation_id&quot;: &quot;9&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;Gmail&quot;,
     &quot;x&quot;: 176,
     &quot;y&quot;: 27
   },
   {
-    &quot;annotation_id&quot;: &quot;9&quot;,
+    &quot;annotation_id&quot;: &quot;10&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;Search for Images&quot;,
     &quot;x&quot;: 230,
     &quot;y&quot;: 27
   },
   {
-    &quot;annotation_id&quot;: &quot;10&quot;,
+    &quot;annotation_id&quot;: &quot;11&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;Sign in&quot;,
     &quot;x&quot;: 352,
     &quot;y&quot;: 27
   },
   {
-    &quot;annotation_id&quot;: &quot;11&quot;,
+    &quot;annotation_id&quot;: &quot;12&quot;,
     &quot;role&quot;: &quot;link&quot;,
     &quot;name&quot;: &quot;.plR5qb{align-self:center;background:inherit;bo...&quot;,
     &quot;x&quot;: 322,
     &quot;y&quot;: 218
   },
   {
-    &quot;annotation_id&quot;: &quot;12&quot;,
+    &quot;annotation_id&quot;: &quot;13&quot;,
     &quot;role&quot;: &quot;combobox&quot;,
     &quot;name&quot;: &quot;Search&quot;,
     &quot;x&quot;: 124,
     &quot;y&quot;: 218
   },
   {
-    &quot;annotation_id&quot;: &quot;13&quot;,
-    &quot;role&quot;: &quot;listbox&quot;,
-    &quot;name&quot;: &quot;see comet lemmon.MagqMc .ZFiwCf{background-colo...&quot;,
-    &quot;x&quot;: 200,
-    &quot;y&quot;: 431
-  },
-  {
     &quot;annotation_id&quot;: &quot;14&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;see comet lemmon&quot;,
+    &quot;name&quot;: &quot;ghost of yotei update 1.010 patch notes&quot;,
     &quot;x&quot;: 214,
     &quot;y&quot;: 294
   },
   {
     &quot;annotation_id&quot;: &quot;15&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;army north army south&quot;,
+    &quot;name&quot;: &quot;walmart iot sensors supply chain&quot;,
     &quot;x&quot;: 214,
     &quot;y&quot;: 324
   },
   {
     &quot;annotation_id&quot;: &quot;16&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;shiny mareep pokemon za&quot;,
+    &quot;name&quot;: &quot;netflix the diplomat season 3&quot;,
     &quot;x&quot;: 214,
     &quot;y&quot;: 355
   },
   {
     &quot;annotation_id&quot;: &quot;17&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;vermont republicans&quot;,
+    &quot;name&quot;: &quot;senate government shutdown vote&quot;,
     &quot;x&quot;: 214,
     &quot;y&quot;: 385
   },
   {
     &quot;annotation_id&quot;: &quot;18&quot;,
     &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;verizon outages&quot;,
+    &quot;name&quot;: &quot;nba boston celtics&quot;,
     &quot;x&quot;: 214,
-    &quot;y&quot;: 416
+    &quot;y&quot;: 423
   },
   {
     &quot;annotation_id&quot;: &quot;19&quot;,
-    &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;hallmark channel christmas movies&quot;,
-    &quot;x&quot;: 214,
-    &quot;y&quot;: 446
-  },
-  {
-    &quot;annotation_id&quot;: &quot;20&quot;,
-    &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;chris brown ft usher it depends remix&quot;,
-    &quot;x&quot;: 214,
-    &quot;y&quot;: 477
-  },
-  {
-    &quot;annotation_id&quot;: &quot;21&quot;,
-    &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;flamin hot grilled cheese burrito&quot;,
-    &quot;x&quot;: 214,
-    &quot;y&quot;: 507
-  },
-  {
-    &quot;annotation_id&quot;: &quot;22&quot;,
-    &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;zodiac signs daily horoscope today&quot;,
-    &quot;x&quot;: 214,
-    &quot;y&quot;: 538
-  },
-  {
-    &quot;annotation_id&quot;: &quot;23&quot;,
-    &quot;role&quot;: &quot;option&quot;,
-    &quot;name&quot;: &quot;cincinnati bengals pittsburgh steelers&quot;,
-    &quot;x&quot;: 214,
-    &quot;y&quot;: 568
-  },
-  {
-    &quot;annotation_id&quot;: &quot;24&quot;,
     &quot;role&quot;: &quot;navigation&quot;,
     &quot;name&quot;: &quot;.Ne6nSd{display:flex;align-items:center;padding...&quot;,
     &quot;x&quot;: 200,
@@ -488,10 +432,10 @@ Error Codes:
                     <div class="step-details-label">Total Steps</div>
                     <div>2</div>
                     <div class="step-details-label">Runtime</div>
-                    <div>30.65 seconds</div>
+                    <div>33.04 seconds</div>
                     <div class="step-details-label">Total Tokens Used</div>
-                    <div>11403</div>
-                    <div class="step-details-label">GPT Output</div><div>The word &#x27;hello&#x27; is visible in the Google search bar as expected.</div>
+                    <div>10819</div>
+                    <div class="step-details-label">GPT Output</div><div>The search bar displays &#x27;hello&#x27; as intended.</div>
                 </div>
             </div>
         </div>

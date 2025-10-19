@@ -10,28 +10,28 @@
     "annotation_id": "1",
     "role": "button",
     "name": "Search by voice",
-    "x": 808,
+    "x": 806,
     "y": 272
   },
   {
     "annotation_id": "2",
     "role": "button",
     "name": "Search by image",
-    "x": 848,
+    "x": 846,
     "y": 272
   },
   {
     "annotation_id": "3",
     "role": "button",
     "name": "Google Search",
-    "x": 563,
+    "x": 560,
     "y": 345
   },
   {
     "annotation_id": "4",
     "role": "button",
     "name": "I\\'m Feeling Lucky",
-    "x": 709,
+    "x": 710,
     "y": 345
   },
   {
@@ -45,14 +45,14 @@
     "annotation_id": "6",
     "role": "button",
     "name": "Stay signed out",
-    "x": 1004,
+    "x": 1000,
     "y": 614
   },
   {
     "annotation_id": "7",
     "role": "button",
     "name": "Sign in",
-    "x": 1154,
+    "x": 1153,
     "y": 614
   },
   {
@@ -94,7 +94,7 @@
     "annotation_id": "13",
     "role": "link",
     "name": ".plR5qb{align-self:center;background:inherit;bo...",
-    "x": 925,
+    "x": 924,
     "y": 272
   },
   {
@@ -143,7 +143,7 @@
     "annotation_id": "20",
     "role": "combobox",
     "name": "Search",
-    "x": 564,
+    "x": 563,
     "y": 272
   },
   {
