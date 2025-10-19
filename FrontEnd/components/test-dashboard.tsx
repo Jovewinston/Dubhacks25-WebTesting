@@ -36,6 +36,7 @@ export function TestDashboard() {
   const [pollingStoppers, setPollingStoppers] = useState<Record<string, () => void>>({})
   const [showConfetti, setShowConfetti] = useState(false)
   const [stopGeneratingConfetti, setStopGeneratingConfetti] = useState(false)
+  const [windowDimensions, setWindowDimensions] = useState({ width: 0, height: 0 })
   const { toast } = useToast()
 
   useEffect(() => {
@@ -48,6 +49,20 @@ export function TestDashboard() {
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(tests))
   }, [tests])
+
+  // Update window dimensions for confetti
+  useEffect(() => {
+    const updateDimensions = () => {
+      setWindowDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight
+      })
+    }
+
+    updateDimensions()
+    window.addEventListener('resize', updateDimensions)
+    return () => window.removeEventListener('resize', updateDimensions)
+  }, [])
 
   // Cleanup polling on unmount
   useEffect(() => {
@@ -355,16 +370,18 @@ export function TestDashboard() {
 
   return (
     <div className="min-h-screen bg-background">
-      {showConfetti && (
-        <Confetti
-          width={window.innerWidth}
-          height={window.innerHeight}
-          recycle={!stopGeneratingConfetti}
-          numberOfPieces={200}
-          gravity={0.3}
-          colors={['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3', '#54a0ff']}
-          run={showConfetti}
-        />
+      {showConfetti && windowDimensions.width > 0 && (
+        <div className="fixed inset-0 pointer-events-none z-50">
+          <Confetti
+            width={windowDimensions.width}
+            height={windowDimensions.height}
+            recycle={!stopGeneratingConfetti}
+            numberOfPieces={200}
+            gravity={0.3}
+            colors={['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3', '#54a0ff']}
+            run={showConfetti}
+          />
+        </div>
       )}
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
