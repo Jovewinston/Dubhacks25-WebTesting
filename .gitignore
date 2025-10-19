@@ -20,8 +20,8 @@ Backend/data/browser_sessions/
 Backend/recorder_sessions/
 
 # Results and output (keep instructions but ignore generated results)
-Backend/data/results/linkedin_*/
-Backend/data/results/progress_tracking.json
+Backend/data/results/
+data/results/
 Backend/screenshot.png
 Backend/core/screenshot.png
 

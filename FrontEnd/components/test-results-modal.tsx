@@ -204,6 +204,11 @@ export function TestResultsModal({ test, onClose, onRunAgain }: TestResultsModal
                         <p className="text-xs text-muted-foreground">
                           {currentCombination.totalSteps} steps • {Math.round(currentCombination.runtimeSec)}s runtime
                         </p>
+                        {currentCombination.explanation && (
+                          <p className="text-xs text-muted-foreground mt-1 italic">
+                            {currentCombination.explanation}
+                          </p>
+                        )}
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
@@ -285,6 +290,12 @@ export function TestResultsModal({ test, onClose, onRunAgain }: TestResultsModal
                         <div>
                           <p className="text-xs font-semibold text-muted-foreground mb-1">Action Description</p>
                           <p className="text-sm text-foreground bg-card p-3 rounded-lg">{step.actionDescription}</p>
+                        </div>
+                      )}
+                      {currentCombination?.explanation && (
+                        <div>
+                          <p className="text-xs font-semibold text-muted-foreground mb-1">Explanation</p>
+                          <p className="text-sm text-foreground bg-card p-3 rounded-lg">{currentCombination.explanation}</p>
                         </div>
                       )}
                     </div>
