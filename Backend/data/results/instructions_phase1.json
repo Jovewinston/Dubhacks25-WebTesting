@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://www.linkedin.com",
+    "task": "Message Samuel Purnama on LinkedIn",
+    "steps": 
+      "1. Login to the page first with the email and password from the accounts list 2. Click on the search bar, 3. Search for 'Samuel Purnama' in the search bar, 6. Click on Samuel Purnama's profile from the drop down, 5. Click the 'Message' button, 7. Type 'Hi' in the message box, 8. Send the message",
+    "expected_behavior": "You should see a sent message to Samuel Purnama in your LinkedIn messages, and our chat conversation should have a message called 'Hi'",
+    "devices": ["mobile", "desktop"],
+    "browsers": ["chrome", "firefox", "safari"]
+  }
+]
+

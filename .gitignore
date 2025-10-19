@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# Browser sessions and data
+Backend/data/browser_sessions/
+Backend/recorder_sessions/
+
+# Results and output (keep instructions but ignore generated results)
+Backend/data/results/linkedin_*/
+Backend/data/results/progress_tracking.json
+Backend/screenshot.png
+Backend/core/screenshot.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Node modules (for FrontEnd)
+node_modules/
+FrontEnd/node_modules/
+
+# Temporary files
+*.tmp
+*.temp

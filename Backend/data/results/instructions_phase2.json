@@ -1,0 +1,142 @@
+[
+    {
+      "persona": "A Linux enthusiast who prefer practical solutions to explicit control over terminal settings.",
+      "url": "https://viata.ai/manage/events",
+      "instructions": [
+        "Search for one-way flights from Portland to Berlin departing after October 10, 2025, and filter to show only non-stop options sorted by price",
+        "Find roundtrip flights from San Francisco to Bangkok for two passengers, departing November 5, 2025, returning November 19, and restrict results to flights with layovers less than 2 hours",
+        "Show me the cheapest premium economy class flights from Chicago to Rome for a trip starting after October 20, 2025, and arriving in Rome before noon local time",
+        "Search for the lowest-priced roundtrip flights from Miami to Tokyo, departing after October 15, 2025, and filter to only show flights operated by Star Alliance members",
+        "Find one-way business class flights from Denver to Sydney on or after October 25, 2025, and sort by shortest travel time",
+        "Look up direct roundtrip flights from Boston to Los Angeles for three people, departing November 3, 2025, returning November 10, and exclude overnight flights",
+        "Search for the best value roundtrip flight deals from Dallas to New York City for one passenger, departing after October 18, 2025, with a maximum price of $",
+        "List the cheapest one-way flights from Atlanta to Vancouver departing after October 28, 2025, with arrival before 5 pm",
+        "Find roundtrip flights from Houston to Paris in economy class for two adults and one child, departing in late October 2025, and filter to show refundable tickets only",
+        "Show all available roundtrip flights from Seattle to Toronto that depart after October 30, 2025, and sort by lowest carbon emissions"
+      ],
+      "augmented_instructions": [
+        "Create a new event with event name 'Meeting with John Doe' on September 20th to September 27th with 150 attendees in Seattle",
+        "Search for roundtrip economy class flights from San Francisco to Bangkok for 2 passengers, departing on November 5, 2025, returning on November 19, 2025, and filter to show flights with layovers less than 2 hours.",
+        "Search for premium economy class flights from Chicago to Rome for 1 passenger, departing after October 20, 2025, and filter to show flights arriving in Rome before noon local time, sorted by lowest price.",
+        "Search for roundtrip economy class flights from Miami to Tokyo for 1 passenger, departing after October 15, 2025, and filter to show only flights operated by Star Alliance members, sorted by lowest price.",
+        "Search for one-way business class flights from Denver to Sydney for 1 passenger, departing on or after October 25, 2025, and sort results by shortest travel time.",
+        "Search for direct roundtrip economy class flights from Boston to Los Angeles for 3 passengers, departing November 3, 2025, returning November 10, 2025, and exclude overnight flights.",
+        "Search for roundtrip economy class flights from Dallas to New York City for 1 passenger, departing after October 18, 2025, and filter to show flights with the best value deals and a maximum price limit.",
+        "Search for one-way economy class flights from Atlanta to Vancouver for 1 passenger, departing after October 28, 2025, and filter to show flights arriving before 5 pm.",
+        "Search for roundtrip economy class flights from Houston to Paris for 2 adults and 1 child, departing in late October 2025, and filter to show only refundable tickets.",
+        "Search for roundtrip economy class flights from Seattle to Toronto for 1 passenger, departing after October 30, 2025, and sort results by lowest carbon emissions."
+      ]
+    },
+    {
+      "persona": "A computational biologist who develops computer models to simulate the effects of drugs, reducing the need for animal testing",
+      "url": "http://flights.google.com/",
+      "instructions": [
+        "Create an event",
+        "Find the cheapest roundtrip economy flights from San Diego to Singapore, departing after October 15, 2025, with a maximum layover of 3 hours",
+        "Look up direct roundtrip flights from Chicago to Paris for two adults, departing on October 22, 2025, returning October 29, 2025, and sort by shortest duration",
+        "Search for one-way premium economy flights from Los Angeles to Sydney, departing on October 25, 2025, and filter for flights departing after 5:00 PM",
+        "Find roundtrip flights from Miami to Buenos Aires for 1 passenger, departing October 18, 2025, and returning October 28, 2025, sorted by lowest carbon emissions",
+        "Search for the cheapest roundtrip flights from Toronto to Tokyo for 3 passengers, departing after October 13, 2025, and filter for flights operated by Star Alliance airlines",
+        "Check for roundtrip flights from San Francisco to Barcelona, departing October 19, 2025, returning October 26, 2025, and filter for flights with Wi-Fi available onboard",
+        "Find economy roundtrip flights from Dallas to Rome, departing October 21, 2025, and returning October 28, 2025, with a checked baggage option included",
+        "Look up roundtrip flights from Denver to Seoul for 1 passenger, departing October 27, 2025, returning November 3, 2025, and filter for flights under $1,",
+        "Search for roundtrip flights from Vancouver to New York, departing on October 17, 2025, and returning October 24, 2025, and show only flights arriving in New York before 10:00 AM"
+      ],
+      "augmented_instructions": [
+        "Search for non-stop roundtrip business class flights from Boston to Zurich for 1 passenger, departing on October 20, 2025, and returning on October 27, 2025.",
+        "Search for the cheapest roundtrip economy class flights from San Diego to Singapore for 1 passenger, departing after October 15, 2025, with layovers no longer than 3 hours.",
+        "Search for direct roundtrip economy class flights from Chicago to Paris for 2 adults, departing on October 22, 2025, returning on October 29, 2025, and sort results by shortest duration.",
+        "Search for one-way premium economy class flights from Los Angeles to Sydney for 1 passenger, departing on October 25, 2025, and filter for departures after 5:00 PM.",
+        "Search for roundtrip economy class flights from Miami to Buenos Aires for 1 passenger, departing on October 18, 2025, and returning on October 28, 2025, and sort results by lowest carbon emissions.",
+        "Search for the cheapest roundtrip economy class flights from Toronto to Tokyo for 3 passengers, departing after October 13, 2025, and filter for flights operated by Star Alliance airlines.",
+        "Search for roundtrip economy class flights from San Francisco to Barcelona for 1 passenger, departing on October 19, 2025, returning on October 26, 2025, and filter for flights with Wi-Fi available onboard.",
+        "Search for roundtrip economy class flights from Dallas to Rome for 1 passenger, departing on October 21, 2025, and returning on October 28, 2025, with checked baggage included.",
+        "Search for roundtrip economy class flights from Denver to Seoul for 1 passenger, departing on October 27, 2025, returning on November 3, 2025, and filter for flights under $1,000.",
+        "Search for roundtrip economy class flights from Vancouver to New York City for 1 passenger, departing on October 17, 2025, returning on October 24, 2025, and show only flights arriving in New York before 10:00 AM."
+      ]
+    },
+    {
+      "persona": "A seasoned business broker with a proven track record in successfully selling small businesses",
+      "url": "http://flights.google.com/",
+      "instructions": [
+        "Search for the cheapest round-trip flight from Los Angeles to Miami, departing on October 21, 2025, and returning one week later, with a layover less than 2 hours",
+        "Find direct round-trip flights from Chicago to Cancun for two passengers in economy class, departing after October 10, 2025, and sort results by shortest total travel time",
+        "Look up one-way business class flights from Seattle to Paris departing on or after October 15, 2025, and filter for flights arriving in the morning local time",
+        "Show non-stop round-trip flights from San Francisco to New York City, departing on October 22, 2025, and returning on October 29, 2025, with baggage fees included in the price",
+        "Search for the lowest-priced round-trip flights from Boston to Rome for three people, departing the last week of October 2025, and filter by airlines with customer ratings above 4 stars",
+        "Find the earliest departing round-trip flight from Dallas to Denver in economy class, with departure on October 26, 2025, and a return 3 days later",
+        "Search for premium economy one-way flights from Atlanta to London, departing on October 31, 2025, and filter for flights with Wi-Fi available",
+        "Look up round-trip flights from Houston to Toronto for two adults and one child, departing October 20, 2025, returning October 27, 2025, and sort by lowest carbon emissions",
+        "Find round-trip flights from Seattle to Honolulu for one passenger, departing after October 18, 2025, and filter to only show flights with refundable tickets",
+        "Search for multi-city flights: New York to Madrid on October 24, 2025, then Madrid to Barcelona on October 28, 2025, and Barcelona back to New York on October 31, 2025, in economy class for one traveler"
+      ],
+      "augmented_instructions": [
+        "Search for round-trip economy class flights from Los Angeles to Miami for 1 passenger, departing on October 21, 2025, returning on October 28, 2025, and filter for layovers less than 2 hours and sort by lowest price.",
+        "Search for round-trip economy class direct flights from Chicago to Cancun for 2 passengers, departing after October 10, 2025, and sort results by shortest total travel time.",
+        "Search for one-way business class flights from Seattle to Paris for 1 passenger, departing on or after October 15, 2025, and filter for flights arriving in the morning local time.",
+        "Search for non-stop round-trip economy class flights from San Francisco to New York City for 1 passenger, departing on October 22, 2025, and returning on October 29, 2025, with baggage fees included in the price.",
+        "Search for round-trip economy class flights from Boston to Rome for 3 passengers, departing between October 25 and October 31, 2025, and filter by airlines with customer ratings above 4 stars and sort by lowest price.",
+        "Search for the earliest departing round-trip economy class flight from Dallas to Denver for 1 passenger, departing on October 26, 2025, and returning on October 29, 2025.",
+        "Search for one-way premium economy flights from Atlanta to London for 1 passenger, departing on October 31, 2025, and filter for flights with Wi-Fi available.",
+        "Search for round-trip economy class flights from Houston to Toronto for 2 adults and 1 child, departing on October 20, 2025, and returning on October 27, 2025, and sort results by lowest carbon emissions.",
+        "Search for round-trip economy class flights from Seattle to Honolulu for 1 passenger, departing after October 18, 2025, and filter to only show refundable tickets.",
+        "Search for multi-city economy class flights for 1 passenger: New York to Madrid on October 24, 2025, Madrid to Barcelona on October 28, 2025, and Barcelona to New York on October 31, 2025."
+      ]
+    },
+    {
+      "persona": "A single, humorous stand-up comedian",
+      "url": "http://flights.google.com/",
+      "instructions": [
+        "Find me the cheapest roundtrip flight from Miami to Paris, departing after October 20th, 2025, but only if there’s at least one layover for my sense of adventure",
+        "Search for one-way business class flights from Chicago to Tokyo, departing any day after October 10th, 2025, but only show me flights that arrive before 5 pm local time (so I can nap before sushi)",
+        "Show me roundtrip flights from Denver to Cancun for 2 adults, leaving after October 25th, 2025, and returning a week later, but filter out all flights longer than 6 hours",
+        "Find the cheapest nonstop roundtrip flights from Boston to Los Angeles for 1 passenger, flying out after October 18th, 2025, and returning within 4 days, but only if they’re under $",
+        "Search for premium economy flights from Dallas to London, departing after October 15th, 2025, but only show options that include free checked bags (because I overpack emotionally and literally)",
+        "Find me roundtrip flights from San Francisco to Sydney for 3 people, departing after October 29th, 2025, and sort the results by shortest total travel time",
+        "Look up one-way flights from Atlanta to New York, departing after October 22nd, 2025, and only show flights with Wi-Fi available (so I can tweet about my delayed flight in real-time)",
+        "Search for the cheapest roundtrip economy flights from Orlando to Honolulu, departing after October 30th, 2025, but exclude all red-eye flights",
+        "Find roundtrip flights from Seattle to Rome, leaving after October 26th, 2025, for 2 adults, and show only airlines rated 4 stars or higher (because I want to be pampered at 30,000 feet)",
+        "Find me the cheapest roundtrip flight from Houston to Vancouver, departing after October 21st, 2025, with a flexible return date, but make sure to sort the options by lowest carbon emissions"
+      ],
+      "augmented_instructions": [
+        "Search for the cheapest roundtrip economy class flights from Miami to Paris for 1 passenger, departing after October 20th, 2025, with at least one layover.",
+        "Search for one-way business class flights from Chicago to Tokyo for 1 passenger, departing after October 10th, 2025, and only show flights arriving before 5 pm local time.",
+        "Search for roundtrip economy class flights from Denver to Cancun for 2 adults, departing after October 25th, 2025, returning on November 1st, 2025, and filter out flights longer than 6 hours.",
+        "Search for the cheapest nonstop roundtrip economy class flights from Boston to Los Angeles for 1 passenger, departing after October 18th, 2025, returning within 4 days, and only show flights under $500.",
+        "Search for premium economy class flights from Dallas to London for 1 passenger, departing after October 15th, 2025, and only show options that include free checked bags.",
+        "Search for roundtrip economy class flights from San Francisco to Sydney for 3 passengers, departing after October 29th, 2025, and sort results by shortest total travel time.",
+        "Search for one-way economy class flights from Atlanta to New York City for 1 passenger, departing after October 22nd, 2025, and only show flights with Wi-Fi available.",
+        "Search for the cheapest roundtrip economy class flights from Orlando to Honolulu for 1 passenger, departing after October 30th, 2025, and exclude all red-eye flights.",
+        "Search for roundtrip economy class flights from Seattle to Rome for 2 adults, departing after October 26th, 2025, and only show airlines rated 4 stars or higher.",
+        "Search for the cheapest roundtrip economy class flights from Houston to Vancouver for 1 passenger, departing after October 21st, 2025, with a flexible return date, and sort by lowest carbon emissions."
+      ]
+    },
+    {
+      "persona": "A hairdresser who likes to provide useful information to clients",
+      "url": "http://flights.google.com/",
+      "instructions": [
+        "Search for the cheapest non-stop round-trip flights from Los Angeles to Paris, departing October 25, 2025, and returning November 2, 2025, for 2 passengers",
+        "Find one-way business class flights from Miami to Buenos Aires on October 30, 2025, and sort results by shortest duration",
+        "Look up round-trip flights from Chicago to Rome for 1 adult and 1 child, departing on November 3, 2025, and returning November 10, 2025, filtering for flights with Wi-Fi available",
+        "Search for the cheapest economy round-trip flights from Dallas to New York, leaving October 21, 2025, and returning October 28, 2025, that depart after 6 PM",
+        "Find flights from San Francisco to Tokyo for 3 people, departing October 18, 2025, and returning October 28, 2025, but only show flights under $700 per person",
+        "Look for the fastest one-way flights from Denver to Orlando on October 22, 2025, and show only flights operated by United Airlines",
+        "Search for round-trip premium economy flights from Boston to Barcelona for 2 adults, departing October 24, 2025, returning November 1, 2025, and filter to show flights with a layover of no more than 2 hours",
+        "Find direct round-trip flights from Atlanta to Cancun, departing October 27, 2025, and returning November 3, 2025, for 4 people, and sort by price from lowest to highest",
+        "Look up the cheapest economy one-way flights from Houston to Toronto on October 20, 2025, and show only flights arriving before 3 PM local time",
+        "Search for round-trip flights from Seattle to Honolulu for 1 passenger, departing October 23, 2025, and returning November 2, 2025, showing only flights with free checked baggage"
+      ],
+      "augmented_instructions": [
+        "Search for the cheapest non-stop round-trip economy flights from Los Angeles to Paris for 2 passengers, departing on October 25, 2025, and returning on November 2, 2025.",
+        "Search for one-way business class flights from Miami to Buenos Aires for 1 passenger, departing on October 30, 2025, and sort results by shortest duration.",
+        "Search for round-trip economy flights from Chicago to Rome for 1 adult and 1 child, departing on November 3, 2025, and returning on November 10, 2025, filtering for flights with Wi-Fi available.",
+        "Search for the cheapest round-trip economy flights from Dallas to New York City for 1 passenger, departing on October 21, 2025, after 6 PM, and returning on October 28, 2025.",
+        "Search for round-trip economy flights from San Francisco to Tokyo for 3 passengers, departing on October 18, 2025, and returning on October 28, 2025, and filter to show only flights under $700 per person.",
+        "Search for the fastest one-way economy flights from Denver to Orlando for 1 passenger, departing on October 22, 2025, and filter to show only flights operated by United Airlines.",
+        "Search for round-trip premium economy flights from Boston to Barcelona for 2 adults, departing on October 24, 2025, and returning on November 1, 2025, and filter to show flights with layovers of no more than 2 hours.",
+        "Search for direct round-trip economy flights from Atlanta to Cancun for 4 passengers, departing on October 27, 2025, and returning on November 3, 2025, and sort by price from lowest to highest.",
+        "Search for the cheapest one-way economy flights from Houston to Toronto for 1 passenger, departing on October 20, 2025, and filter to show only flights arriving before 3 PM local time.",
+        "Search for round-trip economy flights from Seattle to Honolulu for 1 passenger, departing on October 23, 2025, and returning on November 2, 2025, and filter to show only flights with free checked baggage."
+      ]
+    }
+  ]
