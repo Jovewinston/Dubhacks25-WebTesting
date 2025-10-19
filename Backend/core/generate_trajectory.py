@@ -37,6 +37,9 @@ from utils.confidence_validation import process_confidence_validation
 # Post-action validation utilities
 from utils.post_action_validation import process_post_action_validation
 
+# StatSig integration utilities
+from utils.statsig_injector import inject_statsig_sdk, log_custom_event, wait_for_statsig_ready, check_statsig_status
+
 # Load environment variables from .env file
 load_dotenv()
 
@@ -58,6 +61,12 @@ MODE = 0
 MAX_CONTEXT_LENGTH = int(os.getenv("MAX_CONTEXT_LENGTH", "3000"))  # Maximum context length in characters
 KNOWLEDGE_BASE_TYPE = os.getenv("KNOWLEDGE_BASE_TYPE", "graphrag")  # Type of knowledge base to use
 SEARCH_CONTEXT = False  # Whether to search for relevant past trajectories for context
+
+# StatSig configuration
+STATSIG_CLIENT_KEY = os.getenv("STATSIG_CLIENT_KEY")  # StatSig client key from environment
+ENABLE_STATSIG = bool(STATSIG_CLIENT_KEY)  # Enable StatSig if client key is provided
+ENABLE_STATSIG_SESSION_REPLAY = True  # Enable session replay
+ENABLE_STATSIG_AUTO_CAPTURE = True  # Enable auto-capture
 
 # Directory to store all browser sessions
 os.makedirs(BROWSER_SESSIONS_DIR, exist_ok=True)
@@ -196,6 +205,58 @@ def run_single_trajectory(url, task, steps, expected_behavior, device, browser_t
 
             # Navigate to URL for this instruction
             page.goto(url)
+            
+            # Inject StatSig SDK if enabled
+            if ENABLE_STATSIG and STATSIG_CLIENT_KEY:
+                print("📊 Injecting StatSig SDK...")
+                
+                # Create unique user ID for this test session
+                test_user_id = f"test_{device}_{browser_type}_{uuid.uuid4().hex[:8]}"
+                
+                # Custom properties for this test session
+                custom_properties = {
+                    "app": "web_testing",
+                    "version": "1.0.0",
+                    "device": device,
+                    "browser": browser_type,
+                    "task": task,
+                    "url": url,
+                    "episode": eps_name
+                }
+                
+                # Inject StatSig SDK
+                injection_success = inject_statsig_sdk(
+                    page=page,
+                    client_key=STATSIG_CLIENT_KEY,
+                    user_id=test_user_id,
+                    custom_properties=custom_properties,
+                    enable_session_replay=ENABLE_STATSIG_SESSION_REPLAY,
+                    enable_auto_capture=ENABLE_STATSIG_AUTO_CAPTURE
+                )
+                
+                if injection_success:
+                    print(f"✅ StatSig SDK injected successfully for user: {test_user_id}")
+                    
+                    # Wait for StatSig to be ready
+                    if wait_for_statsig_ready(page, timeout=10000):
+                        # Log test session start event
+                        log_custom_event(page, "test_session_started", {
+                            "task": task,
+                            "url": url,
+                            "device": device,
+                            "browser": browser_type,
+                            "episode": eps_name
+                        })
+                        print("📊 StatSig test session started")
+                    else:
+                        print("⚠️ StatSig not ready, continuing without it")
+                else:
+                    print("❌ StatSig injection failed, continuing without it")
+            else:
+                if not ENABLE_STATSIG:
+                    print("ℹ️ StatSig disabled (no client key provided)")
+                else:
+                    print("ℹ️ StatSig not configured")
             
             # Handle login using the new module (if needed)
             # ensure_google_login(page, email, password, url)
@@ -465,6 +526,21 @@ def run_single_trajectory(url, task, steps, expected_behavior, device, browser_t
                     else:
                         print("✅ Task completed successfully, metadata saved.")
                     
+                    # Log StatSig event for task completion
+                    if ENABLE_STATSIG and STATSIG_CLIENT_KEY:
+                        log_custom_event(page, "test_session_completed", {
+                            "task": task,
+                            "url": url,
+                            "device": device,
+                            "browser": browser_type,
+                            "episode": eps_name,
+                            "success": task_success,
+                            "wrong_behavior": wrong_behavior,
+                            "total_steps": step_idx + 1,
+                            "runtime_seconds": runtime
+                        })
+                        print("📊 StatSig test session completed")
+                    
                     # Mark instruction as completed in progress tracker
                     if progress_tracker:
                         error_msg = "Wrong behavior detected" if wrong_behavior else None
@@ -529,6 +605,19 @@ def run_single_trajectory(url, task, steps, expected_behavior, device, browser_t
                             'code': code, 
                             'axtree': tree,
                         })
+                        
+                        # Log StatSig event for successful action
+                        if ENABLE_STATSIG and STATSIG_CLIENT_KEY:
+                            log_custom_event(page, "test_step_executed", {
+                                "step_number": step_idx + 1,
+                                "description": description,
+                                "action_type": gpt_resp.get('action_type', 'unknown') if gpt_resp else 'unknown',
+                                "selected_element_id": gpt_resp.get('selected_annotation_id') if gpt_resp else None,
+                                "task": task,
+                                "url": url,
+                                "device": device,
+                                "browser": browser_type
+                            })
                         # Save axtree to file only after successful execution
                         with open(axtree_file, 'w', encoding='utf-8') as f:
                             json.dump(tree, f, indent=2, ensure_ascii=False)
@@ -903,6 +992,20 @@ def main():
         print("ℹ️  Running in TEXT-ONLY mode - Using targeting data only")
     else:
         print("ℹ️  Running in VISION mode - Using screenshots + targeting data")
+    print("="*60 + "\n")
+    
+    # Print StatSig configuration
+    print("="*60)
+    print("📊 STATSIG CONFIGURATION")
+    print("="*60)
+    print(f"StatSig Enabled: {ENABLE_STATSIG}")
+    if ENABLE_STATSIG:
+        print(f"Client Key: {STATSIG_CLIENT_KEY[:20]}...{STATSIG_CLIENT_KEY[-10:] if STATSIG_CLIENT_KEY else 'None'}")
+        print(f"Session Replay: {ENABLE_STATSIG_SESSION_REPLAY}")
+        print(f"Auto Capture: {ENABLE_STATSIG_AUTO_CAPTURE}")
+        print("ℹ️  StatSig will be injected into all test websites")
+    else:
+        print("ℹ️  StatSig disabled - no client key provided")
     print("="*60 + "\n")
     
     # Initialize progress tracker

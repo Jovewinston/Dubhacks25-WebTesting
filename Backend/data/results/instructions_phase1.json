@@ -1,10 +1,10 @@
 [
   {
-    "url": "https://www.linkedin.com",
-    "task": "Message Samuel Purnama on LinkedIn",
+    "url": "http://localhost:8000",
+    "task": "Test the calculator app by performing various mathematical operations",
     "steps": 
-      "1. Login to the page first with the email and password from the accounts list 2. Click on the search bar, 3. Search for 'Samuel Purnama' in the search bar, 6. Click on Samuel Purnama's profile from the drop down, 5. Click the 'Message' button, 7. Type 'Hi' in the message box, 8. Send the message",
-    "expected_behavior": "You should see a sent message to Samuel Purnama in your LinkedIn messages, and our chat conversation should have a message called 'Hi'",
+      "1. Click on the number '5' button 2. Click on the '+' operator button 3. Click on the number '3' button 4. Click on the '=' button to calculate 5. Clear the display using 'C' button 6. Test multiplication by clicking '4', '×', '7', '=' 7. Test division by clicking 'C', '1', '5', '/', '3', '=' 8. Test decimal operations by clicking 'C', '2', '.', '5', '+', '1', '.', '5', '='",
+    "expected_behavior": "The calculator should display the correct results for each operation: 5+3=8, 4×7=28, 15÷3=5, and 2.5+1.5=4. The clear button should reset the display to 0.",
     "devices": ["mobile", "desktop"],
     "browsers": ["chrome", "firefox", "safari"]
   }
