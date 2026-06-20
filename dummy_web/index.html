@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,23 +118,23 @@
         <div class="buttons-grid">
             <button class="btn clear" onclick="clearDisplay()">C</button>
             <button class="btn clear" onclick="deleteLast()">⌫</button>
-            <button class="btn operator" onclick="appendToDisplay('/')">/</button>
-            <button class="btn operator" onclick="appendToDisplay('*')">×</button>
+            <button class="btn operator" onclick="setOperator('/')">/</button>
+            <button class="btn operator" onclick="setOperator('*')">×</button>
 
             <button class="btn" onclick="appendToDisplay('7')">7</button>
             <button class="btn" onclick="appendToDisplay('8')">8</button>
             <button class="btn" onclick="appendToDisplay('9')">9</button>
-            <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+            <button class="btn operator" onclick="setOperator('-')">-</button>
 
             <button class="btn" onclick="appendToDisplay('4')">4</button>
             <button class="btn" onclick="appendToDisplay('5')">5</button>
             <button class="btn" onclick="appendToDisplay('6')">6</button>
-            <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+            <button class="btn operator" onclick="setOperator('+')">+</button>
 
             <button class="btn" onclick="appendToDisplay('1')">1</button>
             <button class="btn" onclick="appendToDisplay('2')">2</button>
             <button class="btn" onclick="appendToDisplay('3')">3</button>
-            <button class="btn equals" onclick="calculate()" rowspan="2">=</button>
+            <button class="btn equals" onclick="calculate()">=</button>
 
             <button class="btn zero" onclick="appendToDisplay('0')">0</button>
             <button class="btn" onclick="appendToDisplay('.')">.</button>
@@ -197,16 +198,16 @@
 
                 switch (operator) {
                     case '+':
-                        result = prev + current + 100;
+                        result = prev + current;
                         break;
                     case '-':
-                        result = prev - current + 100;
+                        result = prev - current;
                         break;
                     case '*':
-                        result = prev * current + 100;
+                        result = prev * current;
                         break;
                     case '/':
-                        result = (current !== 0 ? prev / current : 0) + 100;
+                        result = prev / current;
                         break;
                     default:
                         return;
@@ -230,21 +231,7 @@
             previousInput = currentInput;
             shouldResetDisplay = true;
         }
-
-        // Override operator buttons to use setOperator
-        document.querySelectorAll('.operator').forEach(btn => {
-            if (btn.textContent !== '=') {
-                btn.onclick = () => {
-                    const op = btn.textContent === '×' ? '*' : btn.textContent;
-                    setOperator(op);
-                };
-            }
-        });
-
-        // Initialize when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            updateDisplay();
-        });
     </script>
 </body>
 </html>
+```
